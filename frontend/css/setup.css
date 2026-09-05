@@ -844,16 +844,11 @@ body {
 .analysis-item {
     display: flex;
     align-items: center;
-
     gap: 12px;
-
-    padding: 11px 0;
-
+    padding: 13px 0;
+    border-bottom: 1px solid #e5ebe3;
     color: #59645b;
-
-    font-size: 13px;
-
-    border-bottom: 1px solid #eef2ed;
+    white-space: nowrap;
 }
 
 
@@ -861,6 +856,9 @@ body {
     border-bottom: none;
 }
 
+.analysis-item > span:last-child {
+    white-space: nowrap;
+}
 
 .analysis-item span {
     width: 20px;
