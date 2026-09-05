@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up | GramBiz AI</title>
+
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-brand">
+            <a href="index.html" class="logo">
+                🌱 GramBiz <strong>AI</strong>
+            </a>
+
+            <h1>Start your journey.</h1>
+
+            <p>
+                Create your GramBiz AI account and get personalized
+                guidance for your business.
+            </p>
+        </div>
+
+
+        <div class="auth-card">
+
+            <div class="auth-header">
+                <h2>Create your account</h2>
+                <p>It only takes a minute to get started.</p>
+            </div>
+
+            <form id="signupForm">
+
+                <div class="form-group">
+                    <label for="name">Full name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your full name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="signupEmail">Email address</label>
+
+                    <input
+                        type="email"
+                        id="signupEmail"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+
+                    <input
+                        type="password"
+                        id="signupPassword"
+                        placeholder="Create a password"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm password</label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm your password"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="auth-btn">
+                    Create Account
+                    <span>→</span>
+                </button>
+
+            </form>
+
+
+            <div class="divider">
+                <span>or</span>
+            </div>
+
+
+            <p class="switch-auth">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="js/auth.js"></script>
+
+</body>
+</html>

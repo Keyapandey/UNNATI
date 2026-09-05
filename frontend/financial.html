@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Financial Overview | GramBiz AI</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/financial.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================================
+     SIDEBAR
+================================ -->
+
+<aside class="sidebar">
+
+    <div class="dashboard-logo">
+        🌱 GramBiz <strong>AI</strong>
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+        <a href="dashboard.html" class="nav-item">
+            <span>▦</span>
+            Dashboard
+        </a>
+
+        <a href="market.html" class="nav-item">
+            <span>📍</span>
+            Market Reach
+        </a>
+
+        <a href="opportunities.html" class="nav-item">
+            <span>💡</span>
+            Opportunities
+        </a>
+
+        <a href="competitors.html" class="nav-item">
+            <span>🏪</span>
+            Competitors
+        </a>
+
+        <a href="pricing.html" class="nav-item">
+            <span>💰</span>
+            Pricing
+        </a>
+
+        <a href="financial.html" class="nav-item active">
+            <span>📊</span>
+            Financials
+        </a>
+
+        <a href="#" class="nav-item">
+            <span>⚠</span>
+            Risk
+        </a>
+
+        <a href="#" class="nav-item">
+            <span>📄</span>
+            Business Plan
+        </a>
+
+    </nav>
+
+
+    <div class="sidebar-bottom">
+
+        <button class="profile-button">
+
+            <span class="profile-avatar">
+                A
+            </span>
+
+            <span id="userName">
+                User
+            </span>
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+
+<!-- ================================
+     MAIN
+================================ -->
+
+<main class="dashboard-main">
+
+
+    <!-- TOP BAR -->
+
+    <header class="dashboard-header">
+
+        <div>
+
+            <p class="welcome-small">
+                Financial Management
+            </p>
+
+            <h1>
+                Financial Overview
+            </h1>
+
+        </div>
+
+
+        <a
+            href="dashboard.html"
+            class="new-analysis-btn"
+        >
+            ← Dashboard
+        </a>
+
+    </header>
+
+
+
+    <!-- FINANCIAL NAVIGATION -->
+
+    <div class="financial-tabs">
+
+        <a
+            href="financial.html"
+            class="financial-tab active"
+        >
+            <span>◈</span>
+            Financial Overview
+        </a>
+
+
+        <a
+            href="scheme-calculator.html"
+            class="financial-tab"
+        >
+            <span>🧮</span>
+            Scheme Calculator
+        </a>
+
+
+        <a
+            href="financial-planner.html"
+            class="financial-tab"
+        >
+            <span>📅</span>
+            Financial Planner
+        </a>
+
+
+        <a
+            href="repayment-planner.html"
+            class="financial-tab"
+        >
+            <span>💳</span>
+            Repayment Planner
+        </a>
+
+
+        <a
+            href="cost-profitability.html"
+            class="financial-tab"
+        >
+            <span>📈</span>
+            Cost & Profitability
+        </a>
+
+    </div>
+
+
+
+    <!-- BUSINESS SUMMARY -->
+
+    <section class="business-summary">
+
+        <div>
+
+            <span class="summary-label">
+                BUSINESS
+            </span>
+
+            <h2 id="businessName">
+                Your Business
+            </h2>
+
+            <p id="businessLocation">
+                Your Location
+            </p>
+
+        </div>
+
+
+        <div class="summary-capital">
+
+            <span class="summary-label">
+                AVAILABLE CAPITAL
+            </span>
+
+            <strong id="capitalAmount">
+                ₹0
+            </strong>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FINANCIAL INTRO -->
+
+    <section class="ai-insight">
+
+        <div class="insight-icon">
+            ₹
+        </div>
+
+
+        <div>
+
+            <span class="insight-label">
+                FINANCIAL SNAPSHOT
+            </span>
+
+            <h3>
+                Understand where your business stands financially.
+            </h3>
+
+            <p>
+                This overview brings together your estimated income,
+                expenses, profit and available capital in one place.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- KEY METRICS -->
+
+    <section class="section-heading">
+
+        <div>
+
+            <h2>
+                Key Financial Metrics
+            </h2>
+
+            <p>
+                Estimated monthly business performance
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <div class="stats-grid">
+
+
+        <!-- REVENUE -->
+
+        <div class="stat-card">
+
+            <span class="stat-icon">
+                ₹
+            </span>
+
+
+            <div>
+
+                <span class="stat-label">
+                    MONTHLY REVENUE
+                </span>
+
+                <strong>
+                    ₹42,500
+                </strong>
+
+                <small>
+                    Estimated sales income
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- EXPENSE -->
+
+        <div class="stat-card">
+
+            <span class="stat-icon">
+                −
+            </span>
+
+
+            <div>
+
+                <span class="stat-label">
+                    MONTHLY EXPENSES
+                </span>
+
+                <strong>
+                    ₹25,700
+                </strong>
+
+                <small>
+                    Operating costs
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROFIT -->
+
+        <div class="stat-card">
+
+            <span class="stat-icon">
+                ↑
+            </span>
+
+
+            <div>
+
+                <span class="stat-label">
+                    EST. NET PROFIT
+                </span>
+
+                <strong>
+                    ₹16,800
+                </strong>
+
+                <small>
+                    Revenue minus expenses
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MARGIN -->
+
+        <div class="stat-card">
+
+            <span class="stat-icon">
+                %
+            </span>
+
+
+            <div>
+
+                <span class="stat-label">
+                    PROFIT MARGIN
+                </span>
+
+                <strong>
+                    39.5%
+                </strong>
+
+                <small>
+                    Estimated net margin
+                </small>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- INCOME VS EXPENSES -->
+
+    <section class="section-heading financial-section">
+
+        <div>
+
+            <h2>
+                Income vs Expenses
+            </h2>
+
+            <p>
+                Estimated monthly financial distribution
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="financial-panel">
+
+
+        <div class="financial-row">
+
+            <div>
+
+                <span class="financial-label">
+                    Revenue
+                </span>
+
+                <strong>
+                    ₹42,500
+                </strong>
+
+            </div>
+
+
+            <div class="financial-bar">
+
+                <div
+                    class="revenue-bar"
+                    style="width: 100%;"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="financial-row">
+
+            <div>
+
+                <span class="financial-label">
+                    Expenses
+                </span>
+
+                <strong>
+                    ₹25,700
+                </strong>
+
+            </div>
+
+
+            <div class="financial-bar">
+
+                <div
+                    class="expense-bar"
+                    style="width: 60.5%;"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="financial-row">
+
+            <div>
+
+                <span class="financial-label">
+                    Net Profit
+                </span>
+
+                <strong>
+                    ₹16,800
+                </strong>
+
+            </div>
+
+
+            <div class="financial-bar">
+
+                <div
+                    class="profit-bar"
+                    style="width: 39.5%;"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- CAPITAL POSITION -->
+
+    <section class="section-heading financial-section">
+
+        <div>
+
+            <h2>
+                Capital Position
+            </h2>
+
+            <p>
+                Current funding picture
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <div class="capital-grid">
+
+
+        <div class="capital-card">
+
+            <span class="summary-label">
+                AVAILABLE CAPITAL
+            </span>
+
+            <strong id="capitalPosition">
+                ₹0
+            </strong>
+
+            <p>
+                Capital currently available for your business.
+            </p>
+
+        </div>
+
+
+
+        <div class="capital-card">
+
+            <span class="summary-label">
+                OWN CAPITAL
+            </span>
+
+            <strong id="ownCapital">
+                ₹0
+            </strong>
+
+            <p>
+                Capital contributed from your own resources.
+            </p>
+
+        </div>
+
+
+
+        <div class="capital-card">
+
+            <span class="summary-label">
+                EXTERNAL FUNDING
+            </span>
+
+            <strong>
+                ₹0
+            </strong>
+
+            <p>
+                Loans or external funding currently considered.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- FINANCIAL HEALTH -->
+
+    <section class="section-heading financial-section">
+
+        <div>
+
+            <h2>
+                Financial Health
+            </h2>
+
+            <p>
+                Quick view of your business financial condition
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <div class="health-grid">
+
+
+        <div class="health-card">
+
+            <span class="health-icon">
+                ✓
+            </span>
+
+            <div>
+
+                <span class="summary-label">
+                    PROFITABILITY
+                </span>
+
+                <h3>
+                    Healthy
+                </h3>
+
+                <p>
+                    Estimated profit is positive after monthly expenses.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="health-card">
+
+            <span class="health-icon">
+                ◌
+            </span>
+
+            <div>
+
+                <span class="summary-label">
+                    EXPENSE CONTROL
+                </span>
+
+                <h3>
+                    Needs Monitoring
+                </h3>
+
+                <p>
+                    Expenses currently use around 60.5% of estimated revenue.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="health-card">
+
+            <span class="health-icon">
+                ₹
+            </span>
+
+            <div>
+
+                <span class="summary-label">
+                    CAPITAL READINESS
+                </span>
+
+                <h3>
+                    To Be Assessed
+                </h3>
+
+                <p>
+                    Funding requirements will be evaluated by the scheme tools.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</main>
+
+
+
+<script src="js/financial.js"></script>
+
+</body>
+
+</html>

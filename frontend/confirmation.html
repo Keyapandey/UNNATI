@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Review | GramBiz AI</title>
+
+    <link rel="stylesheet" href="css/setup.css">
+</head>
+
+<body>
+
+    <header class="setup-header">
+
+        <a href="index.html" class="logo">
+            🌱 GramBiz <strong>AI</strong>
+        </a>
+
+        <div class="step-text">
+            Final Review
+        </div>
+
+    </header>
+
+
+    <main class="setup-container">
+
+        <!-- Progress -->
+
+        <div class="progress-area">
+
+            <div class="progress-step completed">
+                <span>✓</span>
+                Location
+            </div>
+
+            <div class="progress-line completed-line"></div>
+
+            <div class="progress-step completed">
+                <span>✓</span>
+                Business
+            </div>
+
+            <div class="progress-line completed-line"></div>
+
+            <div class="progress-step completed">
+                <span>✓</span>
+                Capital
+            </div>
+
+        </div>
+
+
+        <!-- Confirmation Card -->
+
+        <section class="setup-card confirmation-card">
+
+            <div class="setup-title">
+
+                <div>
+
+                    <h1>Review your details</h1>
+
+                    <p>
+                        Make sure everything looks correct
+                        before we start your AI analysis.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- LOCATION -->
+
+            <div class="review-section">
+
+                <div class="review-heading">
+                    <span>📍</span>
+                    <strong>Location</strong>
+                </div>
+
+                <div class="review-value" id="locationValue">
+                    Loading...
+                </div>
+
+            </div>
+
+
+            <!-- BUSINESS -->
+
+            <div class="review-section">
+
+                <div class="review-heading">
+                    <span>🏪</span>
+                    <strong>Business</strong>
+                </div>
+
+                <div class="review-value" id="businessValue">
+                    Loading...
+                </div>
+
+            </div>
+
+
+            <!-- CAPITAL -->
+
+            <div class="review-section">
+
+                <div class="review-heading">
+                    <span>💰</span>
+                    <strong>Available Capital</strong>
+                </div>
+
+                <div class="review-value capital-value" id="capitalValue">
+                    Loading...
+                </div>
+
+            </div>
+
+
+            <!-- ACTIONS -->
+
+            <div class="confirmation-actions">
+
+                <button
+                    type="button"
+                    class="back-button"
+                    id="reviewBackBtn"
+                >
+                    ←
+                </button>
+
+                <button
+                    type="button"
+                    class="continue-btn"
+                    id="startAnalysisBtn"
+                >
+                    Start AI Analysis →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <p class="privacy-note">
+            🔒 Your information is used only to personalize your business analysis.
+        </p>
+
+    </main>
+
+
+    <script src="js/confirmation.js"></script>
+
+</body>
+
+</html>

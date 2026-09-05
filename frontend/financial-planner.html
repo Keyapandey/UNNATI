@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Financial Planner | GramBiz AI</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/financial.css">
+    <link rel="stylesheet" href="css/financial-planner.css">
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar">
+
+    <div class="dashboard-logo">
+        🌱 GramBiz <strong>AI</strong>
+    </div>
+
+    <nav class="sidebar-nav">
+
+        <a href="dashboard.html" class="nav-item">
+            <span>▦</span>
+            Dashboard
+        </a>
+
+        <a href="market.html" class="nav-item">
+            <span>📍</span>
+            Market Reach
+        </a>
+
+        <a href="opportunities.html" class="nav-item">
+            <span>💡</span>
+            Opportunities
+        </a>
+
+        <a href="competitors.html" class="nav-item">
+            <span>🏪</span>
+            Competitors
+        </a>
+
+        <a href="pricing.html" class="nav-item">
+            <span>💰</span>
+            Pricing
+        </a>
+
+        <a href="financial.html" class="nav-item active">
+            <span>📊</span>
+            Financials
+        </a>
+
+        <a href="#" class="nav-item">
+            <span>⚠</span>
+            Risk
+        </a>
+
+        <a href="#" class="nav-item">
+            <span>📄</span>
+            Business Plan
+        </a>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+
+        <button class="profile-button">
+
+            <span class="profile-avatar">A</span>
+
+            <span id="userName">User</span>
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="dashboard-main">
+
+    <!-- HEADER -->
+
+    <header class="dashboard-header">
+
+        <div>
+
+            <p class="welcome-small">
+                FINANCIAL MANAGEMENT
+            </p>
+
+            <h1>
+                Financial Planner
+            </h1>
+
+        </div>
+
+        <button
+            class="planner-back-btn"
+            onclick="window.location.href='financial.html'">
+
+            ← Back to Financials
+
+        </button>
+
+    </header>
+
+
+    <!-- TABS -->
+
+    <div class="financial-tabs">
+
+        <a href="financial.html">
+            Financial Overview
+        </a>
+
+        <a href="scheme-calculator.html">
+            Scheme Calculator
+        </a>
+
+        <a href="financial-planner.html" class="active">
+            Financial Planner
+        </a>
+
+        <a href="repayment-planner.html">
+            Repayment Planner
+        </a>
+
+        <a href="cost-profitability.html">
+            Cost & Profitability
+        </a>
+
+    </div>
+
+
+    <!-- INTRO -->
+
+    <section class="planner-intro">
+
+        <span class="planner-label">
+            SMART FINANCIAL PLANNER
+        </span>
+
+        <h2>
+            Plan Your Business Finances
+        </h2>
+
+        <p>
+            Estimate sales, expenses, profitability and
+            your expected financial performance for the
+            next 12 months.
+        </p>
+
+    </section>
+
+
+    <!-- BUSINESS CONTEXT -->
+
+    <section class="business-context-card">
+
+        <div>
+
+            <span class="planner-label">
+                YOUR BUSINESS
+            </span>
+
+            <h3 id="plannerBusinessName">
+                Your Business
+            </h3>
+
+            <p id="plannerBusinessLocation">
+                Location not available
+            </p>
+
+        </div>
+
+        <div class="capital-box">
+
+            <span>
+                Available Capital
+            </span>
+
+            <strong id="plannerCapital">
+                ₹0
+            </strong>
+
+        </div>
+
+        <div class="capital-box">
+
+    <span>
+        Funding Required
+    </span>
+
+    <strong id="plannerFundingRequired">
+        ₹0
+    </strong>
+
+    </div>
+
+    </section>
+
+
+    <!-- INPUT + SUMMARY -->
+
+    <section class="planner-grid">
+
+
+        <!-- INPUT CARD -->
+
+        <div class="planner-card">
+
+            <div class="card-heading">
+
+                <h3>
+                    Sales Forecast
+                </h3>
+
+                <p>
+                    Enter your expected business sales.
+                </p>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="monthlySales">
+                    Current Monthly Sales
+                </label>
+
+                <div class="input-money">
+
+                    <span>₹</span>
+
+                    <input
+                        type="number"
+                        id="monthlySales"
+                        placeholder="50000"
+                        min="0">
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="salesGrowth">
+                    Expected Monthly Growth
+                </label>
+
+                <div class="input-percent">
+
+                    <input
+                        type="number"
+                        id="salesGrowth"
+                        value="3"
+                        min="0"
+                        step="0.5">
+
+                    <span>%</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="card-heading expense-heading">
+
+                <h3>
+                    Monthly Expenses
+                </h3>
+
+                <p>
+                    Break your expenses into major categories.
+                </p>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="rawMaterial">
+                    Raw Material / Stock
+                </label>
+
+                <div class="input-money">
+
+                    <span>₹</span>
+
+                    <input
+                        type="number"
+                        id="rawMaterial"
+                        placeholder="18000"
+                        min="0">
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="labour">
+                    Labour / Wages
+                </label>
+
+                <div class="input-money">
+
+                    <span>₹</span>
+
+                    <input
+                        type="number"
+                        id="labour"
+                        placeholder="5000"
+                        min="0">
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="rent">
+                    Rent
+                </label>
+
+                <div class="input-money">
+
+                    <span>₹</span>
+
+                    <input
+                        type="number"
+                        id="rent"
+                        placeholder="4000"
+                        min="0">
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="electricity">
+                    Electricity / Utilities
+                </label>
+
+                <div class="input-money">
+
+                    <span>₹</span>
+
+                    <input
+                        type="number"
+                        id="electricity"
+                        placeholder="2000"
+                        min="0">
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="transport">
+                    Transport
+                </label>
+
+                <div class="input-money">
+
+                    <span>₹</span>
+
+                    <input
+                        type="number"
+                        id="transport"
+                        placeholder="2000"
+                        min="0">
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="otherExpenses">
+                    Other Expenses
+                </label>
+
+                <div class="input-money">
+
+                    <span>₹</span>
+
+                    <input
+                        type="number"
+                        id="otherExpenses"
+                        placeholder="2000"
+                        min="0">
+
+                </div>
+
+            </div>
+
+
+            <div class="planner-actions">
+
+                <button
+                    id="calculatePlannerBtn"
+                    class="planner-button">
+
+                    Calculate Financial Plan
+
+                </button>
+
+                <button
+                    id="resetPlannerBtn"
+                    class="reset-button">
+
+                    Reset
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUMMARY -->
+
+        <div class="planner-card summary-card">
+
+            <div class="card-heading">
+
+                <h3>
+                    Financial Summary
+                </h3>
+
+                <p>
+                    Estimated monthly performance.
+                </p>
+
+            </div>
+
+
+            <div class="summary-list">
+
+                <div class="summary-row">
+
+                    <span>Monthly Revenue</span>
+
+                    <strong id="summaryRevenue">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>Total Expenses</span>
+
+                    <strong id="summaryExpenses">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row profit-row">
+
+                    <span>Estimated Net Profit</span>
+
+                    <strong id="summaryProfit">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>Profit Margin</span>
+
+                    <strong id="summaryMargin">
+                        0%
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- MINI METRICS -->
+
+            <div class="mini-metrics">
+
+                <div>
+
+                    <span>
+                        Break-even Sales
+                    </span>
+
+                    <strong id="summaryBreakEven">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Contribution Margin
+                    </span>
+
+                    <strong id="summaryContribution">
+                        0%
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINANCIAL HEALTH -->
+
+    <section class="planner-card">
+
+        <div class="card-heading">
+
+            <h3>
+                Business Financial Health
+            </h3>
+
+            <p>
+                Preliminary assessment based on your estimates.
+            </p>
+
+        </div>
+
+
+        <div class="health-result">
+
+            <div
+                class="health-icon"
+                id="healthIcon">
+
+                —
+
+            </div>
+
+
+            <div>
+
+                <span class="health-label">
+                    CURRENT ASSESSMENT
+                </span>
+
+                <h3 id="healthTitle">
+                    Enter your figures
+                </h3>
+
+                <p id="healthMessage">
+
+                    Calculate your financial plan to see
+                    the preliminary assessment.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPENSE ANALYSIS -->
+
+    <section class="planner-card">
+
+        <div class="card-heading">
+
+            <h3>
+                Expense Breakdown
+            </h3>
+
+            <p>
+                Understand where your monthly expenses are going.
+            </p>
+
+        </div>
+
+
+        <div id="expenseBreakdown" class="expense-breakdown">
+
+            <div class="empty-breakdown">
+                Calculate your plan to see the expense breakdown.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 12 MONTH FORECAST -->
+
+    <section class="planner-card">
+
+        <div class="card-heading">
+
+            <h3>
+                12-Month Financial Forecast
+            </h3>
+
+            <p>
+                Projected performance using your expected monthly
+                sales growth.
+            </p>
+
+        </div>
+
+
+        <div class="forecast-summary">
+
+            <div>
+
+                <span>
+                    Annual Revenue
+                </span>
+
+                <strong id="annualRevenue">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Annual Expenses
+                </span>
+
+                <strong id="annualExpenses">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Annual Profit
+                </span>
+
+                <strong id="annualProfit">
+                    ₹0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="forecast-table-wrapper">
+
+            <table class="forecast-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Month</th>
+
+                        <th>Revenue</th>
+
+                        <th>Expenses</th>
+
+                        <th>Profit</th>
+
+                        <th>Margin</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="forecastTableBody">
+
+                    <tr>
+
+                        <td colspan="5">
+                            Enter your figures and calculate the plan.
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- SAVE STATUS -->
+
+    <div
+        id="saveStatus"
+        class="save-status">
+
+    </div>
+
+
+    <!-- DISCLAIMER -->
+
+    <div class="planner-disclaimer">
+
+        <strong>Note:</strong>
+
+        This is a preliminary financial estimate based on
+        user-entered assumptions. Actual business performance
+        may vary due to demand, seasonality, costs, market
+        conditions and other factors.
+
+    </div>
+
+</main>
+
+
+<script src="js/financial-planner.js"></script>
+
+</body>
+
+</html>

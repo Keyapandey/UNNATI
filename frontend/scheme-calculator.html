@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Smart Scheme Calculator | GramBiz AI</title>
+
+    <!-- Existing Dashboard Design -->
+    <link
+        rel="stylesheet"
+        href="css/dashboard.css"
+    >
+
+    <!-- This page's CSS -->
+    <link
+        rel="stylesheet"
+        href="css/scheme-calculator.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     SIDEBAR
+================================================== -->
+
+<aside class="sidebar">
+
+
+    <div class="dashboard-logo">
+
+        🌱 GramBiz <strong>AI</strong>
+
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+
+        <a
+            href="dashboard.html"
+            class="nav-item"
+        >
+            <span>▦</span>
+            Dashboard
+        </a>
+
+
+        <a
+            href="market.html"
+            class="nav-item"
+        >
+            <span>📍</span>
+            Market Reach
+        </a>
+
+
+        <a
+            href="opportunities.html"
+            class="nav-item"
+        >
+            <span>💡</span>
+            Opportunities
+        </a>
+
+
+        <a
+            href="competitors.html"
+            class="nav-item"
+        >
+            <span>🏪</span>
+            Competitors
+        </a>
+
+
+        <a
+            href="pricing.html"
+            class="nav-item"
+        >
+            <span>💰</span>
+            Pricing
+        </a>
+
+
+        <a
+            href="./financial.html"
+            class="nav-item active"
+        >
+            <span>📊</span>
+            Financials
+        </a>
+
+
+        <a
+            href="#"
+            class="nav-item"
+        >
+            <span>⚠</span>
+            Risk
+        </a>
+
+
+        <a
+            href="#"
+            class="nav-item"
+        >
+            <span>📄</span>
+            Business Plan
+        </a>
+
+
+    </nav>
+
+
+    <div class="sidebar-bottom">
+
+        <button class="profile-button">
+
+            <span class="profile-avatar">
+                A
+            </span>
+
+            <span id="userName">
+                User
+            </span>
+
+        </button>
+
+    </div>
+
+
+</aside>
+
+
+
+<!-- ==================================================
+     MAIN CONTENT
+================================================== -->
+
+<main class="dashboard-main">
+
+
+    <!-- HEADER -->
+
+    <header class="dashboard-header">
+
+
+        <div>
+
+            <p class="welcome-small">
+                Financial Management
+            </p>
+
+            <h1>
+                Smart Scheme Calculator
+            </h1>
+
+        </div>
+
+
+        <a
+            href="financial.html"
+            class="new-analysis-btn"
+        >
+            ← Financial Overview
+        </a>
+
+
+    </header>
+
+
+
+    <!-- ==================================================
+         FINANCIAL NAVIGATION
+    ================================================== -->
+
+    <div class="financial-tabs">
+
+
+        <a
+            href="financial.html"
+            class="financial-tab"
+        >
+            <span>◈</span>
+            Financial Overview
+        </a>
+
+
+        <a
+            href="scheme-calculator.html"
+            class="financial-tab active"
+        >
+            <span>🧮</span>
+            Scheme Calculator
+        </a>
+
+
+        <a
+            href="financial-planner.html"
+            class="financial-tab"
+        >
+            <span>📅</span>
+            Financial Planner
+        </a>
+
+
+        <a
+            href="repayment-planner.html"
+            class="financial-tab"
+        >
+            <span>💳</span>
+            Repayment Planner
+        </a>
+
+
+        <a
+            href="cost-profitability.html"
+            class="financial-tab"
+        >
+            <span>📈</span>
+            Cost & Profitability
+        </a>
+
+
+    </div>
+
+
+
+    <!-- ==================================================
+         INTRO
+    ================================================== -->
+
+    <section class="scheme-intro">
+
+
+        <div class="scheme-intro-icon">
+            🧮
+        </div>
+
+
+        <div>
+
+            <span class="insight-label">
+                SMART SCHEME ROUTER
+            </span>
+
+
+            <h2>
+                Find financial schemes suited to your business.
+            </h2>
+
+
+            <p>
+                Enter a few basic business and funding details.
+                GramBiz AI will use these inputs to compare
+                suitable government-backed schemes.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==================================================
+         CALCULATOR + ROUTER
+    ================================================== -->
+
+    <div class="scheme-layout">
+
+
+        <!-- ==========================================
+             LEFT — INPUTS
+        =========================================== -->
+
+        <section class="scheme-input-card">
+
+
+            <div class="card-title">
+
+                <div>
+
+                    <h2>
+                        Business & Funding Details
+                    </h2>
+
+                    <p>
+                        Tell us what you need funding for.
+                    </p>
+
+                </div>
+
+                <span class="step-badge">
+                    STEP 1
+                </span>
+
+            </div>
+
+
+
+            <!-- BUSINESS TYPE -->
+
+            <div class="form-group">
+
+                <label>
+                    Business Activity
+                </label>
+
+
+                <select id="businessType">
+
+                    <option value="">
+                        Select business activity
+                    </option>
+
+                    <option value="dairy">
+                        Dairy / Milk Business
+                    </option>
+
+                    <option value="food">
+                        Food Processing
+                    </option>
+
+                    <option value="agriculture">
+                        Agriculture / Agri Allied
+                    </option>
+
+                    <option value="retail">
+                        Retail / Shop
+                    </option>
+
+                    <option value="service">
+                        Service Business
+                    </option>
+
+                    <option value="manufacturing">
+                        Manufacturing
+                    </option>
+
+                    <option value="artisan">
+                        Traditional Artisan / Craft
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- BUSINESS STATUS -->
+
+            <div class="form-group">
+
+                <label>
+                    Business Status
+                </label>
+
+
+                <div class="choice-grid">
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="businessStatus"
+                            value="new"
+                            checked
+                        >
+
+                        <span>
+
+                            <strong>
+                                New Business
+                            </strong>
+
+                            <small>
+                                Starting a new venture
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="businessStatus"
+                            value="existing"
+                        >
+
+                        <span>
+
+                            <strong>
+                                Existing Business
+                            </strong>
+
+                            <small>
+                                Already operating
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT COST -->
+
+            <div class="form-group">
+
+                <label>
+                    Estimated Project Cost
+                </label>
+
+
+                <div class="input-with-prefix">
+
+                    <span>
+                        ₹
+                    </span>
+
+                    <input
+                        type="number"
+                        id="projectCost"
+                        placeholder="Example: 500000"
+                        min="0"
+                    >
+
+                </div>
+
+
+                <small class="field-help">
+                    Approximate total investment required for the business.
+                </small>
+
+            </div>
+
+
+
+            <!-- OWN CONTRIBUTION -->
+
+            <div class="form-group">
+
+                <label>
+                    Your Own Contribution
+                </label>
+
+
+                <div class="input-with-prefix">
+
+                    <span>
+                        ₹
+                    </span>
+
+                    <input
+                        type="number"
+                        id="ownContribution"
+                        placeholder="Example: 100000"
+                        min="0"
+                    >
+
+                </div>
+
+
+                <small class="field-help">
+                    Amount you can contribute from your own resources.
+                </small>
+
+            </div>
+
+
+
+            <!-- FUNDING REQUIRED -->
+
+            <div class="funding-preview">
+
+
+                <div>
+
+                    <span>
+                        Estimated Funding Required
+                    </span>
+
+                    <small>
+                        Project cost − own contribution
+                    </small>
+
+                </div>
+
+
+                <strong id="fundingRequired">
+                    ₹0
+                </strong>
+
+
+            </div>
+
+
+
+            <!-- CALCULATE -->
+
+            <button
+                class="calculate-btn"
+                id="calculateSchemeBtn"
+            >
+
+                Find Suitable Schemes
+                <span>→</span>
+
+            </button>
+
+
+        </section>
+
+
+
+        <!-- ==========================================
+             RIGHT — ROUTER
+        =========================================== -->
+
+        <section class="router-card">
+
+
+            <div class="card-title">
+
+                <div>
+
+                    <h2>
+                        Scheme Router
+                    </h2>
+
+                    <p>
+                        Your potential scheme matches
+                    </p>
+
+                </div>
+
+                <span class="router-status">
+                    Ready
+                </span>
+
+            </div>
+
+
+
+            <!-- DEFAULT STATE -->
+
+            <div
+                class="router-empty"
+                id="routerEmpty"
+            >
+
+                <div class="empty-icon">
+                    🎯
+                </div>
+
+
+                <h3>
+                    Let's find your best match
+                </h3>
+
+
+                <p>
+                    Enter your business details on the left
+                    and click <strong>Find Suitable Schemes</strong>.
+                </p>
+
+            </div>
+
+
+
+            <!-- RESULTS -->
+
+            <div
+                class="router-results"
+                id="routerResults"
+            >
+
+
+                <!-- BEST MATCH -->
+
+                <div class="best-match-card">
+
+
+                    <div class="match-top">
+
+                        <span class="match-label">
+                            ⭐ BEST MATCH
+                        </span>
+
+                        <span
+                            class="match-score"
+                            id="matchScore"
+                        >
+                            92%
+                        </span>
+
+                    </div>
+
+
+                    <h3 id="bestSchemeName">
+                        PM MUDRA Yojana
+                    </h3>
+
+
+                    <p id="bestSchemeDescription">
+                        Suitable financing support for eligible
+                        micro enterprises.
+                    </p>
+
+
+                    <div class="match-tags">
+
+                        <span id="bestLoanAmount">
+                            Up to ₹20 lakh
+                        </span>
+
+                        <span id="bestInterest">
+                            Interest varies by lender
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="view-scheme-btn"
+                        id="viewBestScheme"
+                    >
+                        View Scheme Details →
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- OTHER MATCHES -->
+
+                <div class="other-matches">
+
+
+                    <div class="matches-heading">
+
+                        <h3>
+                            Other Potential Matches
+                        </h3>
+
+                        <span>
+                            Based on your inputs
+                        </span>
+
+                    </div>
+
+
+
+                    <div
+                        class="scheme-mini-list"
+                        id="schemeMiniList"
+                    >
+
+
+                        <div class="scheme-mini-card">
+
+                            <div class="mini-icon">
+                                🏦
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    PMEGP
+                                </strong>
+
+                                <span>
+                                    New micro-enterprise
+                                </span>
+
+                            </div>
+
+                            <b>
+                                78%
+                            </b>
+
+                        </div>
+
+
+
+                        <div class="scheme-mini-card">
+
+                            <div class="mini-icon">
+                                🌾
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    AIF
+                                </strong>
+
+                                <span>
+                                    Agriculture infrastructure
+                                </span>
+
+                            </div>
+
+                            <b>
+                                64%
+                            </b>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </div>
+
+
+
+    <!-- ==================================================
+         SCHEME COMPARISON
+    ================================================== -->
+
+    <section
+        class="comparison-section"
+        id="comparisonSection"
+    >
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <h2>
+                    Scheme Comparison
+                </h2>
+
+                <p>
+                    Compare important financial features at a glance.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="comparison-table-wrapper">
+
+            <table class="comparison-table">
+
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Scheme
+                        </th>
+
+                        <th>
+                            Support
+                        </th>
+
+                        <th>
+                            Interest
+                        </th>
+
+                        <th>
+                            Tenure
+                        </th>
+
+                        <th>
+                            Key Benefit
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+
+                    <tr>
+
+                        <td>
+                            <strong>
+                                PM MUDRA
+                            </strong>
+                        </td>
+
+                        <td>
+                            ₹50,000 – ₹20 lakh
+                        </td>
+
+                        <td>
+                            Lender dependent
+                        </td>
+
+                        <td>
+                            Up to ~5 years*
+                        </td>
+
+                        <td>
+                            Micro-business financing
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <strong>
+                                PMEGP
+                            </strong>
+                        </td>
+
+                        <td>
+                            Project-based
+                        </td>
+
+                        <td>
+                            Normal bank rate
+                        </td>
+
+                        <td>
+                            3–7 years
+                        </td>
+
+                        <td>
+                            New micro-enterprise support
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <strong>
+                                PM Vishwakarma
+                            </strong>
+                        </td>
+
+                        <td>
+                            Up to ₹3 lakh
+                        </td>
+
+                        <td>
+                            5% concessional
+                        </td>
+
+                        <td>
+                            18 + 30 months
+                        </td>
+
+                        <td>
+                            Traditional artisan support
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <strong>
+                                PMFME
+                            </strong>
+                        </td>
+
+                        <td>
+                            35% subsidy
+                        </td>
+
+                        <td>
+                            Bank rate
+                        </td>
+
+                        <td>
+                            Project dependent
+                        </td>
+
+                        <td>
+                            Food-processing subsidy
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <strong>
+                                AIF
+                            </strong>
+                        </td>
+
+                        <td>
+                            3% interest subvention
+                        </td>
+
+                        <td>
+                            Effective rate benefit
+                        </td>
+
+                        <td>
+                            Generally up to 7 years
+                        </td>
+
+                        <td>
+                            Agri infrastructure
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+
+            </table>
+
+        </div>
+
+
+        <p class="table-note">
+            *Displayed values are indicative frontend reference values.
+            Final eligibility, sanction, interest rate and terms depend
+            on current scheme guidelines and lender/authority assessment.
+        </p>
+
+
+    </section>
+
+
+
+    <!-- ==================================================
+         SCHEME DETAILS
+    ================================================== -->
+
+    <section
+        class="scheme-detail-card"
+        id="schemeDetailCard"
+    >
+
+
+        <div class="detail-header">
+
+
+            <div>
+
+                <span class="insight-label">
+                    SELECTED SCHEME
+                </span>
+
+                <h2 id="detailSchemeName">
+                    PM MUDRA Yojana
+                </h2>
+
+            </div>
+
+
+            <span class="recommended-badge">
+                Recommended
+            </span>
+
+
+        </div>
+
+
+
+        <div class="detail-grid">
+
+
+            <div class="detail-item">
+
+                <span>
+                    Financial Support
+                </span>
+
+                <strong id="detailSupport">
+                    Up to ₹20 lakh
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>
+                    Interest
+                </span>
+
+                <strong id="detailInterest">
+                    Lender dependent
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>
+                    Tenure
+                </span>
+
+                <strong id="detailTenure">
+                    Up to ~5 years
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>
+                    Moratorium
+                </span>
+
+                <strong>
+                    As per lender
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="detail-benefit">
+
+
+            <span>
+                Why this scheme may fit
+            </span>
+
+
+            <p id="detailReason">
+
+                The scheme supports eligible micro enterprises
+                across manufacturing, trading, services and
+                agriculture-allied activities.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="calculator-preview">
+
+
+            <div>
+
+                <span>
+                    Estimated Funding Requirement
+                </span>
+
+                <strong id="detailFunding">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Potential Scheme Support
+                </span>
+
+                <strong id="detailPotential">
+                    To be assessed
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- =========================================================
+     STEP 2F - PRELIMINARY ELIGIBILITY CHECK
+     ========================================================= -->
+
+<section class="scheme-extra-section" id="eligibilitySection">
+
+    <div class="section-heading">
+        <div>
+            <span class="section-label">SMART ELIGIBILITY</span>
+            <h2>Preliminary Eligibility Check</h2>
+            <p>
+                A quick scheme-fit check based on the business and funding
+                information you entered.
+            </p>
+        </div>
+    </div>
+
+    <div class="eligibility-card">
+
+        <!-- Overall Status -->
+        <div class="eligibility-status">
+            <div class="status-icon" id="eligibilityIcon">
+                ✓
+            </div>
+
+            <div>
+                <span class="status-label">SCHEME FIT</span>
+                <h3 id="eligibilityTitle">Likely Match</h3>
+                <p id="eligibilityMessage">
+                    Your business details appear suitable for the selected
+                    scheme. Final eligibility will require official verification.
+                </p>
+            </div>
+        </div>
+
+        <!-- Checklist -->
+        <div class="eligibility-checklist">
+
+            <div class="check-item">
+                <div class="check-symbol">✓</div>
+                <div>
+                    <strong>Business Activity</strong>
+                    <span id="eligibilityActivity">
+                        Based on your selected activity
+                    </span>
+                </div>
+            </div>
+
+            <div class="check-item">
+                <div class="check-symbol">✓</div>
+                <div>
+                    <strong>Business Status</strong>
+                    <span id="eligibilityStatusText">
+                        Based on new/existing business selection
+                    </span>
+                </div>
+            </div>
+
+            <div class="check-item">
+                <div class="check-symbol">✓</div>
+                <div>
+                    <strong>Project Cost</strong>
+                    <span id="eligibilityProjectCost">
+                        Project cost entered by user
+                    </span>
+                </div>
+            </div>
+
+            <div class="check-item">
+                <div class="check-symbol">✓</div>
+                <div>
+                    <strong>Funding Requirement</strong>
+                    <span id="eligibilityFunding">
+                        Funding requirement calculated automatically
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="eligibility-note">
+            <strong>Important:</strong>
+            This is a preliminary scheme-fit assessment for guidance only.
+            Actual eligibility, subsidy, loan amount, interest rate and
+            approval depend on the applicable scheme rules and the
+            implementing bank/agency.
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     STEP 2G - WHY THIS SCHEME
+     ========================================================= -->
+
+<section class="scheme-extra-section" id="whySchemeSection">
+
+    <div class="section-heading">
+        <div>
+            <span class="section-label">SMART RECOMMENDATION</span>
+            <h2>Why This Scheme?</h2>
+            <p>
+                Understand why this scheme was recommended for your business.
+            </p>
+        </div>
+    </div>
+
+    <div class="why-scheme-card">
+
+        <div class="why-scheme-header">
+
+            <div class="scheme-big-icon" id="whySchemeIcon">
+                🏦
+            </div>
+
+            <div>
+                <span class="status-label">RECOMMENDED SCHEME</span>
+
+                <h3 id="whySchemeName">
+                    PM MUDRA Yojana
+                </h3>
+
+                <span class="scheme-match-badge" id="whySchemeScore">
+                    92% Match
+                </span>
+            </div>
+
+        </div>
+
+
+        <div class="why-scheme-content">
+
+            <div class="why-main-reason">
+
+                <h4>Why it matches your business</h4>
+
+                <p id="whySchemeReason">
+                    This scheme can fit many small businesses that need
+                    financing for working capital, equipment or expansion.
+                </p>
+
+            </div>
+
+
+            <div class="scheme-highlights">
+
+                <div class="highlight-item">
+
+                    <span class="highlight-label">
+                        Funding Support
+                    </span>
+
+                    <strong id="whySchemeAmount">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="highlight-item">
+
+                    <span class="highlight-label">
+                        Interest
+                    </span>
+
+                    <strong id="whySchemeInterest">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="highlight-item">
+
+                    <span class="highlight-label">
+                        Typical Tenure
+                    </span>
+
+                    <strong id="whySchemeTenure">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     STEP 2G - TYPICAL REQUIRED DOCUMENTS
+     ========================================================= -->
+
+<section class="scheme-extra-section" id="documentsSection">
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-label">
+                DOCUMENT CHECKLIST
+            </span>
+
+            <h2>Typical Required Documents</h2>
+
+            <p>
+                Keep these documents ready before approaching the
+                implementing bank or agency.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="documents-card">
+
+        <div class="documents-header">
+
+            <div class="documents-icon">
+                📄
+            </div>
+
+            <div>
+
+                <h3 id="documentsSchemeName">
+                    Scheme Documents
+                </h3>
+
+                <p>
+                    Typical documents that may be requested.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="documents-grid" id="documentsList">
+
+            <div class="document-item">
+
+                <span class="document-check">✓</span>
+
+                <div>
+                    <strong>Identity Proof</strong>
+                    <span>Aadhaar / other accepted ID</span>
+                </div>
+
+            </div>
+
+
+            <div class="document-item">
+
+                <span class="document-check">✓</span>
+
+                <div>
+                    <strong>PAN / Financial Documents</strong>
+                    <span>As applicable to the application</span>
+                </div>
+
+            </div>
+
+
+            <div class="document-item">
+
+                <span class="document-check">✓</span>
+
+                <div>
+                    <strong>Bank Account Details</strong>
+                    <span>Applicant's banking information</span>
+                </div>
+
+            </div>
+
+
+            <div class="document-item">
+
+                <span class="document-check">✓</span>
+
+                <div>
+                    <strong>Project Details</strong>
+                    <span>Project report, cost estimates or quotations</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="documents-note">
+
+            <strong>Note:</strong>
+            These are typical document categories for guidance.
+            Final document requirements may vary by scheme, bank,
+            applicant category and project type.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<script src="js/scheme-calculator.js"></script>
+
+
+</body>
+
+</html>

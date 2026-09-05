@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cost & Profitability | GramBiz AI</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/financial.css">
+    <link rel="stylesheet" href="css/cost-profitability.css">
+
+</head>
+
+
+<body>
+
+<!-- =====================================================
+     SIDEBAR
+     ===================================================== -->
+
+<aside class="sidebar">
+
+    <div class="dashboard-logo">
+        🌱 GramBiz <strong>AI</strong>
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+        <a href="dashboard.html" class="nav-item">
+            <span>▦</span>
+            Dashboard
+        </a>
+
+        <a href="market.html" class="nav-item">
+            <span>📍</span>
+            Market Reach
+        </a>
+
+        <a href="opportunities.html" class="nav-item">
+            <span>💡</span>
+            Opportunities
+        </a>
+
+        <a href="competitors.html" class="nav-item">
+            <span>🏪</span>
+            Competitors
+        </a>
+
+        <a href="pricing.html" class="nav-item">
+            <span>💰</span>
+            Pricing
+        </a>
+
+        <a href="financial.html" class="nav-item active">
+            <span>📊</span>
+            Financials
+        </a>
+
+        <a href="#" class="nav-item">
+            <span>⚠</span>
+            Risk
+        </a>
+
+        <a href="#" class="nav-item">
+            <span>📄</span>
+            Business Plan
+        </a>
+
+    </nav>
+
+
+    <div class="sidebar-bottom">
+
+        <button class="profile-button">
+
+            <span class="profile-avatar">
+                A
+            </span>
+
+            <span id="userName">
+                User
+            </span>
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN
+     ===================================================== -->
+
+<main class="dashboard-main">
+
+
+    <!-- HEADER -->
+
+    <header class="dashboard-header">
+
+        <div>
+
+            <p class="welcome-small">
+                FINANCIAL MANAGEMENT
+            </p>
+
+            <h1>
+                Cost & Profitability
+            </h1>
+
+        </div>
+
+
+        <button
+            class="profit-back-btn"
+            onclick="window.location.href='financial.html'">
+
+            ← Back to Financials
+
+        </button>
+
+    </header>
+
+
+
+    <!-- =================================================
+         TABS
+         ================================================= -->
+
+    <div class="financial-tabs">
+
+        <a href="financial.html">
+            Financial Overview
+        </a>
+
+        <a href="scheme-calculator.html">
+            Scheme Calculator
+        </a>
+
+        <a href="financial-planner.html">
+            Financial Planner
+        </a>
+
+        <a href="repayment-planner.html">
+            Repayment Planner
+        </a>
+
+        <a href="cost-profitability.html"
+           class="active">
+            Cost & Profitability
+        </a>
+
+    </div>
+
+
+
+    <!-- =================================================
+         INTRO
+         ================================================= -->
+
+    <section class="profit-intro">
+
+        <span class="profit-label">
+            COST & PROFITABILITY ANALYSIS
+        </span>
+
+        <h2>
+            Understand Where Your Money Goes
+        </h2>
+
+        <p>
+            Analyse revenue, costs, profit, break-even
+            point and business profitability before making
+            financial decisions.
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         BUSINESS CONTEXT
+         ================================================= -->
+
+    <section class="profit-context-card">
+
+        <div>
+
+            <span class="profit-label">
+                YOUR BUSINESS
+            </span>
+
+            <h3 id="profitBusinessName">
+                Your Business
+            </h3>
+
+            <p id="profitBusinessLocation">
+                Location not available
+            </p>
+
+        </div>
+
+
+        <div class="context-capital">
+
+            <span>
+                Available Capital
+            </span>
+
+            <strong id="profitCapital">
+                ₹0
+            </strong>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         INPUT + SUMMARY
+         ================================================= -->
+
+    <section class="profit-grid">
+
+
+        <!-- INPUT -->
+
+        <div class="profit-card">
+
+            <div class="card-heading">
+
+                <h3>
+                    Business Cost Inputs
+                </h3>
+
+                <p>
+                    Enter your expected monthly business
+                    revenue and costs.
+                </p>
+
+            </div>
+
+
+            <!-- SALES -->
+
+            <div class="input-group">
+
+                <label for="monthlyRevenue">
+                    Monthly Revenue / Sales
+                </label>
+
+                <div class="money-input">
+
+                    <span>₹</span>
+
+                    <input
+                        type="number"
+                        id="monthlyRevenue"
+                        min="0"
+                        placeholder="42500">
+
+                </div>
+
+            </div>
+
+
+            <!-- UNITS -->
+
+            <div class="input-group">
+
+                <label for="monthlyUnits">
+                    Units Sold Per Month
+                </label>
+
+                <input
+                    type="number"
+                    id="monthlyUnits"
+                    min="0"
+                    placeholder="500">
+
+            </div>
+
+
+            <!-- VARIABLE COST -->
+
+            <div class="input-group">
+
+                <label for="variableCostPerUnit">
+                    Variable Cost Per Unit
+                </label>
+
+                <div class="money-input">
+
+                    <span>₹</span>
+
+                    <input
+                        type="number"
+                        id="variableCostPerUnit"
+                        min="0"
+                        placeholder="40">
+
+                </div>
+
+            </div>
+
+
+            <!-- FIXED COST -->
+
+            <div class="input-group">
+
+                <label for="fixedCosts">
+                    Monthly Fixed Costs
+                </label>
+
+                <div class="money-input">
+
+                    <span>₹</span>
+
+                    <input
+                        type="number"
+                        id="fixedCosts"
+                        min="0"
+                        placeholder="5000">
+
+                </div>
+
+            </div>
+
+
+            <!-- OTHER COST -->
+
+            <div class="input-group">
+
+                <label for="otherCosts">
+                    Other Monthly Costs
+                </label>
+
+                <div class="money-input">
+
+                    <span>₹</span>
+
+                    <input
+                        type="number"
+                        id="otherCosts"
+                        min="0"
+                        placeholder="2000">
+
+                </div>
+
+            </div>
+
+
+            <div class="profit-actions">
+
+                <button
+                    id="calculateProfitBtn"
+                    class="primary-button">
+
+                    Analyse Profitability
+
+                </button>
+
+
+                <button
+                    id="resetProfitBtn"
+                    class="secondary-button">
+
+                    Reset
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SUMMARY -->
+
+        <div class="profit-card">
+
+            <div class="card-heading">
+
+                <h3>
+                    Profitability Summary
+                </h3>
+
+                <p>
+                    Estimated monthly business performance.
+                </p>
+
+            </div>
+
+
+            <div class="profit-highlight">
+
+                <span>
+                    Net Profit
+                </span>
+
+                <strong id="netProfit">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-list">
+
+                <div class="summary-row">
+
+                    <span>
+                        Monthly Revenue
+                    </span>
+
+                    <strong id="revenueResult">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Variable Costs
+                    </span>
+
+                    <strong id="variableCostResult">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Fixed Costs
+                    </span>
+
+                    <strong id="fixedCostResult">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Other Costs
+                    </span>
+
+                    <strong id="otherCostResult">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Total Expenses
+                    </span>
+
+                    <strong id="totalExpenseResult">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Profit Margin
+                    </span>
+
+                    <strong id="profitMargin">
+                        0%
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         PROFIT METRICS
+         ================================================= -->
+
+    <section class="profit-card">
+
+        <div class="card-heading">
+
+            <h3>
+                Business Profitability Metrics
+            </h3>
+
+            <p>
+                Important indicators for business planning.
+            </p>
+
+        </div>
+
+
+        <div class="metric-grid">
+
+
+            <div class="metric-box">
+
+                <span>
+                    Gross Profit
+                </span>
+
+                <strong id="grossProfit">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div class="metric-box">
+
+                <span>
+                    Cost Per Unit
+                </span>
+
+                <strong id="costPerUnit">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div class="metric-box">
+
+                <span>
+                    Break-even Units
+                </span>
+
+                <strong id="breakEvenUnits">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="metric-box">
+
+                <span>
+                    Break-even Revenue
+                </span>
+
+                <strong id="breakEvenRevenue">
+                    ₹0
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         PROFITABILITY STATUS
+         ================================================= -->
+
+    <section class="profit-card">
+
+        <div class="card-heading">
+
+            <h3>
+                Profitability Health
+            </h3>
+
+            <p>
+                A simple planning indicator based on your
+                current assumptions.
+            </p>
+
+        </div>
+
+
+        <div class="profit-health">
+
+            <div
+                id="profitHealthIcon"
+                class="health-icon">
+
+                —
+
+            </div>
+
+
+            <div>
+
+                <span class="health-label">
+                    BUSINESS PROFITABILITY
+                </span>
+
+                <h3 id="profitHealthTitle">
+                    Enter your business data
+                </h3>
+
+                <p id="profitHealthMessage">
+
+                    Analyse your inputs to see the
+                    profitability status.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         WHAT-IF ANALYSIS
+         ================================================= -->
+
+    <section class="profit-card">
+
+        <div class="card-heading">
+
+            <h3>
+                What-if Scenario Analysis
+            </h3>
+
+            <p>
+                See how changes in sales or costs could affect
+                your monthly profit.
+            </p>
+
+        </div>
+
+
+        <div class="scenario-grid">
+
+
+            <div class="scenario-input">
+
+                <label for="salesChange">
+                    Change in Sales
+                </label>
+
+                <div class="percent-input">
+
+                    <input
+                        type="number"
+                        id="salesChange"
+                        value="0"
+                        step="1">
+
+                    <span>%</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="scenario-input">
+
+                <label for="costChange">
+                    Change in Costs
+                </label>
+
+                <div class="percent-input">
+
+                    <input
+                        type="number"
+                        id="costChange"
+                        value="0"
+                        step="1">
+
+                    <span>%</span>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="runScenarioBtn"
+                class="primary-button scenario-button">
+
+                Run Scenario
+
+            </button>
+
+        </div>
+
+
+        <div class="scenario-result">
+
+            <div>
+
+                <span>
+                    Scenario Revenue
+                </span>
+
+                <strong id="scenarioRevenue">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Scenario Expenses
+                </span>
+
+                <strong id="scenarioExpenses">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Scenario Profit
+                </span>
+
+                <strong id="scenarioProfit">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Profit Change
+                </span>
+
+                <strong id="scenarioProfitChange">
+                    ₹0
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         COST BREAKDOWN
+         ================================================= -->
+
+    <section class="profit-card">
+
+        <div class="card-heading">
+
+            <h3>
+                Monthly Cost Breakdown
+            </h3>
+
+            <p>
+                Understand the major components of your
+                monthly business expenses.
+            </p>
+
+        </div>
+
+
+        <div class="cost-bars">
+
+
+            <div class="cost-bar-row">
+
+                <div class="bar-info">
+
+                    <span>
+                        Variable Costs
+                    </span>
+
+                    <strong id="variablePercent">
+                        0%
+                    </strong>
+
+                </div>
+
+                <div class="bar-track">
+
+                    <div
+                        id="variableBar"
+                        class="bar-fill">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="cost-bar-row">
+
+                <div class="bar-info">
+
+                    <span>
+                        Fixed Costs
+                    </span>
+
+                    <strong id="fixedPercent">
+                        0%
+                    </strong>
+
+                </div>
+
+                <div class="bar-track">
+
+                    <div
+                        id="fixedBar"
+                        class="bar-fill">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="cost-bar-row">
+
+                <div class="bar-info">
+
+                    <span>
+                        Other Costs
+                    </span>
+
+                    <strong id="otherPercent">
+                        0%
+                    </strong>
+
+                </div>
+
+                <div class="bar-track">
+
+                    <div
+                        id="otherBar"
+                        class="bar-fill">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <div
+        id="profitSaveStatus"
+        class="save-status">
+    </div>
+
+
+
+    <div class="profit-disclaimer">
+
+        <strong>Planning Note:</strong>
+
+        This analysis is an estimate based on the values
+        entered by the user. Actual business profitability
+        depends on real sales, costs, taxes, seasonality,
+        wastage, financing costs and other operating factors.
+
+    </div>
+
+
+</main>
+
+
+<script src="js/cost-profitability.js"></script>
+
+</body>
+
+</html>

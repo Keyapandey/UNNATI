@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Capital | GramBiz AI</title>
+
+    <link rel="stylesheet" href="css/setup.css">
+</head>
+
+<body>
+
+    <header class="setup-header">
+
+        <a href="index.html" class="logo">
+            🌱 GramBiz <strong>AI</strong>
+        </a>
+
+        <div class="step-text">
+            Step 3 of 3
+        </div>
+
+    </header>
+
+
+    <main class="setup-container">
+
+        <!-- Progress -->
+
+        <div class="progress-area">
+
+            <div class="progress-step completed">
+                <span>✓</span>
+                Location
+            </div>
+
+            <div class="progress-line completed-line"></div>
+
+            <div class="progress-step completed">
+                <span>✓</span>
+                Business
+            </div>
+
+            <div class="progress-line completed-line"></div>
+
+            <div class="progress-step active">
+                <span>3</span>
+                Capital
+            </div>
+
+        </div>
+
+
+        <!-- Capital Card -->
+
+        <section class="setup-card">
+
+            <div class="setup-title">
+
+                <button class="back-button" id="capitalBackBtn">
+                    ←
+                </button>
+
+                <div>
+
+                    <h1>How much can you invest?</h1>
+
+                    <p>
+                        Tell us your available starting capital.
+                        We'll use this to build a realistic plan.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <form id="capitalForm">
+
+                <div class="capital-input">
+
+                    <span>₹</span>
+
+                    <input
+                        type="number"
+                        id="capital"
+                        placeholder="50,000"
+                        min="1"
+                        required
+                    >
+
+                </div>
+
+
+                <p class="input-help">
+                    Enter the amount you can realistically invest
+                    in starting or expanding your business.
+                </p>
+
+
+                <div class="capital-options">
+
+                    <button type="button" data-amount="25000">
+                        ₹25,000
+                    </button>
+
+                    <button type="button" data-amount="50000">
+                        ₹50,000
+                    </button>
+
+                    <button type="button" data-amount="100000">
+                        ₹1,00,000
+                    </button>
+
+                    <button type="button" data-amount="250000">
+                        ₹2,50,000
+                    </button>
+
+                </div>
+
+
+                <div class="form-footer">
+
+                    <span>
+                        You can update this later.
+                    </span>
+
+                    <button
+                        type="submit"
+                        class="continue-btn"
+                    >
+                        Review →
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <p class="privacy-note">
+            🔒 Your information is used only to personalize your business analysis.
+        </p>
+
+    </main>
+
+
+    <script src="js/capital.js"></script>
+
+</body>
+
+</html>

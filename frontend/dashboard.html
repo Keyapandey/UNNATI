@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | GramBiz AI</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================================
+     SIDEBAR
+================================ -->
+
+<aside class="sidebar">
+
+    <div class="dashboard-logo">
+        🌱 GramBiz <strong>AI</strong>
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+        <a href="#" class="nav-item active">
+            <span>▦</span>
+            Dashboard
+        </a>
+
+        <a href="market.html" class="nav-item">
+            <span>📍</span>
+            Market Reach
+        </a>
+
+        <a href="opportunities.html" class="nav-item">
+            <span>💡</span>
+            Opportunities
+        </a>
+
+        <a href="competitors.html" class="nav-item">
+            <span>🏪</span>
+            Competitors
+        </a>
+
+        <a href="pricing.html" class="nav-item">
+            <span>💰</span>
+            Pricing
+        </a>
+
+        <a href="financial.html" class="nav-item">
+            <span>📊</span>
+            Financials
+        </a>
+
+        <a href="#" class="nav-item">
+            <span>⚠</span>
+            Risk
+        </a>
+
+        <a href="#" class="nav-item">
+            <span>📄</span>
+            Business Plan
+        </a>
+
+    </nav>
+
+
+    <div class="sidebar-bottom">
+
+        <button class="profile-button">
+
+            <span class="profile-avatar">
+                A
+            </span>
+
+            <span id="userName">
+                User
+            </span>
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+
+<!-- ================================
+     MAIN
+================================ -->
+
+<main class="dashboard-main">
+
+
+    <!-- TOP BAR -->
+
+    <header class="dashboard-header">
+
+        <div>
+
+            <p class="welcome-small">
+                Good day 👋
+            </p>
+
+            <h1>
+                Your Business Dashboard
+            </h1>
+
+        </div>
+
+
+        <button
+            class="new-analysis-btn"
+            id="newAnalysisBtn"
+        >
+            + New Analysis
+        </button>
+
+    </header>
+
+
+
+    <!-- BUSINESS SUMMARY -->
+
+    <section class="business-summary">
+
+        <div>
+
+            <span class="summary-label">
+                BUSINESS
+            </span>
+
+            <h2 id="businessName">
+                Your Business
+            </h2>
+
+            <p id="businessLocation">
+                Your Location
+            </p>
+
+        </div>
+
+
+        <div class="summary-capital">
+
+            <span class="summary-label">
+                AVAILABLE CAPITAL
+            </span>
+
+            <strong id="capitalAmount">
+                ₹0
+            </strong>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- AI INSIGHT -->
+
+    <section class="ai-insight">
+
+        <div class="insight-icon">
+            ✦
+        </div>
+
+        <div>
+
+            <span class="insight-label">
+                AI INSIGHT
+            </span>
+
+            <h3>
+                Your business has promising potential.
+            </h3>
+
+            <p>
+                Based on your location, business category
+                and available capital, we've identified
+                several areas where you can grow.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FINANCIAL CARDS -->
+
+    <section class="section-heading">
+
+        <div>
+
+            <h2>
+                Financial Overview
+            </h2>
+
+            <p>
+                Estimated monthly business performance
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <div class="stats-grid">
+
+
+        <div class="stat-card">
+
+            <span class="stat-icon">
+                ₹
+            </span>
+
+            <div>
+
+                <span class="stat-label">
+                    EST. MONTHLY REVENUE
+                </span>
+
+                <strong>
+                    ₹42,500
+                </strong>
+
+                <small>
+                    Based on local estimates
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span class="stat-icon">
+                ↑
+            </span>
+
+            <div>
+
+                <span class="stat-label">
+                    EST. MONTHLY PROFIT
+                </span>
+
+                <strong>
+                    ₹16,800
+                </strong>
+
+                <small>
+                    Approx. 39.5% margin
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span class="stat-icon">
+                ↓
+            </span>
+
+            <div>
+
+                <span class="stat-label">
+                    MONTHLY EXPENSES
+                </span>
+
+                <strong>
+                    ₹25,700
+                </strong>
+
+                <small>
+                    Estimated operating costs
+                </small>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ANALYSIS MODULES -->
+
+    <section class="section-heading modules-heading">
+
+        <div>
+
+            <h2>
+                Business Analysis
+            </h2>
+
+            <p>
+                Explore insights generated for your business
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <div class="modules-grid">
+
+
+        <a href="market.html" class="module-card">
+
+            <span class="module-icon">
+                📍
+            </span>
+
+            <div>
+
+                <h3>
+                    Market Reach
+                </h3>
+
+                <p>
+                    Understand your local customer market.
+                </p>
+
+            </div>
+
+            <span class="module-arrow">
+                →
+            </span>
+
+        </a>
+
+
+        <a href="opportunities.html" class="module-card">
+
+            <span class="module-icon">
+                💡
+            </span>
+
+            <div>
+
+                <h3>
+                    Opportunities
+                </h3>
+
+                <p>
+                    Discover potential growth opportunities.
+                </p>
+
+            </div>
+
+            <span class="module-arrow">
+                →
+            </span>
+
+        </a>
+
+
+        <a href="competitors.html" class="module-card">
+
+            <span class="module-icon">
+                🏪
+            </span>
+
+            <div>
+
+                <h3>
+                    Competitors
+                </h3>
+
+                <p>
+                    Explore your local competition.
+                </p>
+
+            </div>
+
+            <span class="module-arrow">
+                →
+            </span>
+
+        </a>
+
+
+        <a href="pricing.html" class="module-card">
+
+            <span class="module-icon">
+                💰
+            </span>
+
+            <div>
+
+                <h3>
+                    Pricing
+                </h3>
+
+                <p>
+                    Find practical pricing recommendations.
+                </p>
+
+            </div>
+
+            <span class="module-arrow">
+                →
+            </span>
+
+        </a>
+
+
+        <a href="#" class="module-card">
+
+            <span class="module-icon">
+                ◈
+            </span>
+
+            <div>
+
+                <h3>
+                    SWOT Analysis
+                </h3>
+
+                <p>
+                    Understand your business strengths and risks.
+                </p>
+
+            </div>
+
+            <span class="module-arrow">
+                →
+            </span>
+
+        </a>
+
+
+        <a href="#" class="module-card">
+
+            <span class="module-icon">
+                ⚠
+            </span>
+
+            <div>
+
+                <h3>
+                    Risk Analysis
+                </h3>
+
+                <p>
+                    Identify and prepare for business risks.
+                </p>
+
+            </div>
+
+            <span class="module-arrow">
+                →
+            </span>
+
+        </a>
+
+
+    </div>
+
+
+
+    <!-- FINANCIAL TOOLS -->
+
+    <section class="section-heading modules-heading">
+
+        <div>
+
+            <h2>
+                Financial Tools
+            </h2>
+
+            <p>
+                Plan and manage your business finances
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <div class="financial-tools">
+
+
+        <a href="#" class="tool-card">
+
+            <span>📊</span>
+
+            <div>
+
+                <h3>
+                    Financial Planner
+                </h3>
+
+                <p>
+                    Plan investments, costs and expected returns.
+                </p>
+
+            </div>
+
+            <strong>→</strong>
+
+        </a>
+
+
+        <a href="#" class="tool-card">
+
+            <span>💳</span>
+
+            <div>
+
+                <h3>
+                    Repayment Planner
+                </h3>
+
+                <p>
+                    Estimate loan repayment and cash flow.
+                </p>
+
+            </div>
+
+            <strong>→</strong>
+
+        </a>
+
+
+        <a href="#" class="tool-card">
+
+            <span>📄</span>
+
+            <div>
+
+                <h3>
+                    Business Plan
+                </h3>
+
+                <p>
+                    Generate a structured business plan.
+                </p>
+
+            </div>
+
+            <strong>→</strong>
+
+        </a>
+
+
+    </div>
+
+
+</main>
+
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

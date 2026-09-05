@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Location | GramBiz AI</title>
+
+    <link rel="stylesheet" href="css/setup.css">
+</head>
+
+<body>
+
+<header class="setup-header">
+
+    <a href="index.html" class="logo">
+        🌱 GramBiz <strong>AI</strong>
+    </a>
+
+    <div class="step-text">
+        Step 1 of 3
+    </div>
+
+</header>
+
+
+<main class="setup-container">
+
+    <div class="progress-area">
+
+        <div class="progress-step active">
+            <span>1</span>
+            Location
+        </div>
+
+        <div class="progress-line"></div>
+
+        <div class="progress-step">
+            <span>2</span>
+            Business
+        </div>
+
+        <div class="progress-line"></div>
+
+        <div class="progress-step">
+            <span>3</span>
+            Capital
+        </div>
+
+    </div>
+
+
+    <section class="setup-card">
+
+        <div class="setup-title">
+
+            <div>
+
+                <h1>Where is your business located?</h1>
+
+                <p>
+                    Your location helps us understand
+                    your local market and opportunities.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="location-button"
+            id="useLocationBtn"
+        >
+            📍 Use my current location
+        </button>
+
+
+        <div class="or-divider">
+            <span>OR</span>
+        </div>
+
+
+        <form id="locationForm">
+
+            <div class="form-group">
+
+                <label for="village">
+                    Village / Town
+                </label>
+
+                <input
+                    type="text"
+                    id="village"
+                    placeholder="Enter village or town"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="block">
+                    Block
+                </label>
+
+                <input
+                    type="text"
+                    id="block"
+                    placeholder="Enter block"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="district">
+                    District
+                </label>
+
+                <input
+                    type="text"
+                    id="district"
+                    placeholder="Enter district"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-footer">
+
+                <span>
+                    You can change this later.
+                </span>
+
+                <button
+                    type="submit"
+                    class="continue-btn"
+                >
+                    Continue →
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+
+    <p class="privacy-note">
+        🔒 Your information is used only to personalize your business analysis.
+    </p>
+
+</main>
+
+
+<script src="js/setup.js"></script>
+
+</body>
+
+</html>

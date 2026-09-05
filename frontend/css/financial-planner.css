@@ -1,0 +1,518 @@
+/* =========================================================
+   GRAMBIZ AI - FINANCIAL PLANNER
+   ========================================================= */
+
+.planner-back-btn {
+    padding: 10px 15px;
+    border: 1px solid #dce5da;
+    border-radius: 8px;
+    background: #fff;
+    color: #31813a;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* INTRO */
+
+.planner-intro {
+    background: #fff;
+    border: 1px solid #e1e8df;
+    border-radius: 11px;
+    padding: 22px;
+    margin-bottom: 16px;
+}
+
+.planner-label {
+    display: block;
+    color: #31813a;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.planner-intro h2 {
+    margin: 0 0 6px;
+    color: #17251a;
+    font-size: 21px;
+}
+
+.planner-intro p {
+    margin: 0;
+    color: #89928a;
+    font-size: 12px;
+}
+
+
+/* BUSINESS */
+
+.business-context-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #fff;
+    border: 1px solid #e1e8df;
+    border-radius: 11px;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+}
+
+.business-context-card h3 {
+    margin: 0 0 4px;
+    color: #273329;
+    font-size: 16px;
+}
+
+.business-context-card p {
+    margin: 0;
+    color: #89928a;
+    font-size: 11px;
+}
+
+.capital-box {
+    min-width: 150px;
+    padding: 11px 15px;
+    background: #f5f8f3;
+    border: 1px solid #e1e8df;
+    border-radius: 8px;
+    text-align: right;
+}
+
+.capital-box span {
+    display: block;
+    color: #89928a;
+    font-size: 10px;
+    margin-bottom: 4px;
+}
+
+.capital-box strong {
+    color: #31813a;
+    font-size: 16px;
+}
+
+
+/* GRID */
+
+.planner-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+
+/* CARDS */
+
+.planner-card {
+    background: #fff;
+    border: 1px solid #e1e8df;
+    border-radius: 11px;
+    padding: 21px;
+    margin-bottom: 16px;
+}
+
+.planner-grid .planner-card {
+    margin-bottom: 0;
+}
+
+.card-heading {
+    margin-bottom: 18px;
+}
+
+.card-heading h3 {
+    margin: 0 0 5px;
+    color: #273329;
+    font-size: 16px;
+}
+
+.card-heading p {
+    margin: 0;
+    color: #89928a;
+    font-size: 11px;
+}
+
+.expense-heading {
+    margin-top: 25px;
+    padding-top: 18px;
+    border-top: 1px solid #edf1eb;
+}
+
+
+/* INPUTS */
+
+.input-group {
+    margin-bottom: 13px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #4e594f;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.input-money,
+.input-percent {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dce5da;
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.input-money span {
+    padding-left: 11px;
+    color: #89928a;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.input-money input,
+.input-percent input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #273329;
+    font-size: 12px;
+}
+
+.input-percent span {
+    padding-right: 11px;
+    color: #89928a;
+    font-weight: 600;
+}
+
+.input-money:focus-within,
+.input-percent:focus-within {
+    border-color: #8db38b;
+}
+
+
+/* BUTTONS */
+
+.planner-actions {
+    display: flex;
+    gap: 9px;
+    margin-top: 18px;
+}
+
+.planner-button {
+    flex: 1;
+    padding: 11px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #31813a;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.planner-button:hover {
+    background: #286b30;
+}
+
+.reset-button {
+    padding: 11px 15px;
+    border: 1px solid #dce5da;
+    border-radius: 8px;
+    background: #fff;
+    color: #657065;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+/* SUMMARY */
+
+.summary-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+    border-bottom: 1px solid #edf1eb;
+}
+
+.summary-row span {
+    color: #68736a;
+    font-size: 12px;
+}
+
+.summary-row strong {
+    color: #273329;
+    font-size: 13px;
+}
+
+.profit-row span,
+.profit-row strong {
+    color: #31813a;
+    font-weight: 700;
+}
+
+
+/* MINI METRICS */
+
+.mini-metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.mini-metrics div {
+    padding: 13px;
+    background: #f5f8f3;
+    border: 1px solid #e1e8df;
+    border-radius: 8px;
+}
+
+.mini-metrics span {
+    display: block;
+    color: #89928a;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.mini-metrics strong {
+    color: #31813a;
+    font-size: 14px;
+}
+
+
+/* HEALTH */
+
+.health-result {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    padding: 16px;
+    background: #f5f8f3;
+    border: 1px solid #e1e8df;
+    border-radius: 9px;
+}
+
+.health-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #eaf5e8;
+    color: #31813a;
+    font-weight: 700;
+}
+
+.health-label {
+    display: block;
+    margin-bottom: 4px;
+    color: #89928a;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .8px;
+}
+
+.health-result h3 {
+    margin: 0 0 4px;
+    color: #273329;
+    font-size: 15px;
+}
+
+.health-result p {
+    margin: 0;
+    color: #89928a;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* EXPENSE BREAKDOWN */
+
+.expense-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.expense-line {
+    display: grid;
+    grid-template-columns: 150px 1fr 85px;
+    align-items: center;
+    gap: 12px;
+}
+
+.expense-name {
+    color: #59635b;
+    font-size: 11px;
+}
+
+.expense-track {
+    height: 8px;
+    background: #edf1eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.expense-fill {
+    height: 100%;
+    background: #78a878;
+    border-radius: 20px;
+    transition: width .4s ease;
+}
+
+.expense-value {
+    text-align: right;
+    color: #374138;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.empty-breakdown {
+    padding: 20px;
+    text-align: center;
+    color: #89928a;
+    background: #f8faf7;
+    border-radius: 8px;
+    font-size: 11px;
+}
+
+
+/* FORECAST SUMMARY */
+
+.forecast-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.forecast-summary div {
+    padding: 15px;
+    background: #f5f8f3;
+    border: 1px solid #e1e8df;
+    border-radius: 8px;
+}
+
+.forecast-summary span {
+    display: block;
+    color: #89928a;
+    font-size: 10px;
+    margin-bottom: 6px;
+}
+
+.forecast-summary strong {
+    color: #31813a;
+    font-size: 16px;
+}
+
+
+/* TABLE */
+
+.forecast-table-wrapper {
+    overflow-x: auto;
+}
+
+.forecast-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 580px;
+}
+
+.forecast-table th {
+    padding: 11px;
+    background: #f5f8f3;
+    color: #59635b;
+    text-align: left;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.forecast-table td {
+    padding: 11px;
+    border-bottom: 1px solid #edf1eb;
+    color: #68736a;
+    font-size: 11px;
+}
+
+.forecast-table td:not(:first-child) {
+    text-align: right;
+}
+
+.forecast-table td:nth-child(4) {
+    color: #31813a;
+    font-weight: 700;
+}
+
+
+/* SAVE */
+
+.save-status {
+    min-height: 18px;
+    margin: -5px 0 12px;
+    color: #31813a;
+    font-size: 11px;
+}
+
+
+/* DISCLAIMER */
+
+.planner-disclaimer {
+    margin-bottom: 30px;
+    padding: 13px 15px;
+    background: #fffaf0;
+    border: 1px solid #f3e5c2;
+    border-radius: 8px;
+    color: #6b5a35;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .planner-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .forecast-summary {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .business-context-card {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .capital-box {
+        width: 100%;
+        text-align: left;
+    }
+
+    .expense-line {
+        grid-template-columns: 110px 1fr 70px;
+    }
+
+    .mini-metrics {
+        grid-template-columns: 1fr;
+    }
+
+}

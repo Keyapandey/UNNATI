@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Repayment Planner | GramBiz AI</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/financial.css">
+    <link rel="stylesheet" href="css/repayment-planner.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     SIDEBAR
+     ===================================================== -->
+
+<aside class="sidebar">
+
+    <div class="dashboard-logo">
+        🌱 GramBiz <strong>AI</strong>
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+        <a href="dashboard.html" class="nav-item">
+            <span>▦</span>
+            Dashboard
+        </a>
+
+        <a href="market.html" class="nav-item">
+            <span>📍</span>
+            Market Reach
+        </a>
+
+        <a href="opportunities.html" class="nav-item">
+            <span>💡</span>
+            Opportunities
+        </a>
+
+        <a href="competitors.html" class="nav-item">
+            <span>🏪</span>
+            Competitors
+        </a>
+
+        <a href="pricing.html" class="nav-item">
+            <span>💰</span>
+            Pricing
+        </a>
+
+        <a href="financial.html" class="nav-item active">
+            <span>📊</span>
+            Financials
+        </a>
+
+        <a href="#" class="nav-item">
+            <span>⚠</span>
+            Risk
+        </a>
+
+        <a href="#" class="nav-item">
+            <span>📄</span>
+            Business Plan
+        </a>
+
+    </nav>
+
+
+    <div class="sidebar-bottom">
+
+        <button class="profile-button">
+
+            <span class="profile-avatar">
+                A
+            </span>
+
+            <span id="userName">
+                User
+            </span>
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN
+     ===================================================== -->
+
+<main class="dashboard-main">
+
+
+    <!-- HEADER -->
+
+    <header class="dashboard-header">
+
+        <div>
+
+            <p class="welcome-small">
+                FINANCIAL MANAGEMENT
+            </p>
+
+            <h1>
+                Repayment Planner
+            </h1>
+
+        </div>
+
+
+        <button
+            class="repayment-back-btn"
+            onclick="window.location.href='financial.html'">
+
+            ← Back to Financials
+
+        </button>
+
+    </header>
+
+
+
+    <!-- =================================================
+         FINANCIAL TABS
+         ================================================= -->
+
+    <div class="financial-tabs">
+
+        <a href="financial.html">
+            Financial Overview
+        </a>
+
+        <a href="scheme-calculator.html">
+            Scheme Calculator
+        </a>
+
+        <a href="financial-planner.html">
+            Financial Planner
+        </a>
+
+        <a href="repayment-planner.html"
+           class="active">
+            Repayment Planner
+        </a>
+
+        <a href="cost-profitability.html">
+            Cost & Profitability
+        </a>
+
+    </div>
+
+
+
+    <!-- =================================================
+         INTRO
+         ================================================= -->
+
+    <section class="repayment-intro">
+
+        <span class="repayment-label">
+            SMART REPAYMENT PLANNER
+        </span>
+
+        <h2>
+            Understand Your Financing & Repayment
+        </h2>
+
+        <p>
+            Estimate EMI, interest, total repayment and
+            monthly repayment affordability before taking
+            financing.
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         BUSINESS CONTEXT
+         ================================================= -->
+
+    <section class="business-context-card">
+
+        <div>
+
+            <span class="repayment-label">
+                YOUR BUSINESS
+            </span>
+
+            <h3 id="repaymentBusinessName">
+                Your Business
+            </h3>
+
+            <p id="repaymentBusinessLocation">
+                Location not available
+            </p>
+
+        </div>
+
+
+        <div class="context-capital">
+
+            <span>
+                Available Capital
+            </span>
+
+            <strong id="repaymentCapital">
+                ₹0
+            </strong>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         INPUT + RESULT
+         ================================================= -->
+
+    <section class="repayment-grid">
+
+
+        <!-- INPUT CARD -->
+
+        <div class="repayment-card">
+
+            <div class="card-heading">
+
+                <h3>
+                    Financing Details
+                </h3>
+
+                <p>
+                    Enter the financing assumptions you want
+                    to evaluate.
+                </p>
+
+            </div>
+
+
+            <!-- LOAN TYPE -->
+
+            <div class="input-group">
+
+                <label for="financeType">
+                    Financing Type
+                </label>
+
+                <select id="financeType">
+
+                    <option value="Business Loan">
+                        Business Loan
+                    </option>
+
+                    <option value="Working Capital">
+                        Working Capital Finance
+                    </option>
+
+                    <option value="Scheme-linked Finance">
+                        Scheme-linked Finance
+                    </option>
+
+                    <option value="Equipment / Asset Finance">
+                        Equipment / Asset Finance
+                    </option>
+
+                    <option value="Other">
+                        Other Financing
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- AMOUNT -->
+
+            <div class="input-group">
+
+                <label for="loanAmount">
+                    Financing Amount
+                </label>
+
+                <div class="money-input">
+
+                    <span>₹</span>
+
+                    <input
+                        type="number"
+                        id="loanAmount"
+                        min="0"
+                        placeholder="300000">
+
+                </div>
+
+            </div>
+
+
+            <!-- INTEREST -->
+
+            <div class="input-group">
+
+                <label for="interestRate">
+                    Annual Interest Rate
+                </label>
+
+                <div class="percent-input">
+
+                    <input
+                        type="number"
+                        id="interestRate"
+                        min="0"
+                        step="0.1"
+                        value="10">
+
+                    <span>%</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- TENURE -->
+
+            <div class="input-group">
+
+                <label for="tenureYears">
+                    Repayment Tenure
+                </label>
+
+                <div class="tenure-input">
+
+                    <input
+                        type="number"
+                        id="tenureYears"
+                        min="1"
+                        max="30"
+                        value="5">
+
+                    <span>Years</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- MORATORIUM -->
+
+            <div class="input-group">
+
+                <label for="moratoriumMonths">
+                    Moratorium Period
+                </label>
+
+                <div class="tenure-input">
+
+                    <input
+                        type="number"
+                        id="moratoriumMonths"
+                        min="0"
+                        max="24"
+                        value="0">
+
+                    <span>Months</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROCESSING FEE -->
+
+            <div class="input-group">
+
+                <label for="processingFee">
+                    Processing Fee
+                </label>
+
+                <div class="percent-input">
+
+                    <input
+                        type="number"
+                        id="processingFee"
+                        min="0"
+                        step="0.1"
+                        value="1">
+
+                    <span>%</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+
+            <div class="repayment-actions">
+
+                <button
+                    id="calculateRepaymentBtn"
+                    class="primary-button">
+
+                    Calculate Repayment
+
+                </button>
+
+
+                <button
+                    id="resetRepaymentBtn"
+                    class="secondary-button">
+
+                    Reset
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RESULT CARD -->
+
+        <div class="repayment-card">
+
+            <div class="card-heading">
+
+                <h3>
+                    Repayment Summary
+                </h3>
+
+                <p>
+                    Estimated repayment based on your inputs.
+                </p>
+
+            </div>
+
+
+            <div class="repayment-highlight">
+
+                <span>
+                    Monthly EMI
+                </span>
+
+                <strong id="emiResult">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-list">
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Financing Amount
+                    </span>
+
+                    <strong id="principalResult">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Total Interest
+                    </span>
+
+                    <strong id="interestResult">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Total Repayment
+                    </span>
+
+                    <strong id="totalRepaymentResult">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Processing Fee
+                    </span>
+
+                    <strong id="processingFeeResult">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row total-cost-row">
+
+                    <span>
+                        Total Financing Cost
+                    </span>
+
+                    <strong id="totalCostResult">
+                        ₹0
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         REPAYMENT METRICS
+         ================================================= -->
+
+    <section class="repayment-card">
+
+        <div class="card-heading">
+
+            <h3>
+                Repayment Metrics
+            </h3>
+
+            <p>
+                Quick view of the financing burden.
+            </p>
+
+        </div>
+
+
+        <div class="metric-grid">
+
+
+            <div class="metric-box">
+
+                <span>
+                    First-Year Principal
+                </span>
+
+                <strong id="firstYearPrincipal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div class="metric-box">
+
+                <span>
+                    First-Year Interest
+                </span>
+
+                <strong id="firstYearInterest">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div class="metric-box">
+
+                <span>
+                    Interest Share
+                </span>
+
+                <strong id="interestShare">
+                    0%
+                </strong>
+
+            </div>
+
+
+            <div class="metric-box">
+
+                <span>
+                    Total Months
+                </span>
+
+                <strong id="totalMonths">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         AFFORDABILITY
+         ================================================= -->
+
+    <section class="repayment-card">
+
+        <div class="card-heading">
+
+            <h3>
+                Repayment Affordability
+            </h3>
+
+            <p>
+                A planning indicator based on your Financial
+                Planner estimates.
+            </p>
+
+        </div>
+
+
+        <div class="affordability-box">
+
+            <div class="affordability-icon"
+                 id="affordabilityIcon">
+
+                —
+
+            </div>
+
+
+            <div>
+
+                <span class="affordability-label">
+                    REPAYMENT CAPACITY
+                </span>
+
+                <h3 id="affordabilityTitle">
+                    Enter your financing details
+                </h3>
+
+                <p id="affordabilityMessage">
+
+                    Your estimated business profit and EMI
+                    will be compared after calculation.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         REPAYMENT SCHEDULE
+         ================================================= -->
+
+    <section class="repayment-card">
+
+        <div class="card-heading">
+
+            <h3>
+                Month-wise Repayment Schedule
+            </h3>
+
+            <p>
+                Estimated principal and interest movement
+                throughout the repayment period.
+            </p>
+
+        </div>
+
+
+        <div class="schedule-wrapper">
+
+            <table class="schedule-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Month
+                        </th>
+
+                        <th>
+                            Opening Balance
+                        </th>
+
+                        <th>
+                            EMI
+                        </th>
+
+                        <th>
+                            Principal
+                        </th>
+
+                        <th>
+                            Interest
+                        </th>
+
+                        <th>
+                            Closing Balance
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="scheduleBody">
+
+                    <tr>
+
+                        <td colspan="6">
+
+                            Enter financing details and
+                            calculate your repayment plan.
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         SAVE STATUS
+         ================================================= -->
+
+    <div
+        id="repaymentSaveStatus"
+        class="save-status">
+    </div>
+
+
+
+    <!-- =================================================
+         DISCLAIMER
+         ================================================= -->
+
+    <div class="repayment-disclaimer">
+
+        <strong>Planning Note:</strong>
+
+        This calculator provides an estimated repayment
+        schedule for planning purposes. Actual EMI,
+        interest, fees, moratorium treatment and lending
+        terms depend on the lender and the applicable
+        financing or scheme conditions.
+
+    </div>
+
+
+</main>
+
+
+<script src="js/repayment-planner.js"></script>
+
+</body>
+
+</html>
