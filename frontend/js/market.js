@@ -1,6 +1,9 @@
-// ================================
-// GRAMBIZ AI - MARKET
-// ================================
+// ============================================
+// GRAMBIZ AI - MARKET REACH
+// ============================================
+
+const business =
+    localStorage.getItem("grambizBusiness");
 
 const village =
     localStorage.getItem("grambizVillage");
@@ -12,13 +15,52 @@ const district =
     localStorage.getItem("grambizDistrict");
 
 
-const marketLocation =
-    document.getElementById("marketLocation");
+// BUSINESS
+
+const businessName =
+    document.getElementById("businessName");
+
+if (businessName && business) {
+    businessName.textContent =
+        business;
+}
 
 
-if (village || block || district) {
+// LOCATION
 
-    marketLocation.textContent =
-        `${village || ""}, ${block || ""}, ${district || ""}`;
+const businessLocation =
+    document.getElementById("businessLocation");
 
+if (businessLocation) {
+
+    const locationParts = [
+        village,
+        block,
+        district
+    ].filter(Boolean);
+
+    businessLocation.textContent =
+        locationParts.length
+            ? locationParts.join(", ")
+            : "Your Location";
+}
+
+
+// DEMO MARKET ESTIMATES
+// These will later come from local/hyper-local data.
+
+const consumerCount =
+    document.getElementById("consumerCount");
+
+const householdCount =
+    document.getElementById("householdCount");
+
+if (consumerCount) {
+    consumerCount.textContent =
+        "2,450";
+}
+
+if (householdCount) {
+    householdCount.textContent =
+        "680";
 }

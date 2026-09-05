@@ -2,376 +2,452 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Market Reach | GramBiz AI</title>
 
     <link rel="stylesheet" href="css/dashboard.css">
-
 </head>
-
 
 <body>
 
+    <aside class="sidebar">
 
-<!-- SIDEBAR -->
-
-<aside class="sidebar">
-
-    <div class="dashboard-logo">
-        🌱 GramBiz <strong>AI</strong>
-    </div>
-
-
-    <nav class="sidebar-nav">
-
-        <a href="dashboard.html" class="nav-item">
-            <span>▦</span>
-            Dashboard
-        </a>
-
-        <a href="market.html" class="nav-item active">
-            <span>📍</span>
-            Market Reach
-        </a>
-
-        <a href="#" class="nav-item">
-            <span>💡</span>
-            Opportunities
-        </a>
-
-        <a href="#" class="nav-item">
-            <span>🏪</span>
-            Competitors
-        </a>
-
-        <a href="#" class="nav-item">
-            <span>💰</span>
-            Pricing
-        </a>
-
-        <a href="#" class="nav-item">
-            <span>📊</span>
-            Financials
-        </a>
-
-        <a href="#" class="nav-item">
-            <span>⚠</span>
-            Risk
-        </a>
-
-        <a href="#" class="nav-item">
-            <span>📄</span>
-            Business Plan
-        </a>
-
-    </nav>
-
-</aside>
-
-
-
-<!-- MAIN -->
-
-<main class="dashboard-main">
-
-
-    <header class="dashboard-header">
-
-        <div>
-
-            <p class="welcome-small">
-                Market Intelligence
-            </p>
-
-            <h1>
-                Market Reach
-            </h1>
-
+        <div class="dashboard-logo">
+            🌱 GramBiz <strong>AI</strong>
         </div>
 
+        <nav class="sidebar-nav">
 
-        <a
-            href="dashboard.html"
-            class="new-analysis-btn"
-        >
-            ← Dashboard
-        </a>
+            <a href="dashboard.html" class="nav-item">
+                <span>▦</span>
+                <span data-i18n="dashboard">Dashboard</span>
+            </a>
 
-    </header>
+            <a href="market.html" class="nav-item active">
+                <span>📍</span>
+                <span data-i18n="marketReach">Market Reach</span>
+            </a>
 
+            <a href="opportunities.html" class="nav-item">
+                <span>💡</span>
+                <span data-i18n="opportunities">Opportunities</span>
+            </a>
 
+            <a href="competitors.html" class="nav-item">
+                <span>🏪</span>
+                <span data-i18n="competitors">Competitors</span>
+            </a>
 
-    <!-- LOCATION -->
+            <a href="pricing.html" class="nav-item">
+                <span>💰</span>
+                <span data-i18n="pricing">Pricing</span>
+            </a>
 
-    <section class="business-summary">
+            <a href="#" class="nav-item">
+                <span>📊</span>
+                <span data-i18n="financials">Financials</span>
+            </a>
 
-        <div>
+            <a href="#" class="nav-item">
+                <span>⚠</span>
+                <span data-i18n="risk">Risk</span>
+            </a>
 
-            <span class="summary-label">
-                YOUR MARKET
-            </span>
+            <a href="#" class="nav-item">
+                <span>📄</span>
+                <span data-i18n="businessPlan">Business Plan</span>
+            </a>
 
-            <h2 id="marketLocation">
-                Local Market
-            </h2>
+        </nav>
 
-            <p>
-                Estimated customer reach around your location
-            </p>
-
-        </div>
-
-
-        <div class="summary-capital">
-
-            <span class="summary-label">
-                EST. CUSTOMER REACH
-            </span>
-
-            <strong>
-                2,500+
-            </strong>
-
-        </div>
-
-    </section>
-
+    </aside>
 
 
-    <!-- MARKET CARDS -->
+    <main class="dashboard-main">
 
-    <section class="section-heading">
-
-        <h2>
-            Local Market Overview
-        </h2>
-
-        <p>
-            Initial estimates based on your business location
-        </p>
-
-    </section>
-
-
-    <div class="stats-grid">
-
-
-        <div class="stat-card">
-
-            <span class="stat-icon">
-                👥
-            </span>
+        <header class="dashboard-header">
 
             <div>
 
-                <span class="stat-label">
-                    POTENTIAL CUSTOMERS
-                </span>
+                <p class="welcome-small" data-i18n="marketAnalysis">
+                    MARKET ANALYSIS
+                </p>
 
-                <strong>
-                    2,500+
-                </strong>
-
-                <small>
-                    Estimated local audience
-                </small>
+                <h1 data-i18n="marketReachTitle">
+                    Understand Your Local Market
+                </h1>
 
             </div>
 
-        </div>
+        </header>
 
 
-        <div class="stat-card">
+        <!-- LOCATION SUMMARY -->
 
-            <span class="stat-icon">
-                📈
-            </span>
+        <section class="business-summary">
 
             <div>
 
-                <span class="stat-label">
-                    MARKET DEMAND
+                <span
+                    class="summary-label"
+                    data-i18n="business"
+                >
+                    BUSINESS
                 </span>
 
-                <strong>
-                    High
-                </strong>
+                <h2 id="businessName">
+                    Your Business
+                </h2>
 
-                <small>
-                    Initial AI estimate
-                </small>
-
-            </div>
-
-        </div>
-
-
-        <div class="stat-card">
-
-            <span class="stat-icon">
-                📍
-            </span>
-
-            <div>
-
-                <span class="stat-label">
-                    PRIMARY MARKET
-                </span>
-
-                <strong>
-                    Local
-                </strong>
-
-                <small>
-                    Village & nearby areas
-                </small>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-
-
-    <!-- AI INSIGHT -->
-
-    <section class="ai-insight">
-
-        <div class="insight-icon">
-            ✦
-        </div>
-
-        <div>
-
-            <span class="insight-label">
-                AI MARKET INSIGHT
-            </span>
-
-            <h3>
-                Start with your nearby customers.
-            </h3>
-
-            <p>
-                Building a strong local customer base can help
-                reduce transportation costs and create repeat
-                customers before expanding into nearby markets.
-            </p>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- MARKET AREAS -->
-
-    <section class="section-heading">
-
-        <h2>
-            Potential Market Areas
-        </h2>
-
-        <p>
-            Areas you can consider targeting
-        </p>
-
-    </section>
-
-
-    <div class="modules-grid">
-
-
-        <a href="#" class="module-card">
-
-            <span class="module-icon">
-                🏠
-            </span>
-
-            <div>
-
-                <h3>
-                    Nearby Village
-                </h3>
-
-                <p>
-                    Primary customer base close to your business.
+                <p id="businessLocation">
+                    Your Location
                 </p>
 
             </div>
 
-            <span class="module-arrow">
-                →
-            </span>
-
-        </a>
+        </section>
 
 
-        <a href="#" class="module-card">
+        <!-- MARKET RADIUS -->
 
-            <span class="module-icon">
-                🏘️
-            </span>
+        <section class="section-heading">
 
             <div>
 
-                <h3>
-                    Nearby Town
-                </h3>
+                <h2 data-i18n="marketArea">
+                    Market Area
+                </h2>
 
-                <p>
-                    Potential expansion market.
+                <p data-i18n="marketAreaDescription">
+                    Explore the estimated customer reach around your business.
                 </p>
 
             </div>
 
-            <span class="module-arrow">
-                →
-            </span>
-
-        </a>
+        </section>
 
 
-        <a href="#" class="module-card">
+        <div class="stats-grid">
 
-            <span class="module-icon">
-                🚚
-            </span>
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    📍
+                </span>
+
+                <div>
+
+                    <span
+                        class="stat-label"
+                        data-i18n="marketRadius"
+                    >
+                        MARKET RADIUS
+                    </span>
+
+                    <strong>
+                        5 km
+                    </strong>
+
+                    <small data-i18n="primaryMarket">
+                        Primary local market
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    👥
+                </span>
+
+                <div>
+
+                    <span
+                        class="stat-label"
+                        data-i18n="estimatedConsumers"
+                    >
+                        EST. CONSUMERS
+                    </span>
+
+                    <strong id="consumerCount">
+                        0
+                    </strong>
+
+                    <small data-i18n="potentialCustomers">
+                        Potential customers
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    🏠
+                </span>
+
+                <div>
+
+                    <span
+                        class="stat-label"
+                        data-i18n="estimatedHouseholds"
+                    >
+                        EST. HOUSEHOLDS
+                    </span>
+
+                    <strong id="householdCount">
+                        0
+                    </strong>
+
+                    <small data-i18n="localHouseholds">
+                        Nearby households
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 10 KM MARKET -->
+
+        <section class="section-heading">
 
             <div>
 
-                <h3>
-                    Wider District
-                </h3>
+                <h2 data-i18n="extendedMarket">
+                    Extended Market
+                </h2>
 
-                <p>
-                    Future market after local growth.
+                <p data-i18n="extendedMarketDescription">
+                    A wider 10 km area can provide additional customers and demand.
                 </p>
 
             </div>
 
-            <span class="module-arrow">
-                →
-            </span>
-
-        </a>
+        </section>
 
 
-    </div>
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    🗺️
+                </span>
+
+                <div>
+
+                    <span
+                        class="stat-label"
+                        data-i18n="extendedRadius"
+                    >
+                        MARKET RADIUS
+                    </span>
+
+                    <strong>
+                        10 km
+                    </strong>
+
+                    <small data-i18n="extendedReach">
+                        Extended market reach
+                    </small>
+
+                </div>
+
+            </div>
 
 
-</main>
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    📈
+                </span>
+
+                <div>
+
+                    <span
+                        class="stat-label"
+                        data-i18n="marketPotential"
+                    >
+                        MARKET POTENTIAL
+                    </span>
+
+                    <strong id="marketPotential">
+                        High
+                    </strong>
+
+                    <small data-i18n="basedOnReach">
+                        Based on estimated reach
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
 
 
-<script src="js/market.js"></script>
+        <!-- TARGET CUSTOMERS -->
+
+        <section class="section-heading">
+
+            <div>
+
+                <h2 data-i18n="targetCustomers">
+                    Target Customers
+                </h2>
+
+                <p data-i18n="targetCustomersDescription">
+                    Customer groups you can focus on first.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <div class="financial-tools">
+
+            <div class="tool-card">
+
+                <span>👨‍👩‍👧‍👦</span>
+
+                <div>
+
+                    <h3 data-i18n="localFamilies">
+                        Local Families
+                    </h3>
+
+                    <p data-i18n="localFamiliesDescription">
+                        Nearby households looking for convenient local products and services.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="tool-card">
+
+                <span>🛍️</span>
+
+                <div>
+
+                    <h3 data-i18n="regularBuyers">
+                        Regular Buyers
+                    </h3>
+
+                    <p data-i18n="regularBuyersDescription">
+                        Customers who may purchase repeatedly from your business.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="tool-card">
+
+                <span>🏪</span>
+
+                <div>
+
+                    <h3 data-i18n="localBusinesses">
+                        Local Businesses
+                    </h3>
+
+                    <p data-i18n="localBusinessesDescription">
+                        Shops and nearby businesses that may become customers or partners.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DISTRIBUTION -->
+
+        <section class="section-heading">
+
+            <div>
+
+                <h2 data-i18n="distributionChannels">
+                    Distribution Channels
+                </h2>
+
+                <p data-i18n="distributionDescription">
+                    Practical ways to reach customers in your area.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <div class="financial-tools">
+
+            <div class="tool-card">
+                <span>🏠</span>
+
+                <div>
+                    <h3 data-i18n="directSales">
+                        Direct Sales
+                    </h3>
+
+                    <p data-i18n="directSalesDescription">
+                        Sell directly from your shop or business location.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="tool-card">
+                <span>🚚</span>
+
+                <div>
+                    <h3 data-i18n="homeDelivery">
+                        Home Delivery
+                    </h3>
+
+                    <p data-i18n="homeDeliveryDescription">
+                        Deliver products directly to nearby customers.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="tool-card">
+                <span>📱</span>
+
+                <div>
+                    <h3 data-i18n="digitalOrders">
+                        Digital Orders
+                    </h3>
+
+                    <p data-i18n="digitalOrdersDescription">
+                        Accept orders through WhatsApp and other digital channels.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/market.js"></script>
+    <script src="js/language.js"></script>
 
 </body>
 

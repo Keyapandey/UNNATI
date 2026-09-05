@@ -249,6 +249,87 @@
 
 "review": "समीक्षा करें →",
 
-"privacyNote": "🔒 आपकी जानकारी का उपयोग केवल आपके व्यवसाय विश्लेषण को व्यक्तिगत बनाने के लिए किया जाता है।"
+"privacyNote": "🔒 आपकी जानकारी का उपयोग केवल आपके व्यवसाय विश्लेषण को व्यक्तिगत बनाने के लिए किया जाता है।",
+
+"finalReview": "अंतिम समीक्षा",
+"reviewTitle": "अपनी जानकारी की समीक्षा करें",
+"reviewDescription": "AI विश्लेषण शुरू करने से पहले सुनिश्चित करें कि सभी जानकारी सही है।",
+"availableCapital": "उपलब्ध पूंजी",
+"startAIAnalysis": "AI विश्लेषण शुरू करें →",
+
+"aiAnalysis": "AI विश्लेषण",
+"analysisTitle": "आपके व्यवसाय का विश्लेषण हो रहा है",
+"analysisDescription": "हमारा AI आपके स्थान, बाजार, प्रतिस्पर्धा और वित्तीय संभावनाओं का विश्लेषण कर रहा है।",
+"analyzingLocation": "स्थान का विश्लेषण",
+"analyzingMarket": "स्थानीय बाजार का अध्ययन",
+"analyzingCompetition": "प्रतिस्पर्धा की जाँच",
+"analyzingOpportunities": "अवसरों की पहचान",
+"analyzingFinancials": "वित्तीय संरचना तैयार करना",
+"analysisPrivacy": "🔒 आपकी व्यक्तिगत व्यवसाय विश्लेषण तैयार करने के लिए आपकी जानकारी का सुरक्षित उपयोग किया जाता है।",
+
+"marketAnalysis": "बाजार विश्लेषण",
+"marketReachTitle": "अपने स्थानीय बाजार को समझें",
+"marketArea": "बाजार क्षेत्र",
+"marketAreaDescription": "अपने व्यवसाय के आसपास अनुमानित ग्राहक पहुंच देखें।",
+"marketRadius": "बाजार की सीमा",
+"estimatedConsumers": "अनुमानित ग्राहक",
+"primaryMarket": "प्राथमिक स्थानीय बाजार",
+"potentialCustomers": "संभावित ग्राहक",
+"estimatedHouseholds": "अनुमानित परिवार",
+"localHouseholds": "आस-पास के परिवार",
+"extendedMarket": "विस्तारित बाजार",
+"extendedMarketDescription": "10 किमी का विस्तृत क्षेत्र अतिरिक्त ग्राहकों और मांग के अवसर प्रदान कर सकता है।",
+"extendedRadius": "बाजार की सीमा",
+"extendedReach": "विस्तारित बाजार पहुंच",
+"marketPotential": "बाजार क्षमता",
+"basedOnReach": "अनुमानित पहुंच के आधार पर",
+"targetCustomers": "लक्षित ग्राहक",
+"targetCustomersDescription": "वे ग्राहक समूह जिन पर आप सबसे पहले ध्यान दे सकते हैं।",
+"localFamilies": "स्थानीय परिवार",
+"localFamiliesDescription": "आस-पास के परिवार जो सुविधाजनक स्थानीय उत्पाद और सेवाएँ चाहते हैं।",
+"regularBuyers": "नियमित ग्राहक",
+"regularBuyersDescription": "वे ग्राहक जो आपके व्यवसाय से बार-बार खरीदारी कर सकते हैं।",
+"localBusinesses": "स्थानीय व्यवसाय",
+"localBusinessesDescription": "आस-पास की दुकानें और व्यवसाय जो आपके ग्राहक या साझेदार बन सकते हैं।",
+"distributionChannels": "वितरण माध्यम",
+"distributionDescription": "अपने क्षेत्र में ग्राहकों तक पहुंचने के व्यावहारिक तरीके।",
+"directSales": "प्रत्यक्ष बिक्री",
+"directSalesDescription": "अपनी दुकान या व्यवसाय के स्थान से सीधे बिक्री करें।",
+"homeDelivery": "होम डिलीवरी",
+"homeDeliveryDescription": "आस-पास के ग्राहकों तक उत्पाद सीधे पहुंचाएं।",
+"digitalOrders": "डिजिटल ऑर्डर",
+"digitalOrdersDescription": "WhatsApp और अन्य डिजिटल माध्यमों से ऑर्डर स्वीकार करें।",
+
+"growthIntelligence": "विकास संबंधी जानकारी",
+"businessOpportunities": "व्यवसाय के अवसर",
+"backToDashboard": "← डैशबोर्ड",
+
+"yourBusiness": "आपका व्यवसाय",
+"opportunitiesFound": "मिले हुए अवसर",
+
+"aiGrowthInsight": "AI विकास सुझाव",
+"growthInsightTitle": "ऐसे अवसरों पर ध्यान दें जो आपके मौजूदा संसाधनों के अनुकूल हों।",
+"growthInsightDescription": "कम निवेश वाले व्यावहारिक अवसरों से शुरुआत करने से आप अपनी उपलब्ध पूंजी पर अनावश्यक दबाव डाले बिना व्यवसाय को बढ़ा सकते हैं।",
+
+"recommendedOpportunities": "अनुशंसित अवसर",
+"recommendedOpportunitiesDescription": "अपने व्यवसाय का विस्तार करने के संभावित तरीके",
+
+"localHomeDelivery": "स्थानीय होम डिलीवरी",
+"localHomeDeliveryDescription": "सरल डिलीवरी सेवाओं के माध्यम से आस-पास के गाँवों के ग्राहकों तक पहुँचें।",
+
+"productBundles": "उत्पाद पैकेज",
+"productBundlesDescription": "औसत ग्राहक खर्च बढ़ाने के लिए किफायती उत्पादों के संयोजन तैयार करें।",
+
+"digitalPromotion": "डिजिटल प्रचार",
+"digitalPromotionDescription": "आस-पास के ग्राहकों को आकर्षित करने के लिए WhatsApp और स्थानीय सोशल नेटवर्क का उपयोग करें।",
+
+"localPartnerships": "स्थानीय साझेदारी",
+"localPartnershipsDescription": "अपनी पहुँच बढ़ाने के लिए आस-पास की दुकानों और आपूर्तिकर्ताओं के साथ साझेदारी करें।",
+
+"nearbyMarketExpansion": "आस-पास के बाजार का विस्तार",
+"nearbyMarketExpansionDescription": "धीरे-धीरे बिक्री को आस-पास के गाँवों और स्थानीय बाजारों तक बढ़ाएँ।",
+
+"repeatCustomerProgram": "नियमित ग्राहक कार्यक्रम",
+"repeatCustomerProgramDescription": "सरल लॉयल्टी ऑफर के माध्यम से नियमित ग्राहकों को प्रोत्साहित करें।"
     
 }

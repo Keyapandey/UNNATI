@@ -1,104 +1,80 @@
-// ================================
+// ============================================
 // GRAMBIZ AI - ANALYSIS
-// ================================
+// ============================================
 
 const progressBar =
     document.getElementById("analysisProgressBar");
 
-const statusText =
-    document.getElementById("analysisStatus");
-
-const marketCheck =
-    document.getElementById("marketCheck");
-
-const competitionCheck =
-    document.getElementById("competitionCheck");
-
-const financialCheck =
-    document.getElementById("financialCheck");
-
-const opportunityCheck =
-    document.getElementById("opportunityCheck");
-
+const progressPercent =
+    document.getElementById("progressPercent");
 
 const steps = [
-
-    {
-        progress: 25,
-        text: "Understanding your business...",
-        element: marketCheck
-    },
-
-    {
-        progress: 50,
-        text: "Analyzing your local competition...",
-        element: competitionCheck
-    },
-
-    {
-        progress: 75,
-        text: "Building your financial plan...",
-        element: financialCheck
-    },
-
-    {
-        progress: 100,
-        text: "Finding growth opportunities...",
-        element: opportunityCheck
-    }
-
+    document.getElementById("locationAnalysis"),
+    document.getElementById("marketAnalysis"),
+    document.getElementById("competitionAnalysis"),
+    document.getElementById("opportunityAnalysis"),
+    document.getElementById("financialAnalysis")
 ];
 
-
 let currentStep = 0;
+let progress = 0;
 
 
-function runAnalysis() {
+// UPDATE ANALYSIS
 
-    if (currentStep >= steps.length) {
+function updateAnalysis() {
 
-        statusText.textContent =
-            "Analysis complete!";
+    if (currentStep < steps.length) {
+
+        steps[currentStep]
+            .classList.add("active");
+
+        progress =
+            Math.round(
+                ((currentStep + 1) /
+                    steps.length) * 100
+            );
+
+        progressBar.style.width =
+            progress + "%";
+
+        progressPercent.textContent =
+            progress + "%";
+
+
+        setTimeout(function () {
+
+            steps[currentStep]
+                .classList.remove("active");
+
+            steps[currentStep]
+                .classList.add("completed");
+
+            steps[currentStep]
+                .querySelector(".analysis-status")
+                .textContent = "✓";
+
+            currentStep++;
+
+            updateAnalysis();
+
+        }, 1000);
+
+    } else {
+
+        // Analysis completed
 
         setTimeout(function () {
 
             window.location.href =
                 "dashboard.html";
 
-        }, 1000);
+        }, 700);
 
-        return;
     }
-
-
-    const step =
-        steps[currentStep];
-
-
-    progressBar.style.width =
-        step.progress + "%";
-
-
-    statusText.textContent =
-        step.text;
-
-
-    step.element.textContent =
-        "✓";
-
-    step.element.style.color =
-        "#31813a";
-
-
-    currentStep++;
-
-
-    setTimeout(
-        runAnalysis,
-        1000
-    );
-
 }
 
 
-runAnalysis();
+// START
+
+updateAnalysis();

@@ -142,5 +142,53 @@
 
 "alreadyHaveAccount": "Already have an account?",
 
-"login": "Login"
+"login": "Login",
+
+"finalReview": "Final Review",
+"reviewTitle": "Review your details",
+"reviewDescription": "Make sure everything looks correct before we start your AI analysis.",
+"availableCapital": "Available Capital",
+"startAIAnalysis": "Start AI Analysis →",
+
+"aiAnalysis": "AI Analysis",
+"analysisTitle": "Analyzing your business",
+"analysisDescription": "Our AI is analyzing your location, market, competition and financial potential.",
+"analyzingLocation": "Analyzing location",
+"analyzingMarket": "Studying local market",
+"analyzingCompetition": "Checking competition",
+"analyzingOpportunities": "Finding opportunities",
+"analyzingFinancials": "Structuring finances",
+"analysisPrivacy": "🔒 Your information is securely used to create your personalized business analysis.",
+
+"growthIntelligence": "Growth Intelligence",
+"businessOpportunities": "Business Opportunities",
+"backToDashboard": "← Dashboard",
+
+"yourBusiness": "YOUR BUSINESS",
+"opportunitiesFound": "OPPORTUNITIES FOUND",
+
+"aiGrowthInsight": "AI GROWTH INSIGHT",
+"growthInsightTitle": "Focus on opportunities that fit your current resources.",
+"growthInsightDescription": "Starting with practical, low-investment opportunities can help you grow without putting unnecessary pressure on your available capital.",
+
+"recommendedOpportunities": "Recommended Opportunities",
+"recommendedOpportunitiesDescription": "Potential ways to expand your business",
+
+"localHomeDelivery": "Local Home Delivery",
+"localHomeDeliveryDescription": "Reach customers in nearby villages through simple delivery services.",
+
+"productBundles": "Product Bundles",
+"productBundlesDescription": "Create affordable product combinations to increase average customer spending.",
+
+"digitalPromotion": "Digital Promotion",
+"digitalPromotionDescription": "Use WhatsApp and local social networks to attract nearby customers.",
+
+"localPartnerships": "Local Partnerships",
+"localPartnershipsDescription": "Partner with nearby shops and suppliers to increase your reach.",
+
+"nearbyMarketExpansion": "Nearby Market Expansion",
+"nearbyMarketExpansionDescription": "Gradually expand sales into nearby villages and local markets.",
+
+"repeatCustomerProgram": "Repeat Customer Program",
+"repeatCustomerProgramDescription": "Encourage regular customers through simple loyalty offers."
 }

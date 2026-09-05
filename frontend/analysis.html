@@ -8,91 +8,245 @@
     <title>AI Analysis | GramBiz AI</title>
 
     <link rel="stylesheet" href="css/setup.css">
+
+    <style>
+        .analysis-card {
+            max-width: 620px;
+            text-align: center;
+        }
+
+        .analysis-icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .analysis-card h1 {
+            margin-bottom: 10px;
+        }
+
+        .analysis-description {
+            color: #69736b;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .analysis-progress {
+            width: 100%;
+            height: 8px;
+            background: #e7ece6;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+
+        .analysis-progress-bar {
+            width: 0%;
+            height: 100%;
+            background: #31813a;
+            border-radius: 10px;
+            transition: width 0.5s ease;
+        }
+
+        .progress-percent {
+            font-size: 13px;
+            color: #59645b;
+            margin-bottom: 25px;
+        }
+
+        .analysis-steps {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .analysis-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 13px 0;
+            border-bottom: 1px solid #e5ebe3;
+            color: #59645b;
+        }
+
+        .analysis-item:last-child {
+            border-bottom: none;
+        }
+
+        .analysis-status {
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #e7ece6;
+            font-size: 12px;
+            flex-shrink: 0;
+        }
+
+        .analysis-item.active {
+            color: #17251a;
+            font-weight: 600;
+        }
+
+        .analysis-item.active .analysis-status {
+            background: #dcefdc;
+            color: #31813a;
+        }
+
+        .analysis-item.completed .analysis-status {
+            background: #31813a;
+            color: white;
+        }
+    </style>
+
 </head>
 
 <body>
 
-<header class="setup-header">
+    <header class="setup-header">
 
-    <a href="index.html" class="logo">
-        🌱 GramBiz <strong>AI</strong>
-    </a>
+        <a href="index.html" class="logo">
+            🌱 GramBiz <strong>AI</strong>
+        </a>
 
-    <div class="step-text">
-        AI Analysis
-    </div>
-
-</header>
-
-
-<main class="analysis-container">
-
-    <section class="analysis-card">
-
-        <div class="ai-icon">
-            ✦
+        <div class="step-text" data-i18n="aiAnalysis">
+            AI Analysis
         </div>
 
-        <h1>
-            Analyzing your business
-        </h1>
-
-        <p class="analysis-description">
-            GramBiz AI is studying your local market,
-            business category and available capital.
-        </p>
+    </header>
 
 
-        <div class="analysis-progress">
+    <main class="setup-container">
+
+        <section class="setup-card analysis-card">
+
+            <div class="analysis-icon">
+                ✦
+            </div>
+
+            <h1 data-i18n="analysisTitle">
+                Analyzing your business
+            </h1>
+
+            <p
+                class="analysis-description"
+                data-i18n="analysisDescription"
+            >
+                Our AI is analyzing your location,
+                market, competition and financial potential.
+            </p>
+
+
+            <!-- PROGRESS BAR -->
+
+            <div class="analysis-progress">
+
+                <div
+                    class="analysis-progress-bar"
+                    id="analysisProgressBar"
+                ></div>
+
+            </div>
 
             <div
-                class="analysis-progress-bar"
-                id="analysisProgressBar"
-            ></div>
-
-        </div>
-
-
-        <div class="analysis-status" id="analysisStatus">
-            Understanding your business...
-        </div>
-
-
-        <div class="analysis-items">
-
-            <div class="analysis-item">
-                <span id="marketCheck">○</span>
-                Local market analysis
+                class="progress-percent"
+                id="progressPercent"
+            >
+                0%
             </div>
 
-            <div class="analysis-item">
-                <span id="competitionCheck">○</span>
-                Competition analysis
+
+            <!-- ANALYSIS STEPS -->
+
+            <div class="analysis-steps">
+
+                <div
+                    class="analysis-item"
+                    id="locationAnalysis"
+                >
+                    <span class="analysis-status">
+                        1
+                    </span>
+
+                    <span data-i18n="analyzingLocation">
+                        Analyzing location
+                    </span>
+                </div>
+
+
+                <div
+                    class="analysis-item"
+                    id="marketAnalysis"
+                >
+                    <span class="analysis-status">
+                        2
+                    </span>
+
+                    <span data-i18n="analyzingMarket">
+                        Studying local market
+                    </span>
+                </div>
+
+
+                <div
+                    class="analysis-item"
+                    id="competitionAnalysis"
+                >
+                    <span class="analysis-status">
+                        3
+                    </span>
+
+                    <span data-i18n="analyzingCompetition">
+                        Checking competition
+                    </span>
+                </div>
+
+
+                <div
+                    class="analysis-item"
+                    id="opportunityAnalysis"
+                >
+                    <span class="analysis-status">
+                        4
+                    </span>
+
+                    <span data-i18n="analyzingOpportunities">
+                        Finding opportunities
+                    </span>
+                </div>
+
+
+                <div
+                    class="analysis-item"
+                    id="financialAnalysis"
+                >
+                    <span class="analysis-status">
+                        5
+                    </span>
+
+                    <span data-i18n="analyzingFinancials">
+                        Structuring finances
+                    </span>
+                </div>
+
             </div>
 
-            <div class="analysis-item">
-                <span id="financialCheck">○</span>
-                Financial planning
-            </div>
-
-            <div class="analysis-item">
-                <span id="opportunityCheck">○</span>
-                Growth opportunities
-            </div>
-
-        </div>
-
-    </section>
+        </section>
 
 
-    <p class="privacy-note">
-        🔒 This analysis is personalized using the information you provided.
-    </p>
+        <p
+            class="privacy-note"
+            data-i18n="analysisPrivacy"
+        >
+            🔒 Your information is securely used to
+            create your personalized business analysis.
+        </p>
 
-</main>
+    </main>
 
 
-<script src="js/analysis.js"></script>
+    <script src="js/analysis.js"></script>
+    <script src="js/language.js"></script>
 
 </body>
 

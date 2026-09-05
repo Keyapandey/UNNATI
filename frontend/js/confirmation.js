@@ -20,6 +20,31 @@ const business =
 const capital =
     localStorage.getItem("grambizCapital");
 
+const currentLanguage =
+    localStorage.getItem("grambizLanguage") || "en";
+
+
+// FALLBACK TEXT
+
+const messages = {
+
+    en: {
+        locationNotProvided: "Location not provided",
+        businessNotSelected: "Not selected",
+        capitalNotProvided: "Not provided"
+    },
+
+    hi: {
+        locationNotProvided: "स्थान उपलब्ध नहीं है",
+        businessNotSelected: "चयनित नहीं है",
+        capitalNotProvided: "उपलब्ध नहीं है"
+    }
+
+};
+
+const text =
+    messages[currentLanguage] || messages.en;
+
 
 // DISPLAY LOCATION
 
@@ -28,14 +53,19 @@ const locationValue =
 
 if (village || block || district) {
 
+    const locationParts = [
+        village,
+        block,
+        district
+    ].filter(Boolean);
+
     locationValue.textContent =
-        `${village || ""}, ${block || ""}, ${district || ""}`;
+        locationParts.join(", ");
 
 } else {
 
     locationValue.textContent =
-        "Location not provided";
-
+        text.locationNotProvided;
 }
 
 
@@ -44,8 +74,63 @@ if (village || block || district) {
 const businessValue =
     document.getElementById("businessValue");
 
-businessValue.textContent =
-    business || "Not selected";
+const businessTranslations = {
+
+    en: {
+        Dairy: "Dairy",
+        Retail: "Retail",
+        Textiles: "Textiles",
+        Agriculture: "Agriculture",
+        Food: "Food",
+        Poultry: "Poultry",
+        Services: "Services",
+        Other: "Other"
+    },
+
+    hi: {
+        Dairy: "डेयरी",
+        Retail: "खुदरा",
+        Textiles: "कपड़ा",
+        Agriculture: "कृषि",
+        Food: "खाद्य",
+        Poultry: "पोल्ट्री",
+        Services: "सेवाएँ",
+        Other: "अन्य"
+    }
+
+};
+
+if (business) {
+
+    // If user selected "Other",
+    // show the custom business name exactly as entered.
+    const businessCategory =
+        localStorage.getItem(
+            "grambizBusinessCategory"
+        );
+
+    if (
+        businessCategory === "Other" &&
+        business !== "Other"
+    ) {
+
+        businessValue.textContent =
+            business;
+
+    } else {
+
+        businessValue.textContent =
+            businessTranslations[currentLanguage]?.[business]
+            || business;
+
+    }
+
+} else {
+
+    businessValue.textContent =
+        text.businessNotSelected;
+
+}
 
 
 // DISPLAY CAPITAL
@@ -64,8 +149,7 @@ if (capital) {
 } else {
 
     capitalValue.textContent =
-        "Not provided";
-
+        text.capitalNotProvided;
 }
 
 
@@ -76,11 +160,14 @@ const reviewBackBtn =
 
 if (reviewBackBtn) {
 
-    reviewBackBtn.addEventListener("click", function () {
+    reviewBackBtn.addEventListener(
+        "click",
+        function () {
 
-        history.back();
+            history.back();
 
-    });
+        }
+    );
 
 }
 
@@ -92,11 +179,14 @@ const startAnalysisBtn =
 
 if (startAnalysisBtn) {
 
-    startAnalysisBtn.addEventListener("click", function () {
+    startAnalysisBtn.addEventListener(
+        "click",
+        function () {
 
-        window.location.href =
-            "analysis.html";
+            window.location.href =
+                "analysis.html";
 
-    });
+        }
+    );
 
 }

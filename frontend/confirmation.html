@@ -18,7 +18,7 @@
             🌱 GramBiz <strong>AI</strong>
         </a>
 
-        <div class="step-text">
+        <div class="step-text" data-i18n="finalReview">
             Final Review
         </div>
 
@@ -33,21 +33,21 @@
 
             <div class="progress-step completed">
                 <span>✓</span>
-                Location
+                <span data-i18n="location">Location</span>
             </div>
 
             <div class="progress-line completed-line"></div>
 
             <div class="progress-step completed">
                 <span>✓</span>
-                Business
+                <span data-i18n="business">Business</span>
             </div>
 
             <div class="progress-line completed-line"></div>
 
             <div class="progress-step completed">
                 <span>✓</span>
-                Capital
+                <span data-i18n="capital">Capital</span>
             </div>
 
         </div>
@@ -61,9 +61,11 @@
 
                 <div>
 
-                    <h1>Review your details</h1>
+                    <h1 data-i18n="reviewTitle">
+                        Review your details
+                    </h1>
 
-                    <p>
+                    <p data-i18n="reviewDescription">
                         Make sure everything looks correct
                         before we start your AI analysis.
                     </p>
@@ -79,10 +81,15 @@
 
                 <div class="review-heading">
                     <span>📍</span>
-                    <strong>Location</strong>
+                    <strong data-i18n="location">
+                        Location
+                    </strong>
                 </div>
 
-                <div class="review-value" id="locationValue">
+                <div
+                    class="review-value"
+                    id="locationValue"
+                >
                     Loading...
                 </div>
 
@@ -95,10 +102,15 @@
 
                 <div class="review-heading">
                     <span>🏪</span>
-                    <strong>Business</strong>
+                    <strong data-i18n="business">
+                        Business
+                    </strong>
                 </div>
 
-                <div class="review-value" id="businessValue">
+                <div
+                    class="review-value"
+                    id="businessValue"
+                >
                     Loading...
                 </div>
 
@@ -111,10 +123,15 @@
 
                 <div class="review-heading">
                     <span>💰</span>
-                    <strong>Available Capital</strong>
+                    <strong data-i18n="availableCapital">
+                        Available Capital
+                    </strong>
                 </div>
 
-                <div class="review-value capital-value" id="capitalValue">
+                <div
+                    class="review-value capital-value"
+                    id="capitalValue"
+                >
                     Loading...
                 </div>
 
@@ -129,6 +146,7 @@
                     type="button"
                     class="back-button"
                     id="reviewBackBtn"
+                    aria-label="Go Back"
                 >
                     ←
                 </button>
@@ -137,6 +155,7 @@
                     type="button"
                     class="continue-btn"
                     id="startAnalysisBtn"
+                    data-i18n="startAIAnalysis"
                 >
                     Start AI Analysis →
                 </button>
@@ -146,14 +165,19 @@
         </section>
 
 
-        <p class="privacy-note">
-            🔒 Your information is used only to personalize your business analysis.
+        <p
+            class="privacy-note"
+            data-i18n="privacyNote"
+        >
+            🔒 Your information is used only to
+            personalize your business analysis.
         </p>
 
     </main>
 
 
     <script src="js/confirmation.js"></script>
+    <script src="js/language.js"></script>
 
 </body>
 
