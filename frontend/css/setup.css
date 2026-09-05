@@ -87,7 +87,7 @@ body {
     font-weight: 600;
 }
 
-.progress-step span {
+.progress-step > span:first-child {
     width: 28px;
     height: 28px;
 
@@ -108,7 +108,7 @@ body {
     color: #31813a;
 }
 
-.progress-step.active span {
+.progress-step.active > span:first-child {
     background: #31813a;
 
     color: white;
@@ -348,7 +348,7 @@ body {
         font-size: 0;
     }
 
-    .progress-step span {
+    .progress-step > span:first-child {
         font-size: 12px;
     }
 
@@ -902,4 +902,40 @@ body {
         font-size: 23px;
     }
 
+}
+
+/* ==========================================
+   OTHER BUSINESS INPUT
+   ========================================== */
+
+.other-business-container {
+    margin-top: 22px;
+    padding: 18px;
+    border: 1px solid #dce5da;
+    border-radius: 10px;
+    background: #f8fbf7;
+}
+
+.other-business-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #344338;
+}
+
+.other-business-container input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #dce5da;
+    border-radius: 8px;
+    background: white;
+    color: #344338;
+    font-size: 14px;
+    outline: none;
+}
+
+.other-business-container input:focus {
+    border-color: #31813a;
 }

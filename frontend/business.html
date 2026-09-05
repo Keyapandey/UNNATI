@@ -18,7 +18,7 @@
             🌱 GramBiz <strong>AI</strong>
         </a>
 
-        <div class="step-text">
+        <div class="step-text" data-i18n="step2of3">
             Step 2 of 3
         </div>
 
@@ -32,21 +32,21 @@
 
             <div class="progress-step completed">
                 <span>✓</span>
-                Location
+                <span data-i18n="location">Location</span>
             </div>
 
             <div class="progress-line completed-line"></div>
 
             <div class="progress-step active">
                 <span>2</span>
-                Business
+                <span data-i18n="business">Business</span>
             </div>
 
             <div class="progress-line"></div>
 
             <div class="progress-step">
                 <span>3</span>
-                Capital
+                <span data-i18n="capital">Capital</span>
             </div>
 
         </div>
@@ -57,17 +57,25 @@
 
             <div class="setup-title">
 
-                <button class="back-button" id="backBtn">
+                <button
+                    type="button"
+                    class="back-button"
+                    id="backBtn"
+                >
                     ←
                 </button>
 
                 <div>
-                    <h1>What business are you planning?</h1>
 
-                    <p>
+                    <h1 data-i18n="businessTitle">
+                        What business are you planning?
+                    </h1>
+
+                    <p data-i18n="businessDescription">
                         Choose the category that best describes
                         your business idea.
                     </p>
+
                 </div>
 
             </div>
@@ -77,6 +85,7 @@
 
                 <div class="business-grid">
 
+                    <!-- Dairy -->
                     <label class="business-option">
 
                         <input
@@ -87,13 +96,20 @@
 
                         <div class="business-content">
                             <div class="business-icon">🐄</div>
-                            <strong>Dairy</strong>
-                            <small>Milk & dairy products</small>
+
+                            <strong data-i18n="dairy">
+                                Dairy
+                            </strong>
+
+                            <small data-i18n="dairyDescription">
+                                Milk & dairy products
+                            </small>
                         </div>
 
                     </label>
 
 
+                    <!-- Retail -->
                     <label class="business-option">
 
                         <input
@@ -104,13 +120,20 @@
 
                         <div class="business-content">
                             <div class="business-icon">🏪</div>
-                            <strong>Retail</strong>
-                            <small>Local shop & trading</small>
+
+                            <strong data-i18n="retail">
+                                Retail
+                            </strong>
+
+                            <small data-i18n="retailDescription">
+                                Local shop & trading
+                            </small>
                         </div>
 
                     </label>
 
 
+                    <!-- Textiles -->
                     <label class="business-option">
 
                         <input
@@ -121,13 +144,20 @@
 
                         <div class="business-content">
                             <div class="business-icon">👕</div>
-                            <strong>Textiles</strong>
-                            <small>Clothing & tailoring</small>
+
+                            <strong data-i18n="textiles">
+                                Textiles
+                            </strong>
+
+                            <small data-i18n="textilesDescription">
+                                Clothing & tailoring
+                            </small>
                         </div>
 
                     </label>
 
 
+                    <!-- Agriculture -->
                     <label class="business-option">
 
                         <input
@@ -138,13 +168,20 @@
 
                         <div class="business-content">
                             <div class="business-icon">🌱</div>
-                            <strong>Agriculture</strong>
-                            <small>Farming & produce</small>
+
+                            <strong data-i18n="agriculture">
+                                Agriculture
+                            </strong>
+
+                            <small data-i18n="agricultureDescription">
+                                Farming & produce
+                            </small>
                         </div>
 
                     </label>
 
 
+                    <!-- Food -->
                     <label class="business-option">
 
                         <input
@@ -155,13 +192,20 @@
 
                         <div class="business-content">
                             <div class="business-icon">🌾</div>
-                            <strong>Food</strong>
-                            <small>Food & processing</small>
+
+                            <strong data-i18n="food">
+                                Food
+                            </strong>
+
+                            <small data-i18n="foodDescription">
+                                Food & processing
+                            </small>
                         </div>
 
                     </label>
 
 
+                    <!-- Poultry -->
                     <label class="business-option">
 
                         <input
@@ -172,13 +216,20 @@
 
                         <div class="business-content">
                             <div class="business-icon">🐔</div>
-                            <strong>Poultry</strong>
-                            <small>Birds & eggs</small>
+
+                            <strong data-i18n="poultry">
+                                Poultry
+                            </strong>
+
+                            <small data-i18n="poultryDescription">
+                                Birds & eggs
+                            </small>
                         </div>
 
                     </label>
 
 
+                    <!-- Services -->
                     <label class="business-option">
 
                         <input
@@ -189,25 +240,39 @@
 
                         <div class="business-content">
                             <div class="business-icon">🛠️</div>
-                            <strong>Services</strong>
-                            <small>Local services</small>
+
+                            <strong data-i18n="services">
+                                Services
+                            </strong>
+
+                            <small data-i18n="servicesDescription">
+                                Local services
+                            </small>
                         </div>
 
                     </label>
 
 
+                    <!-- Other -->
                     <label class="business-option">
 
                         <input
                             type="radio"
                             name="business"
                             value="Other"
+                            id="otherBusiness"
                         >
 
                         <div class="business-content">
                             <div class="business-icon">•••</div>
-                            <strong>Other</strong>
-                            <small>Something else</small>
+
+                            <strong data-i18n="other">
+                                Other
+                            </strong>
+
+                            <small data-i18n="otherDescription">
+                                Something else
+                            </small>
                         </div>
 
                     </label>
@@ -215,15 +280,40 @@
                 </div>
 
 
+                <!-- Other Business Input -->
+                <div
+                    class="other-business-container"
+                    id="otherBusinessContainer"
+                    style="display: none;"
+                >
+
+                    <label
+                        for="otherBusinessInput"
+                        data-i18n="otherBusinessLabel"
+                    >
+                        Enter your business type
+                    </label>
+
+                    <input
+                        type="text"
+                        id="otherBusinessInput"
+                        data-i18n-placeholder="otherBusinessPlaceholder"
+                        placeholder="e.g. Handicrafts, Mobile Repair, Beauty Parlour"
+                    >
+
+                </div>
+
+
                 <div class="form-footer">
 
-                    <span>
+                    <span data-i18n="changeLater">
                         You can change this later.
                     </span>
 
                     <button
                         type="submit"
                         class="continue-btn"
+                        data-i18n="continue"
                     >
                         Continue →
                     </button>
@@ -235,7 +325,7 @@
         </section>
 
 
-        <p class="privacy-note">
+        <p class="privacy-note" data-i18n="privacyNote">
             🔒 Your information is used only to personalize your business analysis.
         </p>
 
@@ -243,6 +333,7 @@
 
 
     <script src="js/setup.js"></script>
+    <script src="js/language.js"></script>
 
 </body>
 

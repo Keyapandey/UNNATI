@@ -35,42 +35,42 @@
 
         <a href="#" class="nav-item active">
             <span>▦</span>
-            Dashboard
+            <span data-i18n="dashboard">Dashboard</span>
         </a>
 
         <a href="market.html" class="nav-item">
             <span>📍</span>
-            Market Reach
+            <span data-i18n="marketReach">Market Reach</span>
         </a>
 
         <a href="opportunities.html" class="nav-item">
             <span>💡</span>
-            Opportunities
+            <span data-i18n="opportunities">Opportunities</span>
         </a>
 
         <a href="competitors.html" class="nav-item">
             <span>🏪</span>
-            Competitors
+            <span data-i18n="competitors">Competitors</span>
         </a>
 
         <a href="pricing.html" class="nav-item">
             <span>💰</span>
-            Pricing
+            <span data-i18n="pricing">Pricing</span>
         </a>
 
         <a href="financial.html" class="nav-item">
             <span>📊</span>
-            Financials
+            <span data-i18n="financials">Financials</span>
         </a>
 
         <a href="#" class="nav-item">
             <span>⚠</span>
-            Risk
+            <span data-i18n="risk">Risk</span>
         </a>
 
         <a href="#" class="nav-item">
             <span>📄</span>
-            Business Plan
+            <span data-i18n="businessPlan">Business Plan</span>
         </a>
 
     </nav>
@@ -109,23 +109,50 @@
 
         <div>
 
-            <p class="welcome-small">
+            <p
+                class="welcome-small"
+                data-i18n="goodDay"
+            >
                 Good day 👋
             </p>
 
-            <h1>
+            <h1 data-i18n="yourBusinessDashboard">
                 Your Business Dashboard
             </h1>
 
         </div>
 
 
-        <button
-            class="new-analysis-btn"
-            id="newAnalysisBtn"
-        >
-            + New Analysis
-        </button>
+        <div class="dashboard-actions">
+
+            <!-- LANGUAGE -->
+
+            <select
+                id="languageSelector"
+                aria-label="Select Language"
+            >
+
+                <option value="en">
+                    English
+                </option>
+
+                <option value="hi">
+                    हिन्दी
+                </option>
+
+            </select>
+
+
+            <button
+                class="new-analysis-btn"
+                id="newAnalysisBtn"
+            >
+                <span data-i18n="newAnalysis">
+                    + New Analysis
+                </span>
+            </button>
+
+        </div>
 
     </header>
 
@@ -137,7 +164,10 @@
 
         <div>
 
-            <span class="summary-label">
+            <span
+                class="summary-label"
+                data-i18n="business"
+            >
                 BUSINESS
             </span>
 
@@ -154,7 +184,10 @@
 
         <div class="summary-capital">
 
-            <span class="summary-label">
+            <span
+                class="summary-label"
+                data-i18n="availableCapital"
+            >
                 AVAILABLE CAPITAL
             </span>
 
@@ -178,15 +211,18 @@
 
         <div>
 
-            <span class="insight-label">
+            <span
+                class="insight-label"
+                data-i18n="aiInsight"
+            >
                 AI INSIGHT
             </span>
 
-            <h3>
+            <h3 data-i18n="promisingPotential">
                 Your business has promising potential.
             </h3>
 
-            <p>
+            <p data-i18n="potentialDescription">
                 Based on your location, business category
                 and available capital, we've identified
                 several areas where you can grow.
@@ -204,11 +240,11 @@
 
         <div>
 
-            <h2>
+            <h2 data-i18n="financialOverview">
                 Financial Overview
             </h2>
 
-            <p>
+            <p data-i18n="monthlyPerformance">
                 Estimated monthly business performance
             </p>
 
@@ -228,7 +264,10 @@
 
             <div>
 
-                <span class="stat-label">
+                <span
+                    class="stat-label"
+                    data-i18n="monthlyRevenue"
+                >
                     EST. MONTHLY REVENUE
                 </span>
 
@@ -236,7 +275,7 @@
                     ₹42,500
                 </strong>
 
-                <small>
+                <small data-i18n="localEstimates">
                     Based on local estimates
                 </small>
 
@@ -253,7 +292,10 @@
 
             <div>
 
-                <span class="stat-label">
+                <span
+                    class="stat-label"
+                    data-i18n="monthlyProfit"
+                >
                     EST. MONTHLY PROFIT
                 </span>
 
@@ -261,7 +303,7 @@
                     ₹16,800
                 </strong>
 
-                <small>
+                <small data-i18n="profitMargin">
                     Approx. 39.5% margin
                 </small>
 
@@ -278,7 +320,10 @@
 
             <div>
 
-                <span class="stat-label">
+                <span
+                    class="stat-label"
+                    data-i18n="monthlyExpenses"
+                >
                     MONTHLY EXPENSES
                 </span>
 
@@ -286,7 +331,7 @@
                     ₹25,700
                 </strong>
 
-                <small>
+                <small data-i18n="operatingCosts">
                     Estimated operating costs
                 </small>
 
@@ -305,11 +350,11 @@
 
         <div>
 
-            <h2>
+            <h2 data-i18n="businessAnalysis">
                 Business Analysis
             </h2>
 
-            <p>
+            <p data-i18n="businessAnalysisDescription">
                 Explore insights generated for your business
             </p>
 
@@ -329,11 +374,11 @@
 
             <div>
 
-                <h3>
+                <h3 data-i18n="marketReach">
                     Market Reach
                 </h3>
 
-                <p>
+                <p data-i18n="marketReachDescription">
                     Understand your local customer market.
                 </p>
 
@@ -354,11 +399,11 @@
 
             <div>
 
-                <h3>
+                <h3 data-i18n="opportunities">
                     Opportunities
                 </h3>
 
-                <p>
+                <p data-i18n="opportunitiesDescription">
                     Discover potential growth opportunities.
                 </p>
 
@@ -379,11 +424,11 @@
 
             <div>
 
-                <h3>
+                <h3 data-i18n="competitors">
                     Competitors
                 </h3>
 
-                <p>
+                <p data-i18n="competitorsDescription">
                     Explore your local competition.
                 </p>
 
@@ -404,11 +449,11 @@
 
             <div>
 
-                <h3>
+                <h3 data-i18n="pricing">
                     Pricing
                 </h3>
 
-                <p>
+                <p data-i18n="pricingDescription">
                     Find practical pricing recommendations.
                 </p>
 
@@ -429,11 +474,11 @@
 
             <div>
 
-                <h3>
+                <h3 data-i18n="swotAnalysis">
                     SWOT Analysis
                 </h3>
 
-                <p>
+                <p data-i18n="swotDescription">
                     Understand your business strengths and risks.
                 </p>
 
@@ -454,11 +499,11 @@
 
             <div>
 
-                <h3>
+                <h3 data-i18n="riskAnalysis">
                     Risk Analysis
                 </h3>
 
-                <p>
+                <p data-i18n="riskDescription">
                     Identify and prepare for business risks.
                 </p>
 
@@ -481,11 +526,11 @@
 
         <div>
 
-            <h2>
+            <h2 data-i18n="financialTools">
                 Financial Tools
             </h2>
 
-            <p>
+            <p data-i18n="financialToolsDescription">
                 Plan and manage your business finances
             </p>
 
@@ -497,17 +542,17 @@
     <div class="financial-tools">
 
 
-        <a href="#" class="tool-card">
+        <a href="financial-planner.html" class="tool-card">
 
             <span>📊</span>
 
             <div>
 
-                <h3>
+                <h3 data-i18n="financialPlanner">
                     Financial Planner
                 </h3>
 
-                <p>
+                <p data-i18n="financialPlannerDescription">
                     Plan investments, costs and expected returns.
                 </p>
 
@@ -518,17 +563,17 @@
         </a>
 
 
-        <a href="#" class="tool-card">
+        <a href="repayment-planner.html" class="tool-card">
 
             <span>💳</span>
 
             <div>
 
-                <h3>
+                <h3 data-i18n="repaymentPlanner">
                     Repayment Planner
                 </h3>
 
-                <p>
+                <p data-i18n="repaymentPlannerDescription">
                     Estimate loan repayment and cash flow.
                 </p>
 
@@ -545,11 +590,11 @@
 
             <div>
 
-                <h3>
+                <h3 data-i18n="businessPlan">
                     Business Plan
                 </h3>
 
-                <p>
+                <p data-i18n="businessPlanDescription">
                     Generate a structured business plan.
                 </p>
 
@@ -567,6 +612,8 @@
 
 
 <script src="js/dashboard.js"></script>
+
+<script src="js/language.js"></script>
 
 </body>
 

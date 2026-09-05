@@ -1,108 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Sign Up | GramBiz AI</title>
 
     <link rel="stylesheet" href="css/auth.css">
+
 </head>
+
 
 <body>
 
-    <div class="auth-container">
 
-        <div class="auth-brand">
-            <a href="index.html" class="logo">
-                🌱 GramBiz <strong>AI</strong>
-            </a>
-
-            <h1>Start your journey.</h1>
-
-            <p>
-                Create your GramBiz AI account and get personalized
-                guidance for your business.
-            </p>
-        </div>
+<div class="auth-container">
 
 
-        <div class="auth-card">
+    <!-- ================================
+         LANGUAGE SELECTOR
+    ================================= -->
 
-            <div class="auth-header">
-                <h2>Create your account</h2>
-                <p>It only takes a minute to get started.</p>
-            </div>
+    <div class="auth-language">
 
-            <form id="signupForm">
+        <select
+            id="languageSelector"
+            aria-label="Select Language"
+        >
 
-                <div class="form-group">
-                    <label for="name">Full name</label>
+            <option value="en">English</option>
 
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="Your full name"
-                        required
-                    >
-                </div>
+            <option value="hi">हिन्दी</option>
 
-                <div class="form-group">
-                    <label for="signupEmail">Email address</label>
-
-                    <input
-                        type="email"
-                        id="signupEmail"
-                        placeholder="you@example.com"
-                        required
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label for="signupPassword">Password</label>
-
-                    <input
-                        type="password"
-                        id="signupPassword"
-                        placeholder="Create a password"
-                        required
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label for="confirmPassword">Confirm password</label>
-
-                    <input
-                        type="password"
-                        id="confirmPassword"
-                        placeholder="Confirm your password"
-                        required
-                    >
-                </div>
-
-                <button type="submit" class="auth-btn">
-                    Create Account
-                    <span>→</span>
-                </button>
-
-            </form>
-
-
-            <div class="divider">
-                <span>or</span>
-            </div>
-
-
-            <p class="switch-auth">
-                Already have an account?
-                <a href="login.html">Login</a>
-            </p>
-
-        </div>
+        </select>
 
     </div>
 
-    <script src="js/auth.js"></script>
+
+
+    <!-- ================================
+         LEFT BRAND SECTION
+    ================================= -->
+
+    <div class="auth-brand">
+
+        <a href="index.html" class="logo">
+
+            🌱 GramBiz <strong>AI</strong>
+
+        </a>
+
+
+        <h1 data-i18n="startJourney">
+            Start your journey.
+        </h1>
+
+
+        <p data-i18n="signupWelcomeText">
+
+            Create your GramBiz AI account and get personalized
+            guidance for your business.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- ================================
+         SIGNUP CARD
+    ================================= -->
+
+    <div class="auth-card">
+
+
+        <div class="auth-header">
+
+            <h2 data-i18n="createAccountTitle">
+                Create your account
+            </h2>
+
+            <p data-i18n="signupSubtitle">
+                It only takes a minute to get started.
+            </p>
+
+        </div>
+
+
+
+        <!-- ================================
+             SIGNUP FORM
+        ================================= -->
+
+        <form id="signupForm">
+
+
+            <!-- FULL NAME -->
+
+            <div class="form-group">
+
+                <label
+                    for="name"
+                    data-i18n="fullName"
+                >
+                    Full name
+                </label>
+
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your full name"
+                    data-i18n-placeholder="fullNamePlaceholder"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+
+                <label
+                    for="signupEmail"
+                    data-i18n="emailAddress"
+                >
+                    Email address
+                </label>
+
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="you@example.com"
+                    data-i18n-placeholder="emailPlaceholder"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- PASSWORD -->
+
+            <div class="form-group">
+
+                <label
+                    for="signupPassword"
+                    data-i18n="password"
+                >
+                    Password
+                </label>
+
+
+                <input
+                    type="password"
+                    id="signupPassword"
+                    placeholder="Create a password"
+                    data-i18n-placeholder="createPasswordPlaceholder"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- CONFIRM PASSWORD -->
+
+            <div class="form-group">
+
+                <label
+                    for="confirmPassword"
+                    data-i18n="confirmPassword"
+                >
+                    Confirm password
+                </label>
+
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm your password"
+                    data-i18n-placeholder="confirmPasswordPlaceholder"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- CREATE ACCOUNT BUTTON -->
+
+            <button
+                type="submit"
+                class="auth-btn"
+            >
+
+                <span data-i18n="createAccount">
+                    Create Account
+                </span>
+
+                <span>→</span>
+
+            </button>
+
+
+        </form>
+
+
+
+        <!-- ================================
+             DIVIDER
+        ================================= -->
+
+        <div class="divider">
+
+            <span data-i18n="or">
+                or
+            </span>
+
+        </div>
+
+
+
+        <!-- ================================
+             LOGIN LINK
+        ================================= -->
+
+        <p class="switch-auth">
+
+            <span data-i18n="alreadyHaveAccount">
+                Already have an account?
+            </span>
+
+            <a
+                href="login.html"
+                data-i18n="login"
+            >
+                Login
+            </a>
+
+        </p>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- ================================
+     JAVASCRIPT
+================================ -->
+
+<script src="js/auth.js"></script>
+
+<script src="js/language.js"></script>
+
 
 </body>
+
 </html>

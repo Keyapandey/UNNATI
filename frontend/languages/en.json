@@ -1,0 +1,146 @@
+{
+    "features": "Features",
+    "about": "About",
+    "login": "Login",
+
+    "badge": "✨ AI-powered business guidance",
+
+    "heroTitle1": "Turn your local idea into a",
+    "heroTitle2": "growing business.",
+
+    "heroDescription": "GramBiz AI helps rural micro-entrepreneurs make smarter business decisions with personalized financial guidance, local market insights, and simple AI-powered advice.",
+
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+
+    "trustText": "🌾 Built for local businesses • 💡 Simple guidance • 📊 Smarter decisions",
+
+    "businessOverview": "BUSINESS OVERVIEW",
+    "yourBusiness": "Your Business",
+    "growing": "● Growing",
+
+    "estimatedRevenue": "Estimated Monthly Revenue",
+    "thisMonth": "↗ 12.8% this month",
+
+    "profit": "Profit",
+    "expenses": "Expenses",
+
+    "aiInsight": "AI Insight",
+    "aiInsightText": "Your product demand is increasing. Consider increasing stock this week.",
+
+    "whatWeDo": "WHAT GRAMBIZ AI DOES",
+    "everythingYouNeed": "Everything you need to",
+    "growSmarter": "grow smarter.",
+    "toolsDescription": "Simple tools designed for real-world local businesses.",
+
+    "aiAdvisor": "AI Business Advisor",
+    "aiAdvisorDescription": "Get practical recommendations based on your business, goals, and local conditions.",
+
+    "financialPlanning": "Financial Planning",
+    "financialPlanningDescription": "Understand revenue, expenses, profit, pricing, and financial health.",
+
+    "localInsights": "Local Insights",
+    "localInsightsDescription": "Make decisions using information relevant to your local market.",
+
+    "businessGrowth": "Business Growth",
+    "businessGrowthDescription": "Discover opportunities and actionable steps to improve your business.",
+
+    "ourMission": "OUR MISSION",
+    "betterDecisions": "Better decisions.",
+    "betterBusinesses": "Better businesses.",
+
+    "missionDescription": "GramBiz AI is designed to make business and financial guidance accessible to micro-entrepreneurs who may not have access to professional business advisors.",
+
+    "dashboard": "Dashboard",
+    "marketReach": "Market Reach",
+    "opportunities": "Opportunities",
+    "competitors": "Competitors",
+    "pricing": "Pricing",
+    "financials": "Financials",
+    "risk": "Risk",
+    "businessPlan": "Business Plan",
+
+    "goodDay": "Good day 👋",
+    "yourBusinessDashboard": "Your Business Dashboard",
+    "newAnalysis": "+ New Analysis",
+
+    "business": "BUSINESS",
+    "availableCapital": "AVAILABLE CAPITAL",
+
+    "aiInsight": "AI INSIGHT",
+    "promisingPotential": "Your business has promising potential.",
+    "potentialDescription": "Based on your location, business category and available capital, we've identified several areas where you can grow.",
+
+    "financialOverview": "Financial Overview",
+    "monthlyPerformance": "Estimated monthly business performance",
+
+    "monthlyRevenue": "EST. MONTHLY REVENUE",
+    "localEstimates": "Based on local estimates",
+
+    "monthlyProfit": "EST. MONTHLY PROFIT",
+    "profitMargin": "Approx. 39.5% margin",
+
+    "monthlyExpenses": "MONTHLY EXPENSES",
+    "operatingCosts": "Estimated operating costs",
+
+    "businessAnalysis": "Business Analysis",
+    "businessAnalysisDescription": "Explore insights generated for your business",
+
+    "marketReachDescription": "Understand your local customer market.",
+
+    "opportunitiesDescription": "Discover potential growth opportunities.",
+
+    "competitorsDescription": "Explore your local competition.",
+
+    "pricingDescription": "Find practical pricing recommendations.",
+
+    "swotAnalysis": "SWOT Analysis",
+    "swotDescription": "Understand your business strengths and risks.",
+
+    "riskAnalysis": "Risk Analysis",
+    "riskDescription": "Identify and prepare for business risks.",
+
+    "financialTools": "Financial Tools",
+    "financialToolsDescription": "Plan and manage your business finances",
+
+    "financialPlanner": "Financial Planner",
+    "financialPlannerDescription": "Plan investments, costs and expected returns.",
+
+    "repaymentPlanner": "Repayment Planner",
+    "repaymentPlannerDescription": "Estimate loan repayment and cash flow.",
+
+    "businessPlanDescription": "Generate a structured business plan.",
+    "footer": "© 2026 GramBiz AI. Building smarter local businesses.",
+
+    "startJourney": "Start your journey.",
+
+"signupWelcomeText": "Create your GramBiz AI account and get personalized guidance for your business.",
+
+"createAccountTitle": "Create your account",
+
+"signupSubtitle": "It only takes a minute to get started.",
+
+"fullName": "Full name",
+
+"fullNamePlaceholder": "Your full name",
+
+"emailAddress": "Email address",
+
+"emailPlaceholder": "you@example.com",
+
+"password": "Password",
+
+"createPasswordPlaceholder": "Create a password",
+
+"confirmPassword": "Confirm password",
+
+"confirmPasswordPlaceholder": "Confirm your password",
+
+"createAccount": "Create Account",
+
+"or": "or",
+
+"alreadyHaveAccount": "Already have an account?",
+
+"login": "Login"
+}

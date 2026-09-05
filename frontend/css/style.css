@@ -145,7 +145,7 @@ body {
     margin-bottom: 25px;
 }
 
-.hero h1 span {
+.hero h1 span:last-child {
     color: #31813a;
 }
 
@@ -604,4 +604,42 @@ footer p {
         gap: 15px;
         text-align: center;
     }
+}
+
+/* ================================
+   LANGUAGE SELECTOR
+================================ */
+
+#languageSelector {
+    border: 1px solid #d3dbd0;
+    background: white;
+
+    color: #344338;
+
+    padding: 9px 12px;
+    border-radius: 8px;
+
+    font-size: 14px;
+    cursor: pointer;
+
+    outline: none;
+}
+
+#languageSelector:hover {
+    border-color: #31813a;
+}
+
+#languageSelector:focus {
+    border-color: #31813a;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    #languageSelector {
+        padding: 7px 8px;
+        font-size: 12px;
+    }
+
 }

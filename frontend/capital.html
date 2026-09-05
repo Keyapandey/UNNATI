@@ -18,7 +18,7 @@
             🌱 GramBiz <strong>AI</strong>
         </a>
 
-        <div class="step-text">
+        <div class="step-text" data-i18n="step3of3">
             Step 3 of 3
         </div>
 
@@ -33,21 +33,21 @@
 
             <div class="progress-step completed">
                 <span>✓</span>
-                Location
+                <span data-i18n="location">Location</span>
             </div>
 
             <div class="progress-line completed-line"></div>
 
             <div class="progress-step completed">
                 <span>✓</span>
-                Business
+                <span data-i18n="business">Business</span>
             </div>
 
             <div class="progress-line completed-line"></div>
 
             <div class="progress-step active">
                 <span>3</span>
-                Capital
+                <span data-i18n="capital">Capital</span>
             </div>
 
         </div>
@@ -59,15 +59,21 @@
 
             <div class="setup-title">
 
-                <button class="back-button" id="capitalBackBtn">
+                <button
+                    type="button"
+                    class="back-button"
+                    id="capitalBackBtn"
+                >
                     ←
                 </button>
 
                 <div>
 
-                    <h1>How much can you invest?</h1>
+                    <h1 data-i18n="capitalTitle">
+                        How much can you invest?
+                    </h1>
 
-                    <p>
+                    <p data-i18n="capitalDescription">
                         Tell us your available starting capital.
                         We'll use this to build a realistic plan.
                     </p>
@@ -87,6 +93,7 @@
                         type="number"
                         id="capital"
                         placeholder="50,000"
+                        data-i18n-placeholder="capitalPlaceholder"
                         min="1"
                         required
                     >
@@ -94,7 +101,10 @@
                 </div>
 
 
-                <p class="input-help">
+                <p
+                    class="input-help"
+                    data-i18n="capitalHelp"
+                >
                     Enter the amount you can realistically invest
                     in starting or expanding your business.
                 </p>
@@ -102,19 +112,31 @@
 
                 <div class="capital-options">
 
-                    <button type="button" data-amount="25000">
+                    <button
+                        type="button"
+                        data-amount="25000"
+                    >
                         ₹25,000
                     </button>
 
-                    <button type="button" data-amount="50000">
+                    <button
+                        type="button"
+                        data-amount="50000"
+                    >
                         ₹50,000
                     </button>
 
-                    <button type="button" data-amount="100000">
+                    <button
+                        type="button"
+                        data-amount="100000"
+                    >
                         ₹1,00,000
                     </button>
 
-                    <button type="button" data-amount="250000">
+                    <button
+                        type="button"
+                        data-amount="250000"
+                    >
                         ₹2,50,000
                     </button>
 
@@ -123,13 +145,14 @@
 
                 <div class="form-footer">
 
-                    <span>
+                    <span data-i18n="capitalUpdateLater">
                         You can update this later.
                     </span>
 
                     <button
                         type="submit"
                         class="continue-btn"
+                        data-i18n="review"
                     >
                         Review →
                     </button>
@@ -141,7 +164,10 @@
         </section>
 
 
-        <p class="privacy-note">
+        <p
+            class="privacy-note"
+            data-i18n="privacyNote"
+        >
             🔒 Your information is used only to personalize your business analysis.
         </p>
 
@@ -149,6 +175,7 @@
 
 
     <script src="js/capital.js"></script>
+    <script src="js/language.js"></script>
 
 </body>
 

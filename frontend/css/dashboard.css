@@ -707,3 +707,60 @@ body {
 
 }
 
+/* ================================
+   DASHBOARD ACTIONS
+================================ */
+
+.dashboard-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* ================================
+   LANGUAGE SELECTOR
+================================ */
+
+#languageSelector {
+    padding: 10px 12px;
+
+    border: 1px solid #dce5da;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #344338;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    outline: none;
+}
+
+
+#languageSelector:hover {
+    border-color: #31813a;
+}
+
+
+#languageSelector:focus {
+    border-color: #31813a;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .dashboard-actions {
+        flex-wrap: wrap;
+    }
+
+    #languageSelector {
+        padding: 9px 10px;
+    }
+
+}

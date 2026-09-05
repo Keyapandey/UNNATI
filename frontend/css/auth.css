@@ -33,6 +33,8 @@ body {
     gap: 60px;
 
     padding: 50px 9%;
+
+    position: relative;
 }
 
 
@@ -364,4 +366,33 @@ body {
     .auth-brand > p {
         font-size: 14px;
     }
+}
+
+/* ================================
+   LANGUAGE SELECTOR
+================================ */
+
+.auth-language {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+}
+
+#languageSelector {
+    padding: 9px 12px;
+    border: 1px solid #dce5da;
+    border-radius: 8px;
+    background: white;
+    color: #344338;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+}
+
+#languageSelector:hover {
+    border-color: #31813a;
+}
+
+#languageSelector:focus {
+    border-color: #31813a;
 }

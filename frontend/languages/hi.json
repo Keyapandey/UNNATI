@@ -1,0 +1,254 @@
+{
+    "features": "विशेषताएँ",
+    "about": "हमारे बारे में",
+    "login": "लॉगिन",
+
+    "badge": "✨ AI-संचालित व्यवसाय मार्गदर्शन",
+
+    "heroTitle1": "अपने स्थानीय विचार को एक",
+    "heroTitle2": "बढ़ते हुए व्यवसाय में बदलें।",
+
+    "heroDescription": "GramBiz AI ग्रामीण सूक्ष्म उद्यमियों को व्यक्तिगत वित्तीय मार्गदर्शन, स्थानीय बाजार की जानकारी और सरल AI-संचालित सलाह के साथ बेहतर व्यावसायिक निर्णय लेने में मदद करता है।",
+
+    "getStarted": "शुरू करें",
+    "learnMore": "और जानें",
+
+    "trustText": "🌾 स्थानीय व्यवसायों के लिए • 💡 सरल मार्गदर्शन • 📊 बेहतर निर्णय",
+
+    "businessOverview": "व्यवसाय का अवलोकन",
+    "yourBusiness": "आपका व्यवसाय",
+    "growing": "● बढ़ रहा है",
+
+    "estimatedRevenue": "अनुमानित मासिक आय",
+    "thisMonth": "↗ इस महीने 12.8%",
+
+    "profit": "लाभ",
+    "expenses": "खर्च",
+
+    "aiInsight": "AI जानकारी",
+    "aiInsightText": "आपके उत्पाद की मांग बढ़ रही है। इस सप्ताह स्टॉक बढ़ाने पर विचार करें।",
+
+    "whatWeDo": "GRAMBIZ AI क्या करता है",
+    "everythingYouNeed": "स्मार्ट तरीके से बढ़ने के लिए",
+    "growSmarter": "आपको जो चाहिए।",
+    "toolsDescription": "वास्तविक स्थानीय व्यवसायों के लिए बनाए गए सरल उपकरण।",
+
+    "aiAdvisor": "AI व्यवसाय सलाहकार",
+    "aiAdvisorDescription": "अपने व्यवसाय, लक्ष्यों और स्थानीय परिस्थितियों के आधार पर व्यावहारिक सुझाव प्राप्त करें।",
+
+    "financialPlanning": "वित्तीय योजना",
+    "financialPlanningDescription": "आय, खर्च, लाभ, मूल्य निर्धारण और वित्तीय स्थिति को समझें।",
+
+    "localInsights": "स्थानीय जानकारी",
+    "localInsightsDescription": "अपने स्थानीय बाजार से संबंधित जानकारी का उपयोग करके बेहतर निर्णय लें।",
+
+    "businessGrowth": "व्यवसाय विकास",
+    "businessGrowthDescription": "अपने व्यवसाय को बेहतर बनाने के अवसर और उपयोगी कदम खोजें।",
+
+    "ourMission": "हमारा उद्देश्य",
+    "betterDecisions": "बेहतर निर्णय।",
+    "betterBusinesses": "बेहतर व्यवसाय।",
+
+    "missionDescription": "GramBiz AI को इस तरह बनाया गया है कि उन सूक्ष्म उद्यमियों तक व्यवसाय और वित्तीय मार्गदर्शन आसानी से पहुँच सके, जिन्हें पेशेवर व्यवसाय सलाहकारों की सुविधा उपलब्ध नहीं है।",
+
+    "dashboard": "डैशबोर्ड",
+    "marketReach": "बाज़ार पहुंच",
+    "opportunities": "अवसर",
+    "competitors": "प्रतियोगी",
+    "pricing": "मूल्य निर्धारण",
+    "financials": "वित्तीय जानकारी",
+    "risk": "जोखिम",
+    "businessPlan": "व्यवसाय योजना",
+
+    "goodDay": "नमस्कार 👋",
+    "yourBusinessDashboard": "आपका व्यवसाय डैशबोर्ड",
+    "newAnalysis": "+ नया विश्लेषण",
+
+    "business": "व्यवसाय",
+    "availableCapital": "उपलब्ध पूंजी",
+
+    "aiInsight": "AI जानकारी",
+    "promisingPotential": "आपके व्यवसाय में अच्छी संभावनाएँ हैं।",
+    "potentialDescription": "आपके स्थान, व्यवसाय की श्रेणी और उपलब्ध पूंजी के आधार पर हमने कई ऐसे क्षेत्र पहचाने हैं जहाँ आपका व्यवसाय बढ़ सकता है।",
+
+    "financialOverview": "वित्तीय अवलोकन",
+    "monthlyPerformance": "अनुमानित मासिक व्यवसाय प्रदर्शन",
+
+    "monthlyRevenue": "अनुमानित मासिक आय",
+    "localEstimates": "स्थानीय अनुमानों के आधार पर",
+
+    "monthlyProfit": "अनुमानित मासिक लाभ",
+    "profitMargin": "लगभग 39.5% मार्जिन",
+
+    "monthlyExpenses": "मासिक खर्च",
+    "operatingCosts": "अनुमानित संचालन लागत",
+
+    "businessAnalysis": "व्यवसाय विश्लेषण",
+    "businessAnalysisDescription": "अपने व्यवसाय के लिए तैयार की गई जानकारी देखें",
+
+    "marketReachDescription": "अपने स्थानीय ग्राहक बाजार को समझें।",
+
+    "opportunitiesDescription": "व्यवसाय के विकास के संभावित अवसर खोजें।",
+
+    "competitorsDescription": "अपने स्थानीय प्रतिस्पर्धियों के बारे में जानें।",
+
+    "pricingDescription": "व्यावहारिक मूल्य निर्धारण सुझाव प्राप्त करें।",
+
+    "swotAnalysis": "SWOT विश्लेषण",
+    "swotDescription": "अपने व्यवसाय की ताकत और जोखिम को समझें।",
+
+    "riskAnalysis": "जोखिम विश्लेषण",
+    "riskDescription": "व्यावसायिक जोखिमों की पहचान करें और उनके लिए तैयार रहें।",
+
+    "financialTools": "वित्तीय उपकरण",
+    "financialToolsDescription": "अपने व्यवसाय की वित्तीय योजना बनाएं और उसे प्रबंधित करें",
+
+    "financialPlanner": "वित्तीय योजनाकार",
+    "financialPlannerDescription": "निवेश, लागत और अपेक्षित रिटर्न की योजना बनाएं।",
+
+    "repaymentPlanner": "ऋण चुकौती योजनाकार",
+    "repaymentPlannerDescription": "ऋण की किस्त और नकदी प्रवाह का अनुमान लगाएं।",
+
+    "businessPlanDescription": "एक व्यवस्थित व्यवसाय योजना तैयार करें।",
+    "footer": "© 2026 GramBiz AI. बेहतर स्थानीय व्यवसायों का निर्माण।",
+
+    "welcomeBack": "वापसी पर स्वागत है।",
+
+"loginWelcomeText": "अपने व्यवसाय को आगे बढ़ाने और विकसित करने के लिए लॉगिन करें।",
+
+"loginTitle": "GramBiz AI में लॉगिन करें",
+
+"loginSubtitle": "जारी रखने के लिए अपना विवरण दर्ज करें।",
+
+"emailAddress": "ईमेल पता",
+
+"emailPlaceholder": "you@example.com",
+
+"password": "पासवर्ड",
+
+"passwordPlaceholder": "अपना पासवर्ड दर्ज करें",
+
+"rememberMe": "मुझे याद रखें",
+
+"forgotPassword": "पासवर्ड भूल गए?",
+
+"login": "लॉगिन",
+
+"or": "या",
+
+"noAccount": "क्या आपका खाता नहीं है?",
+
+"createAccount": "खाता बनाएं",
+
+"startJourney": "अपनी यात्रा शुरू करें।",
+
+"signupWelcomeText": "अपना GramBiz AI खाता बनाएं और अपने व्यवसाय के लिए व्यक्तिगत मार्गदर्शन प्राप्त करें।",
+
+"createAccountTitle": "अपना खाता बनाएं",
+
+"signupSubtitle": "शुरू करने में केवल एक मिनट लगेगा।",
+
+"fullName": "पूरा नाम",
+
+"fullNamePlaceholder": "अपना पूरा नाम दर्ज करें",
+
+"emailAddress": "ईमेल पता",
+
+"emailPlaceholder": "you@example.com",
+
+"password": "पासवर्ड",
+
+"createPasswordPlaceholder": "एक पासवर्ड बनाएं",
+
+"confirmPassword": "पासवर्ड की पुष्टि करें",
+
+"confirmPasswordPlaceholder": "अपना पासवर्ड फिर से दर्ज करें",
+
+"createAccount": "खाता बनाएं",
+
+"or": "या",
+
+"alreadyHaveAccount": "क्या आपका पहले से खाता है?",
+
+"login": "लॉगिन",
+
+"step1of3": "चरण 1 / 3",
+"location": "स्थान",
+"business": "व्यवसाय",
+"capital": "पूंजी",
+
+"locationTitle": "आपका व्यवसाय कहाँ स्थित है?",
+"locationDescription": "आपका स्थान हमें आपके स्थानीय बाजार और अवसरों को समझने में मदद करता है।",
+
+"useCurrentLocation": "📍 मेरा वर्तमान स्थान उपयोग करें",
+
+"or": "या",
+
+"villageTown": "गाँव / शहर",
+"villagePlaceholder": "गाँव या शहर दर्ज करें",
+
+"block": "ब्लॉक",
+"blockPlaceholder": "ब्लॉक दर्ज करें",
+
+"district": "जिला",
+"districtPlaceholder": "जिला दर्ज करें",
+
+"changeLater": "आप इसे बाद में बदल सकते हैं।",
+"continue": "जारी रखें →",
+
+"privacyNote": "🔒 आपकी जानकारी का उपयोग केवल आपके व्यवसाय विश्लेषण को व्यक्तिगत बनाने के लिए किया जाता है।",
+
+"step2of3": "चरण 2 / 3",
+
+"businessTitle": "आप किस व्यवसाय की योजना बना रहे हैं?",
+"businessDescription": "वह श्रेणी चुनें जो आपके व्यवसाय के विचार का सबसे अच्छा वर्णन करती है।",
+
+"dairy": "डेयरी",
+"dairyDescription": "दूध और डेयरी उत्पाद",
+
+"retail": "खुदरा",
+"retailDescription": "स्थानीय दुकान और व्यापार",
+
+"textiles": "कपड़ा",
+"textilesDescription": "कपड़े और सिलाई",
+
+"agriculture": "कृषि",
+"agricultureDescription": "खेती और कृषि उत्पाद",
+
+"food": "खाद्य",
+"foodDescription": "खाद्य और प्रसंस्करण",
+
+"poultry": "पोल्ट्री",
+"poultryDescription": "पक्षी और अंडे",
+
+"services": "सेवाएँ",
+"servicesDescription": "स्थानीय सेवाएँ",
+
+"other": "अन्य",
+"otherDescription": "कुछ और",
+
+"otherBusinessLabel": "अपने व्यवसाय का प्रकार दर्ज करें",
+"otherBusinessPlaceholder": "जैसे: हस्तशिल्प, मोबाइल रिपेयर, ब्यूटी पार्लर",
+
+"changeLater": "आप इसे बाद में बदल सकते हैं।",
+
+"continue": "जारी रखें →",
+
+"privacyNote": "🔒 आपकी जानकारी का उपयोग केवल आपके व्यवसाय विश्लेषण को व्यक्तिगत बनाने के लिए किया जाता है।",
+
+"step3of3": "चरण 3 / 3",
+
+"capitalTitle": "आप कितना निवेश कर सकते हैं?",
+"capitalDescription": "अपनी उपलब्ध शुरुआती पूंजी बताएं। हम इसका उपयोग एक वास्तविक योजना बनाने के लिए करेंगे।",
+
+"capitalPlaceholder": "50,000",
+
+"capitalHelp": "वह राशि दर्ज करें जिसे आप अपना व्यवसाय शुरू करने या बढ़ाने में वास्तविक रूप से निवेश कर सकते हैं।",
+
+"capitalUpdateLater": "आप इसे बाद में अपडेट कर सकते हैं।",
+
+"review": "समीक्षा करें →",
+
+"privacyNote": "🔒 आपकी जानकारी का उपयोग केवल आपके व्यवसाय विश्लेषण को व्यक्तिगत बनाने के लिए किया जाता है।"
+    
+}

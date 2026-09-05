@@ -18,7 +18,7 @@
         🌱 GramBiz <strong>AI</strong>
     </a>
 
-    <div class="step-text">
+    <div class="step-text" data-i18n="step1of3">
         Step 1 of 3
     </div>
 
@@ -31,21 +31,21 @@
 
         <div class="progress-step active">
             <span>1</span>
-            Location
+            <span data-i18n="location">Location</span>
         </div>
 
         <div class="progress-line"></div>
 
         <div class="progress-step">
             <span>2</span>
-            Business
+            <span data-i18n="business">Business</span>
         </div>
 
         <div class="progress-line"></div>
 
         <div class="progress-step">
             <span>3</span>
-            Capital
+            <span data-i18n="capital">Capital</span>
         </div>
 
     </div>
@@ -57,9 +57,9 @@
 
             <div>
 
-                <h1>Where is your business located?</h1>
+                <h1 data-i18n="locationTitle">Where is your business located?</h1>
 
-                <p>
+                <p data-i18n="locationDescription">
                     Your location helps us understand
                     your local market and opportunities.
                 </p>
@@ -73,13 +73,14 @@
             type="button"
             class="location-button"
             id="useLocationBtn"
+            data-i18n="useCurrentLocation"
         >
             📍 Use my current location
         </button>
 
 
         <div class="or-divider">
-            <span>OR</span>
+            <span data-i18n="or">OR</span>
         </div>
 
 
@@ -87,7 +88,7 @@
 
             <div class="form-group">
 
-                <label for="village">
+                <label for="village" data-i18n="villageTown">
                     Village / Town
                 </label>
 
@@ -95,6 +96,7 @@
                     type="text"
                     id="village"
                     placeholder="Enter village or town"
+                    data-i18n-placeholder="villagePlaceholder"
                     required
                 >
 
@@ -103,7 +105,7 @@
 
             <div class="form-group">
 
-                <label for="block">
+                <label for="block" data-i18n="block">
                     Block
                 </label>
 
@@ -111,6 +113,7 @@
                     type="text"
                     id="block"
                     placeholder="Enter block"
+                    data-i18n-placeholder="blockPlaceholder"
                     required
                 >
 
@@ -119,7 +122,7 @@
 
             <div class="form-group">
 
-                <label for="district">
+                <label for="district" data-i18n="district">
                     District
                 </label>
 
@@ -127,6 +130,7 @@
                     type="text"
                     id="district"
                     placeholder="Enter district"
+                    data-i18n-placeholder="districtPlaceholder"
                     required
                 >
 
@@ -135,13 +139,14 @@
 
             <div class="form-footer">
 
-                <span>
+                <span data-i18n="changeLater">
                     You can change this later.
                 </span>
 
                 <button
                     type="submit"
                     class="continue-btn"
+                    data-i18n="continue"
                 >
                     Continue →
                 </button>
@@ -153,7 +158,7 @@
     </section>
 
 
-    <p class="privacy-note">
+    <p class="privacy-note" data-i18n="privacyNote">
         🔒 Your information is used only to personalize your business analysis.
     </p>
 
@@ -161,6 +166,7 @@
 
 
 <script src="js/setup.js"></script>
+<script src="js/language.js"></script>
 
 </body>
 

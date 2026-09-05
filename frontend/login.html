@@ -18,26 +18,43 @@
                 🌱 GramBiz <strong>AI</strong>
             </a>
 
-            <h1>Welcome back.</h1>
+            <h1 data-i18n="welcomeBack">Welcome back.</h1>
 
-            <p>
+            <p data-i18n="loginWelcomeText">
                 Login to continue building and growing your business
                 with GramBiz AI.
             </p>
         </div>
 
 
+        <div class="auth-language">
+
+    <select
+        id="languageSelector"
+        aria-label="Select Language"
+    >
+
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+
+    </select>
+
+</div>
+
         <div class="auth-card">
 
-            <div class="auth-header">
-                <h2>Login to GramBiz AI</h2>
-                <p>Enter your details to continue.</p>
-            </div>
+            <h2 data-i18n="loginTitle">
+                Login to GramBiz AI
+            </h2>
+
+            <p data-i18n="loginSubtitle">
+                Enter your details to continue.
+            </p>
 
             <form id="loginForm">
 
                 <div class="form-group">
-                    <label for="email">Email address</label>
+                    <label for="email" data-i18n="emailAddress">Email address</label>
 
                     <input
                         type="email"
@@ -48,7 +65,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="password">Password</label>
+                    <label for="password" data-i18n="password">Password</label>
 
                     <input
                         type="password"
@@ -61,14 +78,14 @@
                 <div class="form-options">
                     <label class="remember">
                         <input type="checkbox">
-                        Remember me
+                        <span data-i18n="rememberMe">Remember me</span>
                     </label>
 
-                    <a href="#">Forgot password?</a>
+                    <a href="#" data-i18n="forgotPassword">Forgot password?</a>
                 </div>
 
                 <button type="submit" class="auth-btn">
-                    Login
+                    <span data-i18n="login">Login</span>
                     <span>→</span>
                 </button>
 
@@ -76,13 +93,13 @@
 
 
             <div class="divider">
-                <span>or</span>
+                <span data-i18n="or">or</span>
             </div>
 
 
             <p class="switch-auth">
-                Don't have an account?
-                <a href="signup.html">Create an account</a>
+                <span data-i18n="noAccount">Don't have an account?</span>
+                <a href="signup.html" data-i18n="createAccount">Create an account</a>
             </p>
 
         </div>
@@ -90,6 +107,6 @@
     </div>
 
     <script src="js/auth.js"></script>
-
+    <script src="js/language.js"></script>
 </body>
 </html>

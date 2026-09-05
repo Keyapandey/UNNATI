@@ -18,11 +18,23 @@
             <span>GramBiz <strong>AI</strong></span>
         </div>
 
-        <nav>
-            <a href="#features">Features</a>
-            <a href="#about">About</a>
-            <button class="nav-btn" id="loginBtn">Login</button>
-        </nav>
+       <nav>
+
+    <a href="#features" data-i18n="features">Features</a>
+
+    <a href="#about" data-i18n="about">About</a>
+
+    <!-- Language Selector -->
+    <select id="languageSelector" aria-label="Select Language">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+    </select>
+
+    <button class="nav-btn" id="loginBtn" data-i18n="login">
+        Login
+    </button>
+
+</nav>
     </header>
 
 
@@ -31,16 +43,16 @@
 
         <div class="hero-content">
 
-            <div class="badge">
+            <div class="badge" data-i18n="badge">
                 ✨ AI-powered business guidance
             </div>
 
             <h1>
-                Turn your local idea into a
-                <span>growing business.</span>
+                <span data-i18n="heroTitle1">Turn your local idea into a </span>
+                <span data-i18n="heroTitle2">growing business.</span>
             </h1>
 
-            <p>
+            <p data-i18n="heroDescription">
                 GramBiz AI helps rural micro-entrepreneurs make smarter
                 business decisions with personalized financial guidance,
                 local market insights, and simple AI-powered advice.
@@ -48,16 +60,16 @@
 
             <div class="hero-buttons">
                 <button class="primary-btn" id="getStartedBtn">
-                    Get Started
+                    <span data-i18n="getStarted">Get Started</span>
                     <span>→</span>
                 </button>
 
-                <button class="secondary-btn" id="learnMoreBtn">
+                <button class="secondary-btn" id="learnMoreBtn" data-i18n="learnMore">
                     Learn More
                 </button>
             </div>
 
-            <div class="trust-text">
+            <div class="trust-text" data-i18n="trustText">
                 🌾 Built for local businesses • 💡 Simple guidance • 📊 Smarter decisions
             </div>
 
@@ -71,30 +83,30 @@
 
                 <div class="card-header">
                     <div>
-                        <small>BUSINESS OVERVIEW</small>
-                        <h3>Your Business</h3>
+                        <small data-i18n="businessOverview">BUSINESS OVERVIEW</small>
+                        <h3 data-i18n="yourBusiness">Your Business</h3>
                     </div>
 
-                    <div class="status">
+                    <div class="status" data-i18n="growing">
                         ● Growing
                     </div>
                 </div>
 
                 <div class="revenue">
-                    <small>Estimated Monthly Revenue</small>
+                    <small data-i18n="estimatedRevenue">Estimated Monthly Revenue</small>
                     <h2>₹42,500</h2>
-                    <span>↗ 12.8% this month</span>
+                    <span data-i18n="thisMonth">↗ 12.8% this month</span>
                 </div>
 
                 <div class="mini-stats">
 
                     <div>
-                        <small>Profit</small>
+                        <small data-i18n="profit">Profit</small>
                         <strong>₹16,800</strong>
                     </div>
 
                     <div>
-                        <small>Expenses</small>
+                        <small data-i18n="expenses">Expenses</small>
                         <strong>₹25,700</strong>
                     </div>
 
@@ -104,8 +116,8 @@
                     <div class="insight-icon">💡</div>
 
                     <div>
-                        <strong>AI Insight</strong>
-                        <p>
+                        <strong data-i18n="aiInsight">AI Insight</strong>
+                        <p data-i18n="aiInsightText">
                             Your product demand is increasing.
                             Consider increasing stock this week.
                         </p>
@@ -123,14 +135,14 @@
     <section class="features" id="features">
 
         <div class="section-heading">
-            <span>WHAT GRAMBIZ AI DOES</span>
+            <span data-i18n="whatWeDo">WHAT GRAMBIZ AI DOES</span>
 
             <h2>
-                Everything you need to
-                <strong>grow smarter.</strong>
+                <span data-i18n="everythingYouNeed">Everything you need to</span>
+                <strong data-i18n="growSmarter">grow smarter.</strong>
             </h2>
 
-            <p>
+            <p data-i18n="toolsDescription">
                 Simple tools designed for real-world local businesses.
             </p>
         </div>
@@ -139,8 +151,8 @@
 
             <div class="feature-card">
                 <div class="feature-icon">🤖</div>
-                <h3>AI Business Advisor</h3>
-                <p>
+                <h3 data-i18n="aiAdvisor">AI Business Advisor</h3>
+                <p data-i18n="aiAdvisorDescription">
                     Get practical recommendations based on your
                     business, goals, and local conditions.
                 </p>
@@ -148,8 +160,8 @@
 
             <div class="feature-card">
                 <div class="feature-icon">💰</div>
-                <h3>Financial Planning</h3>
-                <p>
+                <h3 data-i18n="financialPlanning">Financial Planning</h3>
+                <p data-i18n="financialPlanningDescription">
                     Understand revenue, expenses, profit,
                     pricing, and financial health.
                 </p>
@@ -157,8 +169,8 @@
 
             <div class="feature-card">
                 <div class="feature-icon">📍</div>
-                <h3>Local Insights</h3>
-                <p>
+                <h3 data-i18n="localInsights">Local Insights</h3>
+                <p data-i18n="localInsightsDescription">
                     Make decisions using information relevant
                     to your local market.
                 </p>
@@ -166,8 +178,8 @@
 
             <div class="feature-card">
                 <div class="feature-icon">📈</div>
-                <h3>Business Growth</h3>
-                <p>
+                <h3 data-i18n="businessGrowth">Business Growth</h3>
+                <p data-i18n="businessGrowthDescription">
                     Discover opportunities and actionable
                     steps to improve your business.
                 </p>
@@ -182,16 +194,16 @@
     <section class="about" id="about">
 
         <div>
-            <span>OUR MISSION</span>
+            <span data-i18n="ourMission">OUR MISSION</span>
 
             <h2>
-                Better decisions.
+                <span data-i18n="betterDecisions">Better decisions.</span>
                 <br>
-                Better businesses.
+                <span data-i18n="betterBusinesses">Better businesses.</span>
             </h2>
         </div>
 
-        <p>
+        <p data-i18n="missionDescription">
             GramBiz AI is designed to make business and financial
             guidance accessible to micro-entrepreneurs who may not
             have access to professional business advisors.
@@ -207,11 +219,12 @@
             <span>GramBiz <strong>AI</strong></span>
         </div>
 
-        <p>© 2026 GramBiz AI. Building smarter local businesses.</p>
+        <p data-i18n="footer">© 2026 GramBiz AI. Building smarter local businesses.</p>
     </footer>
 
 
     <script src="js/script.js"></script>
+    <script src="js/language.js"></script>
 
 </body>
 </html>
