@@ -94,12 +94,12 @@ async function loadLanguage(language) {
         if (language === "hi") {
 
             document.title =
-                "लॉगिन | GramBiz AI";
+                "लॉगिन | UNNATI";
 
         } else {
 
             document.title =
-                "Login | GramBiz AI";
+                "Login | UNNATI";
 
         }
 
