@@ -64,3 +64,17 @@ if (householdCount) {
     householdCount.textContent =
         "680";
 }
+
+const userName = localStorage.getItem("grambizUserName");
+
+const userNameElement = document.getElementById("userName");
+const profileAvatar = document.querySelector(".profile-avatar");
+
+if (userName) {
+    userNameElement.textContent = userName;
+
+    profileAvatar.textContent = userName
+        .trim()
+        .charAt(0)
+        .toUpperCase();
+}

@@ -1,5 +1,5 @@
 /* ================================
-   GRAMBIZ AI - DASHBOARD
+   GRAMBIZ AI - BUSINESS PLAN
 ================================ */
 
 * {
@@ -8,37 +8,28 @@
     padding: 0;
 }
 
-
 body {
     font-family: Arial, sans-serif;
-
     background: #f5f8f3;
-
     color: #17251a;
 }
 
-
-/* ================================
-   SIDEBAR
-================================ */
+/* SIDEBAR */
 
 .sidebar {
     position: fixed;
-
     left: 0;
     top: 0;
     bottom: 0;
 
     width: 235px;
-
-    background: #ffffff;
-
-    border-right: 1px solid #e1e8df;
+    padding: 25px 15px;
 
     display: flex;
     flex-direction: column;
 
-    padding: 25px 15px;
+    background: #ffffff;
+    border-right: 1px solid #e1e8df;
 }
 
 .dashboard-logo.unnati-brand {
@@ -83,91 +74,63 @@ body {
     line-height: 1;
     white-space: nowrap;
 }
-
-
 .sidebar-nav {
     display: flex;
     flex-direction: column;
-
     gap: 5px;
 }
-
 
 .nav-item {
     display: flex;
     align-items: center;
-
     gap: 12px;
 
     padding: 12px 13px;
-
     border-radius: 8px;
 
     color: #68736a;
-
     text-decoration: none;
-
     font-size: 16px;
-
     transition: 0.2s ease;
 }
 
-
 .nav-item > span:first-child {
     width: 20px;
-
     text-align: center;
-
     font-size: 16px;
 }
 
-
 .nav-item:hover {
     background: #f0f6ee;
-
     color: #31813a;
 }
-
 
 .nav-item.active {
     background: #eaf5e8;
-
     color: #31813a;
-
     font-weight: 600;
 }
 
-
 .sidebar-bottom {
     margin-top: auto;
-
     padding-top: 20px;
-
     border-top: 1px solid #e7ece5;
 }
-
 
 .profile-button {
     width: 100%;
 
     display: flex;
     align-items: center;
-
     gap: 10px;
 
     border: none;
-
     background: transparent;
-
     color: #4e594f;
 
     font-size: 13px;
-
     text-align: left;
-
-    cursor: pointer;
 }
-
 
 .profile-avatar {
     width: 34px;
@@ -178,619 +141,390 @@ body {
     justify-content: center;
 
     border-radius: 50%;
-
     background: #31813a;
-
-    color: white;
-
+    color: #ffffff;
     font-weight: 600;
 }
 
+/* MAIN */
 
-/* ================================
-   MAIN
-================================ */
-
-.dashboard-main {
-    margin-left: 235px;
-
-    padding: 35px 45px;
-
+.business-plan-main {
     max-width: 1450px;
+    min-height: 100vh;
+
+    margin-left: 235px;
+    padding: 35px 45px 45px;
 }
 
-
-/* HEADER */
-
-.dashboard-header {
+.plan-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    gap: 20px;
 
     margin-bottom: 28px;
 }
 
-
-.welcome-small {
-    margin-bottom: 5px;
-
-    color: #8a938c;
-
-    font-size: 12px;
-}
-
-
-.dashboard-header h1 {
-    font-size: 27px;
-
-    color: #17251a;
-}
-
-
-.new-analysis-btn {
-    padding: 11px 17px;
-
-    border: none;
-
-    border-radius: 8px;
-
-    background: #31813a;
-
-    color: white;
-
-    font-size: 12px;
-    font-weight: 600;
-
-    cursor: pointer;
-
-    transition: 0.2s ease;
-}
-
-
-.new-analysis-btn:hover {
-    background: #276b2f;
-}
-
-
-/* ================================
-   BUSINESS SUMMARY
-================================ */
-
-.business-summary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 24px 28px;
-
-    background: white;
-
-    border: 1px solid #e1e8df;
-
-    border-radius: 12px;
-
-    margin-bottom: 18px;
-}
-
-
+.page-label,
 .summary-label {
     display: block;
-
     margin-bottom: 6px;
 
     color: #8a938c;
-
     font-size: 10px;
     font-weight: 700;
-
-    letter-spacing: 0.8px;
+    letter-spacing: 0.9px;
 }
 
-
-.business-summary h2 {
-    font-size: 19px;
-
-    margin-bottom: 4px;
+.plan-header h1 {
+    color: #17251a;
+    font-size: 27px;
 }
 
+.page-description {
+    max-width: 540px;
+    margin-top: 7px;
 
-.business-summary p {
-    color: #788278;
-
-    font-size: 12px;
-}
-
-
-.summary-capital {
-    text-align: right;
-}
-
-
-.summary-capital strong {
-    color: #31813a;
-
-    font-size: 23px;
-}
-
-
-/* ================================
-   AI INSIGHT
-================================ */
-
-.ai-insight {
-    display: flex;
-    align-items: flex-start;
-
-    gap: 15px;
-
-    padding: 20px 22px;
-
-    margin-bottom: 32px;
-
-    border: 1px solid #dce9d9;
-
-    border-radius: 12px;
-
-    background: #eef7ec;
-}
-
-
-.insight-icon {
-    width: 38px;
-    height: 38px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    border-radius: 9px;
-
-    background: white;
-
-    color: #31813a;
-
-    font-size: 19px;
-}
-
-
-.insight-label {
-    color: #31813a;
-
-    font-size: 9px;
-    font-weight: 700;
-
-    letter-spacing: 1px;
-}
-
-
-.ai-insight h3 {
-    margin: 4px 0 5px;
-
-    font-size: 15px;
-}
-
-
-.ai-insight p {
     color: #68736a;
-
-    font-size: 12px;
-
-    line-height: 1.6;
+    font-size: 13px;
+    line-height: 1.5;
 }
 
+.download-btn {
+    padding: 11px 16px;
 
-/* ================================
-   SECTION HEADINGS
-================================ */
-
-.section-heading {
-    margin-bottom: 15px;
-}
-
-
-.section-heading h2 {
-    font-size: 18px;
-}
-
-
-.section-heading p {
-    margin-top: 4px;
-
-    color: #8a938c;
-
-    font-size: 11px;
-}
-
-
-.modules-heading {
-    margin-top: 34px;
-}
-
-
-/* ================================
-   FINANCIAL STATS
-================================ */
-
-.stats-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 15px;
-}
-
-
-.stat-card {
-    display: flex;
-    align-items: flex-start;
-
-    gap: 13px;
-
-    padding: 20px;
-
-    background: white;
-
-    border: 1px solid #e1e8df;
-
-    border-radius: 11px;
-}
-
-
-.stat-icon {
-    width: 35px;
-    height: 35px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-
+    border: none;
     border-radius: 8px;
 
-    background: #edf6eb;
+    background: #31813a;
+    color: #ffffff;
 
-    color: #31813a;
-
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
 
+.download-btn:hover {
+    background: #276b2f;
+}
 
-.stat-label {
+/* BUSINESS SUMMARY */
+
+.plan-summary {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    padding: 23px 25px;
+    margin-bottom: 18px;
+
+    background: #ffffff;
+    border: 1px solid #e1e8df;
+    border-radius: 12px;
+}
+
+.summary-icon {
+    width: 47px;
+    height: 47px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    background: #edf6eb;
+    font-size: 22px;
+}
+
+.plan-summary h2 {
+    margin-bottom: 4px;
+    color: #273329;
+    font-size: 19px;
+}
+
+.plan-summary p {
+    color: #788278;
+    font-size: 12px;
+}
+
+.plan-capital {
+    margin-left: auto;
+    padding-left: 25px;
+
+    text-align: right;
+    border-left: 1px solid #e7ece5;
+}
+
+.plan-capital span {
     display: block;
-
     margin-bottom: 5px;
 
     color: #8a938c;
-
     font-size: 9px;
     font-weight: 700;
+    letter-spacing: 0.6px;
 }
 
-
-.stat-card strong {
-    display: block;
-
-    font-size: 21px;
+.plan-capital strong {
+    color: #31813a;
+    font-size: 23px;
 }
 
+/* AI RECOMMENDATION */
 
-.stat-card small {
-    display: block;
-
-    margin-top: 5px;
-
-    color: #929a93;
-
-    font-size: 10px;
-}
-
-
-/* ================================
-   ANALYSIS MODULES
-================================ */
-
-.modules-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 14px;
-}
-
-
-.module-card {
+.plan-intro {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    gap: 15px;
 
-    gap: 13px;
+    padding: 20px 22px;
+    margin-bottom: 32px;
 
-    padding: 18px;
-
-    background: white;
-
-    border: 1px solid #e1e8df;
-
-    border-radius: 11px;
-
-    text-decoration: none;
-
-    transition: 0.2s ease;
+    background: #eef7ec;
+    border: 1px solid #dce9d9;
+    border-radius: 12px;
 }
 
-
-.module-card:hover {
-    border-color: #b9d2b6;
-
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 8px 20px rgba(31, 60, 35, 0.05);
-}
-
-
-.module-icon {
+.intro-icon {
     width: 38px;
     height: 38px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
     flex-shrink: 0;
 
     border-radius: 9px;
-
-    background: #f0f6ee;
-
-    font-size: 17px;
+    background: #ffffff;
+    color: #31813a;
+    font-size: 19px;
 }
 
+.intro-label {
+    color: #31813a;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
 
-.module-card h3 {
+.plan-intro h3 {
+    margin: 4px 0 5px;
     color: #273329;
-
-    font-size: 13px;
+    font-size: 15px;
 }
 
+.plan-intro p {
+    color: #68736a;
+    font-size: 12px;
+    line-height: 1.6;
+}
 
-.module-card p {
+/* HEADINGS */
+
+.section-heading {
+    margin: 30px 0 15px;
+}
+
+.section-heading h2 {
+    color: #17251a;
+    font-size: 18px;
+}
+
+.section-heading p {
     margin-top: 4px;
-
-    color: #89928a;
-
-    font-size: 10px;
-
-    line-height: 1.4;
+    color: #8a938c;
+    font-size: 11px;
 }
 
+/* PLAN CARDS */
 
-.module-arrow {
-    margin-left: auto;
-
-    color: #9aa49b;
-
-    font-size: 16px;
-}
-
-
-/* ================================
-   FINANCIAL TOOLS
-================================ */
-
-.financial-tools {
+.plan-grid {
     display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 14px;
-
-    padding-bottom: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
 }
 
+.plan-card {
+    padding: 20px;
 
-.tool-card {
-    display: flex;
-    align-items: center;
-
-    gap: 13px;
-
-    padding: 18px;
-
-    background: white;
-
+    background: #ffffff;
     border: 1px solid #e1e8df;
-
     border-radius: 11px;
-
-    text-decoration: none;
 
     transition: 0.2s ease;
 }
 
-
-.tool-card:hover {
-    border-color: #b9d2b6;
-
+.plan-card:hover {
     transform: translateY(-2px);
+    border-color: #b9d2b6;
+    box-shadow: 0 8px 20px rgba(31, 60, 35, 0.06);
 }
 
-
-.tool-card > span {
-    font-size: 21px;
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 13px;
 }
 
+.plan-icon {
+    width: 38px;
+    height: 38px;
 
-.tool-card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    border-radius: 9px;
+    background: #f0f6ee;
+    font-size: 17px;
+}
+
+.card-number {
+    display: block;
+    margin-bottom: 2px;
+
+    color: #8a938c;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.plan-card h3 {
     color: #273329;
+    font-size: 14px;
+}
 
+.plan-card > p {
+    min-height: 54px;
+    color: #718073;
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+.plan-tip {
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid #edf0ec;
+
+    color: #68736a;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.plan-tip strong {
+    color: #31813a;
+}
+
+/* 30-DAY ACTION PLAN */
+
+.action-plan-card {
+    padding: 5px 20px;
+    background: #ffffff;
+    border: 1px solid #e1e8df;
+    border-radius: 11px;
+}
+
+.action-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    padding: 17px 0;
+    border-bottom: 1px solid #edf0ec;
+}
+
+.action-step:last-child {
+    border-bottom: none;
+}
+
+.action-step > span {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    background: #eaf5e8;
+    color: #31813a;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.action-step h3 {
+    margin-bottom: 4px;
+    color: #273329;
     font-size: 13px;
 }
 
-
-.tool-card p {
-    margin-top: 4px;
-
-    color: #89928a;
-
-    font-size: 10px;
+.action-step p {
+    color: #788278;
+    font-size: 11px;
+    line-height: 1.5;
 }
 
+/* MOBILE */
 
-.tool-card > strong {
-    margin-left: auto;
-
-    color: #9aa49b;
-}
-
-
-/* ================================
-   MOBILE
-================================ */
-
-@media (max-width: 1000px) {
-
-    .stats-grid,
-    .modules-grid,
-    .financial-tools {
-        grid-template-columns:
-            repeat(2, 1fr);
+@media (max-width: 850px) {
+    .plan-grid {
+        grid-template-columns: 1fr;
     }
-
 }
-
 
 @media (max-width: 700px) {
-
     .sidebar {
         position: relative;
-
         width: 100%;
-
         height: auto;
-
         border-right: none;
-
         border-bottom: 1px solid #e1e8df;
     }
 
-
     .sidebar-nav {
         display: grid;
-
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-
 
     .sidebar-bottom {
         display: none;
     }
 
-
-    .dashboard-main {
+    .business-plan-main {
         margin-left: 0;
-
         padding: 25px 18px;
     }
 
-
-    .dashboard-header {
-        align-items: flex-start;
-
-        gap: 15px;
-    }
-
-
-    .dashboard-header h1 {
-        font-size: 22px;
-    }
-
-
-    .business-summary {
+    .plan-header {
         flex-direction: column;
+    }
 
+    .plan-header h1 {
+        font-size: 23px;
+    }
+
+    .download-btn {
+        width: 100%;
+    }
+
+    .plan-summary {
         align-items: flex-start;
-
-        gap: 20px;
-    }
-
-
-    .summary-capital {
-        text-align: left;
-    }
-
-
-    .stats-grid,
-    .modules-grid,
-    .financial-tools {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-/* ================================
-   DASHBOARD ACTIONS
-================================ */
-
-.dashboard-actions {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-
-/* ================================
-   LANGUAGE SELECTOR
-================================ */
-
-#languageSelector {
-    padding: 10px 12px;
-
-    border: 1px solid #dce5da;
-
-    border-radius: 8px;
-
-    background: white;
-
-    color: #344338;
-
-    font-size: 12px;
-
-    cursor: pointer;
-
-    outline: none;
-}
-
-
-#languageSelector:hover {
-    border-color: #31813a;
-}
-
-
-#languageSelector:focus {
-    border-color: #31813a;
-}
-
-
-/* MOBILE */
-
-@media (max-width: 700px) {
-
-    .dashboard-actions {
         flex-wrap: wrap;
     }
 
-    #languageSelector {
-        padding: 9px 10px;
+    .plan-capital {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left;
+        border-left: none;
     }
-
 }
 
 .sidebar-bottom {

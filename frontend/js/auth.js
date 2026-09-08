@@ -17,7 +17,7 @@ if (loginForm) {
         localStorage.setItem("grambizLoggedIn", "true");
 
         // Go to business setup
-        window.location.href = "location.html";
+        window.location.href = "dashboard.html";
 
     });
 

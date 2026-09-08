@@ -23,10 +23,18 @@
 <!-- SIDEBAR -->
 
 <aside class="sidebar">
+<div class="dashboard-logo unnati-brand">
+    <img
+        src="assets/unnati-logo.png"
+        alt="Unnati logo"
+        class="unnati-logo"
+    >
 
-    <div class="dashboard-logo">
-        🌱 GramBiz <strong>AI</strong>
+    <div class="brand-text">
+        <span>UNNATI</span>
+        <small>Know your market. Grow your business.</small>
     </div>
+</div>
 
 
     <nav class="sidebar-nav">
@@ -61,17 +69,30 @@
             <span data-i18n="financials">Financials</span>
         </a>
 
-        <a href="#" class="nav-item">
+        <a href="risk.html" class="nav-item">
             <span>⚠</span>
             <span data-i18n="risk">Risk</span>
         </a>
 
-        <a href="#" class="nav-item">
+        <a href="businessPlan.html" class="nav-item">
             <span>📄</span>
             <span data-i18n="businessPlan">Business Plan</span>
         </a>
 
     </nav>
+    <div class="sidebar-bottom">
+    <button class="profile-button" id="profileMenuBtn" type="button">
+        <span class="profile-avatar">A</span>
+        <span id="userName">User</span>
+        <span class="profile-arrow">⌃</span>
+    </button>
+
+    <div class="profile-menu" id="profileMenu">
+        <button id="editProfileBtn">✏ Edit Profile</button>
+        <button id="settingsBtn">⚙ Settings</button>
+        <button class="logout-btn" id="logoutBtn">↪ Logout</button>
+    </div>
+</div>
 
 </aside>
 
@@ -338,6 +359,7 @@
 
 <script src="js/opportunities.js"></script>
 <script src="js/language.js"></script>
+<script src="js/profile-menu.js"></script>
 
 </body>
 

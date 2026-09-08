@@ -374,19 +374,24 @@ body {
 
 .auth-language {
     position: absolute;
-    top: 30px;
-    right: 35px;
+    top: 14px;
+    right: 42px;
+
+    z-index: 10;
 }
 
-#languageSelector {
+.auth-language #languageSelector {
+    min-width: 118px;
     padding: 9px 12px;
-    border: 1px solid #dce5da;
-    border-radius: 8px;
-    background: white;
+
+    border: 1px solid #d7e1d4;
+    border-radius: 9px;
+
+    background: #ffffff;
     color: #344338;
-    font-size: 13px;
+
+    font-size: 14px;
     cursor: pointer;
-    outline: none;
 }
 
 #languageSelector:hover {
@@ -395,4 +400,11 @@ body {
 
 #languageSelector:focus {
     border-color: #31813a;
+}
+
+@media (max-width: 700px) {
+    .auth-language {
+        top: 18px;
+        right: 18px;
+    }
 }
