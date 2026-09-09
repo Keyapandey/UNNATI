@@ -276,166 +276,76 @@ ownContributionInput.addEventListener(
 // SCHEME DATA
 // ==================================================
 
+// ==================================================
+// SCHEME DATA — matches Problem Statement exactly
+// (NSFDC two-tier structure)
+// ==================================================
+
 const schemes = {
 
-
-    mudra: {
-
-        name: "PM MUDRA Yojana",
-
-        score: "92%",
-
+    microFinance: {
+        name: "Micro Finance Scheme",
+        score: "Best Fit",
         description:
-            "Suitable financing support for eligible micro enterprises across manufacturing, trading, services and agriculture-allied activities.",
-
+            "For small units with a project cost up to ₹1.40 lakh. Funded at a concessional interest rate for micro-enterprise beneficiaries.",
         amount:
-            "₹50,000 – ₹20 lakh",
-
+            "Up to 90% of project cost (max ₹1,25,000)",
         interest:
-            "Varies by lender",
-
+            "6.5% per annum",
         tenure:
-            "Up to ~5 years",
-
+            "3 years (including 3-month moratorium)",
         reason:
-            "This scheme can fit many small businesses that need financing for working capital, equipment or business expansion.",
+            "Your project cost falls within the ₹1.40 lakh threshold, so it qualifies under the Micro Finance Scheme with a lower concessional interest rate.",
+        icon: "🌱"
+    },
 
+    termLoan: {
+        name: "Term Loan Scheme",
+        score: "Best Fit",
+        description:
+            "For larger projects costing between ₹1.40 lakh and ₹50.00 lakh. Funded for beneficiaries scaling beyond micro-scale enterprises.",
+        amount:
+            "Up to 90% of project cost (max ₹45,00,000)",
+        interest:
+            "8% per annum",
+        tenure:
+            "7 years (including 6-month moratorium)",
+        reason:
+            "Your project cost exceeds ₹1.40 lakh, so it is routed to the Term Loan Scheme rather than the Micro Finance Scheme.",
         icon: "🏦"
-
     },
 
-
-    pmegp: {
-
-        name: "PMEGP",
-
-        score: "78%",
-
+    notEligible: {
+        name: "No Matching Scheme",
+        score: "—",
         description:
-            "A government-supported route for eligible new micro-enterprises.",
-
-        amount:
-            "Up to ₹50 lakh manufacturing / ₹20 lakh service-business",
-
-        interest:
-            "Normal bank rate",
-
-        tenure:
-            "3–7 years",
-
+            "Your estimated project cost exceeds ₹50 lakh, which is outside the range covered by these two schemes.",
+        amount: "Not applicable",
+        interest: "Not applicable",
+        tenure: "Not applicable",
         reason:
-            "Potentially relevant when the entrepreneur is establishing a new eligible micro-enterprise.",
-
-        icon: "🏭"
-
-    },
-
-
-    vishwakarma: {
-
-        name: "PM Vishwakarma",
-
-        score: "72%",
-
-        description:
-            "Financial support designed for eligible traditional artisans and craftspeople.",
-
-        amount:
-            "Up to ₹3 lakh",
-
-        interest:
-            "5% concessional",
-
-        tenure:
-            "18 + 30 months",
-
-        reason:
-            "Potentially relevant for eligible traditional artisan activities.",
-
-        icon: "🛠️"
-
-    },
-
-
-    pmfme: {
-
-        name: "PMFME",
-
-        score: "86%",
-
-        description:
-            "Credit-linked subsidy support for eligible micro food-processing units.",
-
-        amount:
-            "35% subsidy, max ₹10 lakh/unit",
-
-        interest:
-            "Bank lending rate",
-
-        tenure:
-            "Project dependent",
-
-        reason:
-            "Potentially strong match for eligible food-processing activities such as dairy processing, spices, flour or pickle businesses.",
-
-        icon: "🥫"
-
-    },
-
-
-    aif: {
-
-        name: "Agriculture Infrastructure Fund",
-
-        score: "64%",
-
-        description:
-            "Financing support for eligible agricultural infrastructure projects.",
-
-        amount:
-            "Project financing",
-
-        interest:
-            "Eligible 3% interest subvention",
-
-        tenure:
-            "Generally up to 7 years",
-
-        reason:
-            "Potentially relevant for eligible agriculture infrastructure such as storage, processing or related facilities.",
-
-        icon: "🌾"
-
+            "Project cost above ₹50 lakh falls outside the Micro Finance and Term Loan Scheme bands defined for this advisory tool.",
+        icon: "⚠️"
     }
 
 };
-
-
-
 // ==================================================
 // ROUTER LOGIC — FRONTEND DEMO
 // ==================================================
 
+// ==================================================
+// ROUTER LOGIC — deterministic, matches PS thresholds
+// Logic A: projectCost <= ₹1.40 lakh -> Micro Finance
+// Logic B: ₹1.40 lakh < projectCost <= ₹50 lakh -> Term Loan
+// ==================================================
+
 function selectBestScheme() {
-
-
-    const businessType =
-        document.getElementById("businessType").value;
-
-
-    const businessStatus =
-        document.querySelector(
-            'input[name="businessStatus"]:checked'
-        ).value;
-
 
     const projectCost =
         Number(projectCostInput.value) || 0;
 
-
     const ownContribution =
         Number(ownContributionInput.value) || 0;
-
 
     const fundingRequired =
         Math.max(
@@ -443,213 +353,108 @@ function selectBestScheme() {
             0
         );
 
-
-
     // ----------------------------------------------
-    // Default
+    // ROUTING — by project cost only
     // ----------------------------------------------
 
-    let bestScheme =
-        schemes.mudra;
+    let bestScheme;
 
-
-
-    // ----------------------------------------------
-    // Food Processing
-    // ----------------------------------------------
-
-    if (businessType === "food") {
-
-        bestScheme =
-            schemes.pmfme;
-
+    if (projectCost <= 0) {
+        bestScheme = schemes.notEligible;
+    }
+    else if (projectCost <= 140000) {
+        bestScheme = schemes.microFinance;
+    }
+    else if (projectCost <= 5000000) {
+        bestScheme = schemes.termLoan;
+    }
+    else {
+        bestScheme = schemes.notEligible;
     }
 
-
-
     // ----------------------------------------------
-    // Artisan
+    // ACTUAL LOAN ELIGIBILITY (90% of project cost,
+    // capped at the scheme's maximum)
     // ----------------------------------------------
 
-    else if (businessType === "artisan") {
+    let loanCap = 0;
 
-        bestScheme =
-            schemes.vishwakarma;
-
+    if (bestScheme === schemes.microFinance) {
+        loanCap = 125000;
+    } else if (bestScheme === schemes.termLoan) {
+        loanCap = 4500000;
     }
 
-
-
-    // ----------------------------------------------
-    // Agriculture
-    // ----------------------------------------------
-
-    else if (businessType === "agriculture") {
-
-        bestScheme =
-            schemes.aif;
-
-    }
-
-
-
-    // ----------------------------------------------
-    // New manufacturing/service business
-    // ----------------------------------------------
-
-    else if (
-        businessStatus === "new" &&
-        (
-            businessType === "manufacturing" ||
-            businessType === "service"
-        )
-    ) {
-
-        bestScheme =
-            schemes.pmegp;
-
-    }
-
-
-
-    // ----------------------------------------------
-    // Small retail / dairy
-    // ----------------------------------------------
-
-    else if (
-        businessType === "retail" ||
-        businessType === "dairy"
-    ) {
-
-        bestScheme =
-            schemes.mudra;
-
-    }
-
-
+    const calculatedLoan =
+        Math.min(
+            projectCost * 0.90,
+            loanCap || projectCost * 0.90
+        );
 
     // ----------------------------------------------
     // DISPLAY RESULT
     // ----------------------------------------------
 
-    document.getElementById(
-        "bestSchemeName"
-    ).textContent =
+    document.getElementById("bestSchemeName").textContent =
         bestScheme.name;
 
-
-    document.getElementById(
-        "bestSchemeDescription"
-    ).textContent =
+    document.getElementById("bestSchemeDescription").textContent =
         bestScheme.description;
 
-
-    document.getElementById(
-        "matchScore"
-    ).textContent =
+    document.getElementById("matchScore").textContent =
         bestScheme.score;
 
+    document.getElementById("bestLoanAmount").textContent =
+        bestScheme === schemes.notEligible
+            ? "Not applicable"
+            : formatMoney(calculatedLoan) + " (max eligible loan)";
 
-    document.getElementById(
-        "bestLoanAmount"
-    ).textContent =
-        bestScheme.amount;
-
-
-    document.getElementById(
-        "bestInterest"
-    ).textContent =
+    document.getElementById("bestInterest").textContent =
         bestScheme.interest;
-
-
 
     // ----------------------------------------------
     // DETAIL CARD
     // ----------------------------------------------
 
-    document.getElementById(
-        "detailSchemeName"
-    ).textContent =
+    document.getElementById("detailSchemeName").textContent =
         bestScheme.name;
 
-
-    document.getElementById(
-        "detailSupport"
-    ).textContent =
+    document.getElementById("detailSupport").textContent =
         bestScheme.amount;
 
-
-    document.getElementById(
-        "detailInterest"
-    ).textContent =
+    document.getElementById("detailInterest").textContent =
         bestScheme.interest;
 
-
-    document.getElementById(
-        "detailTenure"
-    ).textContent =
+    document.getElementById("detailTenure").textContent =
         bestScheme.tenure;
 
-
-    document.getElementById(
-        "detailReason"
-    ).textContent =
+    document.getElementById("detailReason").textContent =
         bestScheme.reason;
 
-
-    document.getElementById(
-        "detailFunding"
-    ).textContent =
+    document.getElementById("detailFunding").textContent =
         formatMoney(fundingRequired);
 
-
-
-    document.getElementById(
-        "detailPotential"
-    ).textContent =
+    document.getElementById("detailPotential").textContent =
         "To be assessed";
-
-
 
     // ----------------------------------------------
     // SHOW RESULTS
     // ----------------------------------------------
 
-    routerEmpty.style.display =
-        "none";
+    routerEmpty.style.display = "none";
+    routerResults.classList.add("show");
+    comparisonSection.style.display = "block";
+    schemeDetailCard.style.display = "block";
 
+    document.querySelector(".router-status").textContent =
+        bestScheme === schemes.notEligible ? "No Match" : "Matched";
 
-    routerResults.classList.add(
-        "show"
-    );
+    // Save the calculated loan amount too, alongside the scheme
+    bestScheme = { ...bestScheme, amount: formatMoney(calculatedLoan) + " eligible loan" };
 
-
-    comparisonSection.style.display =
-        "block";
-
-
-    schemeDetailCard.style.display =
-        "block";
-
-
-
-    // ----------------------------------------------
-    // STATUS
-    // ----------------------------------------------
-
-    document.querySelector(
-        ".router-status"
-    ).textContent =
-        "Matched";
-
-    // STEP 2G
-updateSchemeExplanation(bestScheme);
-
-// STEP 6 - SAVE SCHEME DATA
-saveSchemeFinancialData(bestScheme);
-
+    updateSchemeExplanation(bestScheme);
+    saveSchemeFinancialData(bestScheme);
 }
-
 
 // ==================================================
 // BUTTON CLICK
