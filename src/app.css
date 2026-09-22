@@ -1,0 +1,3 @@
+html, body, #root { min-height: 100%; }
+.unnati-react-shell { min-height: 100vh; }
+.unnati-route-loading, .unnati-route-error { display:none !important; }
