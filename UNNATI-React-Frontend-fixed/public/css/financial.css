@@ -1,0 +1,401 @@
+/* =========================================================
+   GRAMBIZ AI
+   FINANCIAL OVERVIEW
+========================================================= */
+
+
+/* ================================
+   FINANCIAL TABS
+================================ */
+
+.financial-tabs {
+
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 20px;
+
+    padding: 7px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8df;
+
+    border-radius: 11px;
+
+}
+
+
+.financial-tab {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 10px 13px;
+
+    border-radius: 8px;
+
+    color: #68736a;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    transition: 0.2s ease;
+
+}
+
+
+.financial-tab span {
+
+    font-size: 14px;
+
+}
+
+
+.financial-tab:hover {
+
+    background: #f0f6ee;
+
+    color: #31813a;
+
+}
+
+
+.financial-tab.active {
+
+    background: #eaf5e8;
+
+    color: #31813a;
+
+}
+
+
+
+/* ================================
+   FINANCIAL SECTION
+================================ */
+
+.financial-section {
+
+    margin-top: 35px;
+
+}
+
+
+
+/* ================================
+   FINANCIAL PANEL
+================================ */
+
+.financial-panel {
+
+    padding: 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8df;
+
+    border-radius: 11px;
+
+}
+
+
+
+/* ================================
+   FINANCIAL ROW
+================================ */
+
+.financial-row {
+
+    margin-bottom: 25px;
+
+}
+
+
+.financial-row:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.financial-row > div:first-child {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 9px;
+
+}
+
+
+.financial-label {
+
+    color: #68736a;
+
+    font-size: 12px;
+
+}
+
+
+.financial-row strong {
+
+    color: #273329;
+
+    font-size: 13px;
+
+}
+
+
+
+/* ================================
+   BARS
+================================ */
+
+.financial-bar {
+
+    height: 9px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #edf1ed;
+
+}
+
+
+.revenue-bar {
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background: #31813a;
+
+}
+
+
+.expense-bar {
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background: #9aa49b;
+
+}
+
+
+.profit-bar {
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background: #6d9f70;
+
+}
+
+
+
+/* ================================
+   CAPITAL GRID
+================================ */
+
+.capital-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.capital-card {
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8df;
+
+    border-radius: 11px;
+
+}
+
+
+.capital-card strong {
+
+    display: block;
+
+    margin-top: 8px;
+
+    color: #31813a;
+
+    font-size: 24px;
+
+}
+
+
+.capital-card p {
+
+    margin-top: 8px;
+
+    color: #89928a;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* ================================
+   HEALTH
+================================ */
+
+.health-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.health-card {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+    padding: 19px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8df;
+
+    border-radius: 11px;
+
+}
+
+
+.health-icon {
+
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    background: #edf6eb;
+
+    color: #31813a;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+}
+
+
+.health-card h3 {
+
+    margin-top: 5px;
+
+    color: #273329;
+
+    font-size: 13px;
+
+}
+
+
+.health-card p {
+
+    margin-top: 5px;
+
+    color: #89928a;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+    .capital-grid,
+    .health-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .financial-tabs {
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .financial-tab {
+
+        justify-content: center;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .financial-tabs {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}

@@ -1,0 +1,260 @@
+/* ==========================================================
+   UNNATI BUSINESS ASSISTANT
+   Small floating assistant — intentionally compact
+========================================================== */
+
+.unnati-ai-launcher {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #d9e8d6;
+    border-radius: 999px;
+    padding: 9px 13px 9px 9px;
+    background: #ffffff;
+    color: #246d2d;
+    box-shadow: 0 8px 26px rgba(33, 73, 37, .14);
+    cursor: pointer;
+    font: 600 12px Arial, sans-serif;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.unnati-ai-launcher:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 11px 30px rgba(33, 73, 37, .20);
+}
+
+.unnati-ai-launcher-icon {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #eaf5e8;
+    font-size: 15px;
+}
+
+.unnati-ai-window {
+    position: fixed;
+    right: 24px;
+    bottom: 76px;
+    z-index: 9999;
+    width: min(360px, calc(100vw - 30px));
+    height: min(540px, calc(100vh - 105px));
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #dce7da;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 18px 55px rgba(24, 50, 27, .22);
+    font-family: Arial, sans-serif;
+}
+
+.unnati-ai-window.open {
+    display: flex;
+    animation: unnatiAiIn .18s ease-out;
+}
+
+@keyframes unnatiAiIn {
+    from { opacity: 0; transform: translateY(10px) scale(.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.unnati-ai-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 15px;
+    background: #f3f8f1;
+    border-bottom: 1px solid #e2ece0;
+}
+
+.unnati-ai-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.unnati-ai-avatar {
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: #31813a;
+    color: #fff;
+    font-size: 16px;
+}
+
+.unnati-ai-title strong {
+    display: block;
+    color: #17251a;
+    font-size: 14px;
+}
+
+.unnati-ai-title span {
+    display: block;
+    margin-top: 2px;
+    color: #7a857c;
+    font-size: 10px;
+}
+
+.unnati-ai-close {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #657067;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.unnati-ai-close:hover { background: #e7efe5; }
+
+.unnati-ai-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 14px;
+    background: #fbfcfa;
+}
+
+.unnati-ai-welcome {
+    margin-bottom: 12px;
+    color: #56635a;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.unnati-ai-welcome strong { color: #17251a; }
+
+.unnati-ai-suggestions {
+    display: grid;
+    gap: 7px;
+    margin-bottom: 13px;
+}
+
+.unnati-ai-suggestion {
+    width: 100%;
+    border: 1px solid #e0e8de;
+    border-radius: 10px;
+    padding: 9px 10px;
+    background: #fff;
+    color: #314238;
+    text-align: left;
+    font-size: 11px;
+    line-height: 1.35;
+    cursor: pointer;
+    transition: .15s ease;
+}
+
+.unnati-ai-suggestion:hover {
+    border-color: #b9d5b5;
+    background: #f4f9f2;
+}
+
+.unnati-ai-message {
+    max-width: 88%;
+    margin: 8px 0;
+    padding: 9px 11px;
+    border-radius: 11px;
+    font-size: 11px;
+    line-height: 1.55;
+    white-space: normal;
+}
+
+.unnati-ai-message.user {
+    margin-left: auto;
+    background: #31813a;
+    color: #fff;
+    border-bottom-right-radius: 4px;
+}
+
+.unnati-ai-message.bot {
+    margin-right: auto;
+    background: #eef6ec;
+    color: #26372a;
+    border-bottom-left-radius: 4px;
+}
+
+.unnati-ai-message.bot strong { color: #1e6728; }
+
+.unnati-ai-message.bot ul {
+    margin: 5px 0 0 16px;
+    padding: 0;
+}
+
+.unnati-ai-message.bot li { margin: 3px 0; }
+
+.unnati-ai-typing {
+    display: inline-flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.unnati-ai-typing i {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #6c8570;
+    animation: unnatiDot 1s infinite ease-in-out;
+}
+
+.unnati-ai-typing i:nth-child(2) { animation-delay: .15s; }
+.unnati-ai-typing i:nth-child(3) { animation-delay: .30s; }
+
+@keyframes unnatiDot {
+    0%, 70%, 100% { transform: translateY(0); opacity: .45; }
+    35% { transform: translateY(-3px); opacity: 1; }
+}
+
+.unnati-ai-input-area {
+    display: flex;
+    gap: 7px;
+    padding: 10px;
+    border-top: 1px solid #e3eae1;
+    background: #fff;
+}
+
+.unnati-ai-input {
+    min-width: 0;
+    flex: 1;
+    resize: none;
+    height: 38px;
+    border: 1px solid #dce5da;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    color: #243129;
+    font: 11px Arial, sans-serif;
+}
+
+.unnati-ai-input:focus { border-color: #9fc59a; }
+
+.unnati-ai-send {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 10px;
+    background: #31813a;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.unnati-ai-send:hover { background: #276b2f; }
+
+@media (max-width: 600px) {
+    .unnati-ai-launcher { right: 14px; bottom: 14px; }
+    .unnati-ai-window {
+        right: 14px;
+        bottom: 62px;
+        width: calc(100vw - 28px);
+        height: min(520px, calc(100vh - 78px));
+    }
+}

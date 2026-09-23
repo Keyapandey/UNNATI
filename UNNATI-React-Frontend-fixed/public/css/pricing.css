@@ -1,0 +1,60 @@
+/* =========================================================
+   GRAMBIZ AI
+   PRICING PAGE ONLY
+   ========================================================= */
+
+
+/* Back button */
+
+.pricing-page {
+    width: 100%;
+}
+
+
+/* Pricing-specific back button */
+
+.pricing-back-btn {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Pricing factors spacing */
+
+.pricing-factors-heading {
+    margin-top: 42px;
+}
+
+
+/* Recommendation spacing */
+
+.pricing-recommendation-heading {
+    margin-top: 42px;
+}
+
+
+/* Recommendation card */
+
+.pricing-recommendation {
+    margin-bottom: 40px;
+}
+
+
+/* Make pricing cards consistent with dashboard */
+
+.dashboard-main .stat-card strong {
+    display: block;
+}
+
+
+/* Pricing responsive adjustment */
+
+@media (max-width: 700px) {
+
+    .pricing-back-btn {
+        width: 100%;
+    }
+
+}
