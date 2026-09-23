@@ -1,5 +1,6 @@
 import React from "react";
 import LegacyPage from "../components/LegacyPage";
+   import FinancialTabs from "../components/FinancialTabs";
 
 export default function RepaymentPlanner() {
   return (
@@ -82,25 +83,7 @@ export default function RepaymentPlanner() {
 
         </button>
 </header>
-
-<div className="financial-tabs">
-<a href="financial.html">
-            Financial Overview
-        </a>
-<a href="scheme-calculator.html">
-            Scheme Calculator
-        </a>
-<a href="financial-planner.html">
-            Financial Planner
-        </a>
-<a className="active" href="repayment-planner.html">
-            Repayment Planner
-        </a>
-<a href="cost-profitability.html">
-            Cost & Profitability
-        </a>
-</div>
-
+   <FinancialTabs active="overview" />
 <section className="repayment-intro">
 <span className="repayment-label">
             SMART REPAYMENT PLANNER

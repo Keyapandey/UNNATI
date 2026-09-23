@@ -262,3 +262,19 @@
         }
     });
 })();
+
+/* Highlight the current Financials tab */
+(function () {
+  function markActiveTab() {
+    var page = (location.pathname.split("/").pop() || "financial.html").toLowerCase();
+    document.querySelectorAll(".financial-tabs a").forEach(function (a) {
+      var target = (a.getAttribute("href") || "").split("/").pop().toLowerCase();
+      var isActive = target === page;
+      a.classList.toggle("active", isActive);
+      if (isActive) a.setAttribute("aria-current", "page");
+      else a.removeAttribute("aria-current");
+    });
+  }
+  markActiveTab();
+  new MutationObserver(markActiveTab).observe(document.body, { childList: true, subtree: true });
+})();

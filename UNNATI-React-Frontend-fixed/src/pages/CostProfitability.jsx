@@ -1,5 +1,6 @@
 import React from "react";
 import LegacyPage from "../components/LegacyPage";
+   import FinancialTabs from "../components/FinancialTabs";
 
 export default function CostProfitability() {
   return (
@@ -83,24 +84,7 @@ export default function CostProfitability() {
         </button>
 </header>
 
-<div className="financial-tabs">
-<a href="financial.html">
-            Financial Overview
-        </a>
-<a href="scheme-calculator.html">
-            Scheme Calculator
-        </a>
-<a href="financial-planner.html">
-            Financial Planner
-        </a>
-<a href="repayment-planner.html">
-            Repayment Planner
-        </a>
-<a className="active" href="cost-profitability.html">
-            Cost & Profitability
-        </a>
-</div>
-
+   <FinancialTabs active="overview" />
 <section className="profit-intro">
 <span className="profit-label">
             COST & PROFITABILITY ANALYSIS

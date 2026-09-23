@@ -399,3 +399,80 @@
     }
 
 }
+
+/* ===== Financial tabs (shared by all financial pages) ===== */
+.financial-tabs {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 10px !important;
+  margin: 20px 0 30px !important;
+  background: #ffffff !important;
+  border: 1px solid #dfe7df !important;
+  border-radius: 16px !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  overflow-x: auto;
+}
+
+.financial-tabs a {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 18px 24px !important;
+  border-radius: 12px !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #52615a !important;
+  background: transparent !important;
+}
+
+.financial-tabs a:hover {
+  background: #f3f7f2 !important;
+}
+
+.financial-tabs a.active,
+.financial-tabs a[aria-current="page"] {
+  color: #237b38 !important;
+  font-weight: 700 !important;
+  background: #eaf5e8 !important;
+}
+
+/* Icons, only added when the link has no icon of its own */
+.financial-tabs a:not(:has(span))::before { font-size: 16px; }
+.financial-tabs a[href*="financial.html"]:not(:has(span))::before { content: "◈"; }
+.financial-tabs a[href*="scheme-calculator"]:not(:has(span))::before { content: "🧮"; }
+.financial-tabs a[href*="financial-planner"]:not(:has(span))::before { content: "📅"; }
+.financial-tabs a[href*="repayment-planner"]:not(:has(span))::before { content: "💳"; }
+.financial-tabs a[href*="cost-profitability"]:not(:has(span))::before { content: "📈"; }
+
+/* ===== Financial tabs: smaller, fit in one row, no scrollbar ===== */
+.financial-tabs {
+  flex-wrap: nowrap !important;
+  gap: 4px !important;
+  padding: 6px !important;
+  overflow: hidden !important;
+  scrollbar-width: none !important;
+}
+
+.financial-tabs::-webkit-scrollbar {
+  display: none !important;
+}
+
+.financial-tabs a {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  justify-content: center !important;
+  padding: 10px 12px !important;
+  gap: 6px !important;
+  font-size: 13px !important;
+  line-height: 1.2 !important;
+  white-space: nowrap !important;
+  border-radius: 10px !important;
+}
+
+.financial-tabs a span {
+  font-size: 14px !important;
+}
